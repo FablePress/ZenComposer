@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>Editor</title>
     <!-- Editor -->
-    <link rel="stylesheet" href="http://localhost:8080/dist/cdn/toastui-editor.css" />
-    <link rel="stylesheet" href="https://uicdn.toast.com/chart/v4.1.4/toastui-chart.min.css" />
+    <link rel="stylesheet" href="http://localhost:8080/dist/cdn/zen-composer.css" />
+    <link rel="stylesheet" href="https://uicdn.toast.com/chart/v4.1.4/zenComposer-chart.min.css" />
   </head>
   <body>
     <div class="code-html">
@@ -17,11 +17,11 @@
       <div id="viewer"></div>
     </div>
     <!-- Chart -->
-    <script src="https://uicdn.toast.com/chart/v4.1.4/toastui-chart.js"></script>
+    <script src="https://uicdn.toast.com/chart/v4.1.4/zenComposer-chart.js"></script>
     <!-- Editor -->
-    <script src="http://localhost:8080/dist/cdn/toastui-editor-all.js"></script>
+    <script src="http://localhost:8080/dist/cdn/zen-composer-all.js"></script>
     <!-- Plugin -->
-    <script src="../dist/cdn/toastui-editor-plugin-chart.js"></script>
+    <script src="../dist/cdn/zen-composer-plugin-chart.js"></script>
     <script class="code-js">
       const content = [
         '$$chart',
@@ -45,7 +45,7 @@
         minHeight: 100,
         maxHeight: 300
       };
-      const { Editor } = toastui;
+      const { Editor } = zenComposer;
       const { chart } = Editor.plugin;
 
       const editor = new Editor({

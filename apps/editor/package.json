@@ -1,12 +1,12 @@
 {
-  "name": "@toast-ui/editor",
+  "name": "@fablepress/zen-composer",
   "version": "3.2.2",
   "description": "GFM  Markdown Wysiwyg Editor - Productive and Extensible",
   "keywords": [
     "nhn",
     "nhn cloud",
     "toast",
-    "toastui",
+    "zenComposer",
     "toast-ui",
     "markdown",
     "wysiwyg",
@@ -14,30 +14,30 @@
     "preview",
     "gfm"
   ],
-  "main": "dist/toastui-editor.js",
+  "main": "dist/zen-composer.js",
   "module": "dist/esm/",
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
-      "require": "./dist/toastui-editor.js"
+      "require": "./dist/zen-composer.js"
     },
     "./viewer": {
       "import": "./dist/esm/indexViewer.js",
-      "require": "./dist/toastui-editor-viewer.js"
+      "require": "./dist/zen-composer-viewer.js"
     },
     "./dist/i18n/*": {
       "import": "./dist/esm/i18n/*.js",
       "require": "./dist/i18n/*.js"
     },
-    "./dist/toastui-editor-viewer": "./dist/toastui-editor-viewer.js",
-    "./dist/toastui-editor.css": "./dist/toastui-editor.css",
-    "./dist/toastui-editor-viewer.css": "./dist/toastui-editor-viewer.css",
-    "./dist/toastui-editor-only.css": "./dist/toastui-editor-only.css",
-    "./dist/theme/toastui-editor-dark.css": "./dist/theme/toastui-editor-dark.css",
-    "./toastui-editor.css": "./dist/toastui-editor.css",
-    "./toastui-editor-viewer.css": "./dist/toastui-editor-viewer.css",
-    "./toastui-editor-only.css": "./dist/toastui-editor-only.css",
-    "./toastui-editor-dark.css": "./dist/theme/toastui-editor-dark.css"
+    "./dist/zen-composer-viewer": "./dist/zen-composer-viewer.js",
+    "./dist/zen-composer.css": "./dist/zen-composer.css",
+    "./dist/zen-composer-viewer.css": "./dist/zen-composer-viewer.css",
+    "./dist/zen-composer-only.css": "./dist/zen-composer-only.css",
+    "./dist/theme/zen-composer-dark.css": "./dist/theme/zen-composer-dark.css",
+    "./zen-composer.css": "./dist/zen-composer.css",
+    "./zen-composer-viewer.css": "./dist/zen-composer-viewer.css",
+    "./zen-composer-only.css": "./dist/zen-composer-only.css",
+    "./zen-composer-dark.css": "./dist/theme/zen-composer-dark.css"
   },
   "types": "types/index.d.ts",
   "files": [
@@ -52,11 +52,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "apps/editor"
   },
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "homepage": "https://ui.toast.com",
   "browserslist": "last 2 versions, not ie <= 10",

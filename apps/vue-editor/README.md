@@ -1,8 +1,8 @@
-# TOAST UI Editor for Vue
+# Zen Composer for Vue
 
-> This is [Vue](https://vuejs.org/) component wrapping [TOAST UI Editor](https://github.com/nhn/tui.editor/tree/master/apps/editor).
+> This is [Vue](https://vuejs.org/) component wrapping [Zen Composer](https://github.com/nhn/zen-composer/tree/master/apps/editor).
 
-[![npm version](https://img.shields.io/npm/v/@toast-ui/vue-editor.svg)](https://www.npmjs.com/package/@toast-ui/vue-editor)
+[![npm version](https://img.shields.io/npm/v/@fablepress/zen-composer-vue.svg)](https://www.npmjs.com/package/@fablepress/zen-composer-vue)
 
 ## 🚩 Table of Contents
 
@@ -13,7 +13,7 @@
 
 ## Collect Statistics on the Use of Open Source
 
-Vue Wrapper of TOAST UI Editor applies Google Analytics (GA) to collect statistics on the use of open source, in order to identify how widely TOAST UI Editor is used throughout the world. It also serves as important index to determine the future course of projects. location.hostname (e.g. ui.toast.com) is to be collected and the sole purpose is nothing but to measure statistics on the usage. To disable GA, use the following `usageStatistics` options when declare Vue Wrapper component.
+Vue Wrapper of Zen Composer applies Google Analytics (GA) to collect statistics on the use of open source, in order to identify how widely Zen Composer is used throughout the world. It also serves as important index to determine the future course of projects. location.hostname (e.g. ui.toast.com) is to be collected and the sole purpose is nothing but to measure statistics on the usage. To disable GA, use the following `usageStatistics` options when declare Vue Wrapper component.
 
 ```js
 const options = {
@@ -27,29 +27,29 @@ const options = {
 ### Using npm
 
 ```sh
-npm install --save @toast-ui/vue-editor
+npm install --save @fablepress/zen-composer-vue
 ```
 
 ## 📝 Editor Usage
 
 ### Import
 
-You can use Toast UI Editor for Vue as a ECMAScript module or a CommonJS module. As this module does not contain CSS files, you should import `toastui-editor.css` from `@toast-ui/editor` in the script.
+You can use Zen Composer for Vue as a ECMAScript module or a CommonJS module. As this module does not contain CSS files, you should import `zen-composer.css` from `@fablepress/zen-composer` in the script.
 
 - ES Modules
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor.css';
+import '@fablepress/zen-composer/dist/zen-composer.css';
 
-import { Editor } from '@toast-ui/vue-editor';
+import { Editor } from '@fablepress/zen-composer-vue';
 ```
 
 - CommonJS
 
 ```js
-require('@toast-ui/editor/dist/toastui-editor.css');
+require('@fablepress/zen-composer/dist/zen-composer.css');
 
-const { Editor } = require('@toast-ui/vue-editor');
+const { Editor } = require('@fablepress/zen-composer-vue');
 ```
 
 ### Creating Component
@@ -65,9 +65,9 @@ First implement `<editor/>` in the template.
 And then add `Editor` to the `components` in your component or Vue instance like this:
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor.css';
+import '@fablepress/zen-composer/dist/zen-composer.css';
 
-import { Editor } from '@toast-ui/vue-editor';
+import { Editor } from '@fablepress/zen-composer-vue';
 
 export default {
   components: {
@@ -79,9 +79,9 @@ export default {
 or
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor.css';
+import '@fablepress/zen-composer/dist/zen-composer.css';
 
-import { Editor } from '@toast-ui/vue-editor';
+import { Editor } from '@fablepress/zen-composer-vue';
 
 new Vue({
   el: '#app',
@@ -97,7 +97,7 @@ new Vue({
 | --------------- | ------ | -------------------------- | --------------------------------------------------------- |
 | initialValue    | String | ''                         | Editor's initial value       .                             |
 | initialEditType | String | 'markdown'                 | Initial editor type (markdown, wysiwyg).                   |
-| options         | Object | following `defaultOptions` | Options of tui.editor. This is for initailize tui.editor. |
+| options         | Object | following `defaultOptions` | Options of zen-composer. This is for initailize zen-composer. |
 | height          | String | '300px'                    | This prop can control the height of the editor.           |
 | previewStyle          | String | 'vertical'           | Markdown editor's preview style (tab, vertical).           |
 
@@ -130,9 +130,9 @@ const defaultOptions = {
   />
 </template>
 <script>
-  import '@toast-ui/editor/dist/toastui-editor.css';
+  import '@fablepress/zen-composer/dist/zen-composer.css';
 
-  import { Editor } from '@toast-ui/vue-editor';
+  import { Editor } from '@fablepress/zen-composer-vue';
 
   export default {
     components: {
@@ -152,18 +152,18 @@ const defaultOptions = {
 
 ### Instance Methods
 
-If you want to more manipulate the Editor, you can use `invoke` method to call the method of toastui.editor. For more information of method, see [instance methods of TOAST UI Editor](https://nhn.github.io/tui.editor/latest/ToastUIEditor#addHook).
+If you want to more manipulate the Editor, you can use `invoke` method to call the method of toaszen-composer. For more information of method, see [instance methods of Zen Composer](https://nhn.github.io/zen-composer/latest/ZenComposer#addHook).
 
 First, you need to assign `ref` attribute of `<editor/>` and then you can use `invoke` method through `this.$refs` like this:
 
 ```html
 <template>
-  <editor ref="toastuiEditor" />
+  <editor ref="zenComposerEditor" />
 </template>
 <script>
-  import '@toast-ui/editor/dist/toastui-editor.css';
+  import '@fablepress/zen-composer/dist/zen-composer.css';
 
-  import { Editor } from '@toast-ui/vue-editor';
+  import { Editor } from '@fablepress/zen-composer-vue';
 
   export default {
     components: {
@@ -171,13 +171,13 @@ First, you need to assign `ref` attribute of `<editor/>` and then you can use `i
     },
     methods: {
       scroll() {
-        this.$refs.toastuiEditor.invoke('setScrollTop', 10);
+        this.$refs.zenComposerEditor.invoke('setScrollTop', 10);
       },
       moveTop() {
-        this.$refs.toastuiEditor.invoke('moveCursorToStart');
+        this.$refs.zenComposerEditor.invoke('moveCursorToStart');
       },
       getHTML() {
-        let html = this.$refs.toastuiEditor.invoke('getHTML');
+        let html = this.$refs.zenComposerEditor.invoke('getHTML');
       }
     }
   };
@@ -203,7 +203,7 @@ First, you need to assign `ref` attribute of `<editor/>` and then you can use `i
   />
 </template>
 <script>
-  import { Editor } from '@toast-ui/vue-editor';
+  import { Editor } from '@fablepress/zen-composer-vue';
 
   export default {
     components: {
@@ -237,17 +237,17 @@ First, you need to assign `ref` attribute of `<editor/>` and then you can use `i
 - ES Modules
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import '@fablepress/zen-composer/dist/zen-composer-viewer.css';
 
-import { Viewer } from '@toast-ui/vue-editor';
+import { Viewer } from '@fablepress/zen-composer-vue';
 ```
 
 - CommonJS
 
 ```js
-require('@toast-ui/editor/dist/toastui-editor-viewer.css');
+require('@fablepress/zen-composer/dist/zen-composer-viewer.css');
 
-const { Viewer } = require('@toast-ui/vue-editor');
+const { Viewer } = require('@fablepress/zen-composer-vue');
 ```
 
 ### Creating Component
@@ -263,9 +263,9 @@ First implement `<viewer />` in the template.
 And then add `Viewer` to the `components` in your component or Vue instance like this:
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import '@fablepress/zen-composer/dist/zen-composer-viewer.css';
 
-import { Viewer } from '@toast-ui/vue-editor';
+import { Viewer } from '@fablepress/zen-composer-vue';
 
 export default {
   components: {
@@ -277,9 +277,9 @@ export default {
 or
 
 ```js
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import '@fablepress/zen-composer/dist/zen-composer-viewer.css';
 
-import { Viewer } from '@toast-ui/vue-editor';
+import { Viewer } from '@fablepress/zen-composer-vue';
 
 new Vue({
   el: '#app',
@@ -295,16 +295,16 @@ new Vue({
 | ------------ | ------ | ------- | ----------------------------------------------- |
 | initialValue | String | ''      | Viewer's initial value                          |
 | height       | String | '300px' | This prop can control the height of the viewer. |
-| options      | Object | above `defaultOptions` | Options of tui.editor. This is for initailize tui.editor. |
+| options      | Object | above `defaultOptions` | Options of zen-composer. This is for initailize zen-composer. |
 
 ```html
 <template>
   <viewer :initialValue="viewerText" height="500px" />
 </template>
 <script>
-  import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+  import '@fablepress/zen-composer/dist/zen-composer-viewer.css';
 
-  import { Viewer } from '@toast-ui/vue-editor';
+  import { Viewer } from '@fablepress/zen-composer-vue';
 
   export default {
     components: {

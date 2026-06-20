@@ -1,4 +1,4 @@
-// Type definitions for TOAST UI Editor v3.2.2
+// Type definitions for Zen Composer v3.2.2
 // TypeScript Version: 4.2.3
 import {
   EditorCore,
@@ -22,7 +22,7 @@ import {
   HTMLMdNodeConvertor,
   HTMLMdNodeConvertorMap,
 } from './editor';
-import './toastui-editor-viewer';
+import './zen-composer-viewer';
 
 export {
   MdNode,
@@ -37,7 +37,7 @@ export {
   HeadingMdNode,
   CodeMdNode,
   HTMLConvertorMap,
-} from './toastmark';
+} from './zenmark';
 export { ToMdConvertorMap } from './convertor';
 export { Emitter, Handler } from './event';
 export {
@@ -65,6 +65,6 @@ export { MdLikeNode, HTMLMdNode } from './markdown';
 export { Editor, EditorCore, Viewer };
 export default Editor;
 
-export declare namespace toastui {
+export declare namespace zenComposer {
   export { Editor };
 }

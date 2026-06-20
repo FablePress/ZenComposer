@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-var */
 var content = [
-  '![image](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)',
+  '![image](https://uicdn.toast.com/zenComposer/img/zen-composer-bi.png)',
   '',
   '# Awesome Editor!',
   '',
@@ -9,7 +9,7 @@ var content = [
   '',
   '## Create Instance',
   '',
-  'You can create an instance with the following code and use `getHtml()` and `getMarkdown()` of the [Editor](https://github.com/nhn/tui.editor).',
+  'You can create an instance with the following code and use `getHtml()` and `getMarkdown()` of the [Editor](https://github.com/nhn/zen-composer).',
   '',
   '```js',
   'const editor = new Editor(options);',

@@ -21,7 +21,7 @@ export {
   Pos as MdPos,
   Sourcepos,
 } from './node';
-export { ToastMark, EditResult } from './toastMark';
+export { ZenMark, EditResult } from './zenMark';
 export {
   HTMLConvertor,
   HTMLConvertorMap,

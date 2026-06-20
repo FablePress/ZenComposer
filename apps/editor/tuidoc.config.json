@@ -1,12 +1,12 @@
 {
   "header": {
     "logo": {
-      "src": "https://uicdn.toast.com/toastui/img/tui-editor-bi-white.png",
+      "src": "https://uicdn.toast.com/zenComposer/img/zen-composer-bi-white.png",
       "linkUrl": "/"
     },
     "title": {
       "text": "github",
-      "linkUrl": "https://github.com/nhn/tui.editor"
+      "linkUrl": "https://github.com/nhn/zen-composer"
     },
     "version": true
   },
@@ -54,5 +54,5 @@
     },
     "globalErrorLogVariable": true
   },
-  "pathPrefix": "tui.editor"
+  "pathPrefix": "zen-composer"
 }

@@ -7,7 +7,7 @@
 The [Autolinks](https://spec.commonmark.org/0.29/#autolinks) is the CommonMark specification like as below. (If you want to know the detail specification of the Autolinks, refer to examples in the above link.)
 > Autolinks are absolute URIs and email addresses inside `<` and `>`. They are parsed as `>` links, with the URL or email address as the link label.
 
-The functionality is available in TOAST UI Editor (henceforth referred to as 'Editor') without any configuration, because the Editor follows the CommonMark specification. 
+The functionality is available in Zen Composer (henceforth referred to as 'Editor') without any configuration, because the Editor follows the CommonMark specification. 
 
 ![image](https://user-images.githubusercontent.com/37766175/120604939-7ad04d00-c488-11eb-82c1-f9f05891039e.png)
 
@@ -26,7 +26,7 @@ The Extended Autolinks on Editor can be used by configuring the `extendedAutolin
 When we set the `extendedAutolinks` value to explicitly declare it `true` value, the nodes which follow the Extended Autolinks specification can be parsed as the link node on Editor.
 
 ```js
-const editor = new toastui.Editor({
+const editor = new zenComposer.Editor({
   // ...
   extendedAutolinks: true
 });
@@ -38,17 +38,17 @@ Editor enables users to define their own Extended Autolinks by providing the cal
 To customize the Extended Autolinks, `extendedAutolinks` option should be `function`. The following is a simple example snippet for configuring the option.
 
 ```js
-const reToastuiEditorRepo = /tui\.editor/g;
+const reZenComposerRepo = /tui\.editor/g;
 
 const editor = new Editor({
   el: document.querySelector('#editor'),
   extendedAutolinks: (content) => {
-    const matched = content.match(reToastuiEditorRepo);
+    const matched = content.match(reZenComposerRepo);
     if (matched) {
       return matched.map(m =>
         ({
-          text: 'toastui-editor',
-          url: 'https://github.com/nhn/tui.editor',
+          text: 'zen-composer',
+          url: 'https://github.com/nhn/zen-composer',
           range: [0, 1]
         })
       );

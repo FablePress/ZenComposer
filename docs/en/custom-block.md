@@ -1,6 +1,6 @@
 # 🔩 Custom Block Node And HTML Node
 
-The TOAST UI Editor (henceforth referred to as 'Editor') follows the [CommonMark](https://spec.commonmark.org/0.29/) specification, and also supports the [GFM](https://github.github.com/gfm/) specification. But what if you want to use a specific syntax that is not supported by CommonMark or GFM? For example, you might want to use [LaTeX](https://www.latex-project.org/) syntax or render elements such as charts in Markdown. The editor provides the option to define a **custom block node** for this usability.
+The Zen Composer (henceforth referred to as 'Editor') follows the [CommonMark](https://spec.commonmark.org/0.29/) specification, and also supports the [GFM](https://github.github.com/gfm/) specification. But what if you want to use a specific syntax that is not supported by CommonMark or GFM? For example, you might want to use [LaTeX](https://www.latex-project.org/) syntax or render elements such as charts in Markdown. The editor provides the option to define a **custom block node** for this usability.
 
 ## Custom Block Node
 
@@ -51,7 +51,7 @@ The custom block node in the WYSIWYG Editor works like the image below.
 
 ![image](https://user-images.githubusercontent.com/37766175/120984395-96539480-c7b5-11eb-8e57-2f43082f345f.gif)
 
-In WYSIWYG Editor, the custom block node is rendered in the same result as a markdown preview, and can be changed by clicking on the node and using the edit button that appears when selected. Because the custom block node are eventually parsed based on specific text, editing in the WYSIWYG Editor is also based on text. This operation is different from general WYSIWYG editors, but it is more ideal because the **TOAST UI Editor supports WYSIWYG editors based on markdown**.
+In WYSIWYG Editor, the custom block node is rendered in the same result as a markdown preview, and can be changed by clicking on the node and using the edit button that appears when selected. Because the custom block node are eventually parsed based on specific text, editing in the WYSIWYG Editor is also based on text. This operation is different from general WYSIWYG editors, but it is more ideal because the **Zen Composer supports WYSIWYG editors based on markdown**.
 
 ## HTML Node
 

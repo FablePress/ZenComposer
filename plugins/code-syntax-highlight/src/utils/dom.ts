@@ -23,7 +23,7 @@ export function removeNode(node: Node) {
   }
 }
 
-const CLS_PREFIX = 'toastui-editor-';
+const CLS_PREFIX = 'zen-composer-';
 
 export function cls(...names: string[]) {
   return names.map((className) => `${CLS_PREFIX}${className}`).join(' ');

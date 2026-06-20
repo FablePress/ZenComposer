@@ -5,7 +5,7 @@ import banner from 'rollup-plugin-banner';
 import { version, author, license } from './package.json';
 
 const bannerText = [
-  'TOAST UI Editor : React Wrapper',
+  'Zen Composer : React Wrapper',
   `@version ${version} | ${new Date().toDateString()}`,
   `@author ${author}`,
   `@license ${license}`,
@@ -20,6 +20,6 @@ export default [
       sourcemap: false,
     },
     plugins: [typescript(), commonjs(), nodeResolve(), banner(bannerText)],
-    external: ['react', '@toast-ui/editor', '@toast-ui/editor/dist/toastui-editor-viewer'],
+    external: ['react', '@fablepress/zen-composer', '@fablepress/zen-composer/dist/zen-composer-viewer'],
   },
 ];

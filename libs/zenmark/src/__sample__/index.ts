@@ -1,5 +1,5 @@
 import codemirror from 'codemirror';
-import { ToastMark } from '../toastmark';
+import { ZenMark } from '../zenmark';
 import { Renderer } from '../html/renderer';
 import { last } from '../helper';
 import 'codemirror/lib/codemirror.css';
@@ -18,7 +18,7 @@ const htmlEl = document.querySelector('.html') as HTMLElement;
 const previewEl = document.querySelector('.preview') as HTMLElement;
 
 const cm = codemirror(editorEl, { lineNumbers: true });
-const doc = new ToastMark();
+const doc = new ZenMark();
 const renderer = new Renderer({ gfm: true, nodeId: true });
 
 const tokenTypes = {

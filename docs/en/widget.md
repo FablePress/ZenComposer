@@ -1,6 +1,6 @@
 # 📱 Widget Node
 
-When you type a specific key in the editor, you can display a suggestion popup, or a link node as a specific widget node. The TOAST UI Editor (henceforth referred to as 'Editor') provides options and APIs for this feature.
+When you type a specific key in the editor, you can display a suggestion popup, or a link node as a specific widget node. The Zen Composer (henceforth referred to as 'Editor') provides options and APIs for this feature.
 
 ## Popup Widget
 

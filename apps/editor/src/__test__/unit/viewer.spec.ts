@@ -7,7 +7,7 @@ describe('Viewer', () => {
 
   function getViewerHTML() {
     return oneLineTrim`${removeDataAttr(
-      container.querySelector('.toastui-editor-contents')!.innerHTML
+      container.querySelector('.zen-composer-contents')!.innerHTML
     )}`;
   }
 

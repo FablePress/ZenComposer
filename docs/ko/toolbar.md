@@ -1,5 +1,5 @@
 # 🛠 툴바
-일반적으로 에디터에서는 단축키나 툴바를 사용하여 특정 텍스트나 노드를 입력할 수 있다. 특히 마크다운처럼 특정한 텍스트 문법이 존재하지 않는 위지윅 에디터에서는 대부분의 동작이 툴바를 통해 이뤄지기 때문에 툴바의 역할이 중요하다. TOAST UI Editor(이하 '에디터'라고 명시) 역시 기본 UI로 툴바를 제공하며 커스터마이징을 위한 옵션과 API도 제공한다.
+일반적으로 에디터에서는 단축키나 툴바를 사용하여 특정 텍스트나 노드를 입력할 수 있다. 특히 마크다운처럼 특정한 텍스트 문법이 존재하지 않는 위지윅 에디터에서는 대부분의 동작이 툴바를 통해 이뤄지기 때문에 툴바의 역할이 중요하다. Zen Composer(이하 '에디터'라고 명시) 역시 기본 UI로 툴바를 제공하며 커스터마이징을 위한 옵션과 API도 제공한다.
 
 ## 툴바 옵션
 에디터는 bold, italic, strike 등 총 16가지의 툴바를 기본으로 제공한다. 별도의 옵션을 지정하지 않았을 경우 기본 툴바 옵션은 아래와 같다.
@@ -64,7 +64,7 @@ const editor = new Editor({
       tooltip: 'myItem',
       command: 'bold',
       text: '@',
-      className: 'toastui-editor-toolbar-icons',
+      className: 'zen-composer-toolbar-icons',
       style: { backgroundImage: 'none', color: 'red' }
     }]
   ],
@@ -169,7 +169,7 @@ const editor = new Editor({
       tooltip: 'myItem',
       command: 'bold',
       text: '@',
-      className: 'toastui-editor-toolbar-icons',
+      className: 'zen-composer-toolbar-icons',
       style: { backgroundImage: 'none', color: 'red' },
       // `strong` 노드에 위치할 경우 툴바 요소에 'active' 클래스가 추가된다.
       state: 'strong',
@@ -233,4 +233,4 @@ const editor = new Editor({
 
 ## 예제
 
-예제는 [여기](https://nhn.github.io/tui.editor/latest/tutorial-example15-customizing-toolbar-buttons)서 확인할 수 있다.
+예제는 [여기](https://nhn.github.io/zen-composer/latest/tutorial-example15-customizing-toolbar-buttons)서 확인할 수 있다.

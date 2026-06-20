@@ -1,5 +1,5 @@
 import { source } from 'common-tags';
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 import mergedTableCellPlugin from '@/index';
 
 describe('markdown merged table plugin', () => {
@@ -8,7 +8,7 @@ describe('markdown merged table plugin', () => {
   function removeDataAttr(html: string) {
     return html
       .replace(/\sdata-nodeid="\d{1,}"/g, '')
-      .replace(/\sclass="toastui-editor-md-preview-highlight"/g, '')
+      .replace(/\sclass="zen-composer-md-preview-highlight"/g, '')
       .trim();
   }
 

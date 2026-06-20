@@ -8,7 +8,7 @@ import CommandManager from '@/commands/commandManager';
 import { WwToDOMAdaptor } from '@/wysiwyg/adaptor/wwToDOMAdaptor';
 import { cls } from '@/utils/dom';
 
-import type { HTMLConvertorMap } from '@toast-ui/toastmark';
+import type { HTMLConvertorMap } from '@fablepress/zenmark';
 
 const CODE_BLOCK_CLS = cls('ww-code-block');
 
@@ -848,9 +848,9 @@ describe('wysiwyg commands', () => {
       cmd.exec('customBlock', { info: 'myCustom' });
 
       expect(wwe.getHTML()).toBe(oneLineTrim`
-        <div class="toastui-editor-custom-block">
-          <div class="toastui-editor-custom-block-editor" style="display: none;"></div>
-          <div class="toastui-editor-custom-block-view">
+        <div class="zen-composer-custom-block">
+          <div class="zen-composer-custom-block-editor" style="display: none;"></div>
+          <div class="zen-composer-custom-block-view">
             <div data-custom="myCustom">
               <span></span>
             </div>
@@ -870,9 +870,9 @@ describe('wysiwyg commands', () => {
       cmd.exec('customBlock', { info: 'myCustom' });
 
       expect(wwe.getHTML()).toBe(oneLineTrim`
-        <div class="toastui-editor-custom-block">
-          <div class="toastui-editor-custom-block-editor" style="display: none;"></div>
-          <div class="toastui-editor-custom-block-view">
+        <div class="zen-composer-custom-block">
+          <div class="zen-composer-custom-block-editor" style="display: none;"></div>
+          <div class="zen-composer-custom-block-view">
             <div data-custom="myCustom">
               <span>foo</span>
             </div>

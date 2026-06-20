@@ -10,10 +10,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.css"
     />
     <!-- Editor -->
-    <link rel="stylesheet" href="../dist/cdn/toastui-editor.css" />
+    <link rel="stylesheet" href="../dist/cdn/zen-composer.css" />
   </head>
   <body>
-    <div class="tui-doc-description">
+    <div class="zen-composer-doc-description">
       <strong
         >The example code can be slower than your environment because the code is transpiled by
         babel-standalone in runtime.</strong
@@ -26,9 +26,9 @@
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <script src="./data/md-default.js"></script>
     <!-- Editor -->
-    <script src="../dist/cdn/toastui-editor-all.js"></script>
+    <script src="../dist/cdn/zen-composer-all.js"></script>
     <script type="text/babel" class="code-js">
-      const editor = new toastui.Editor({
+      const editor = new zenComposer.Editor({
         el: document.querySelector('#editor'),
         previewStyle: 'vertical',
         height: '500px',

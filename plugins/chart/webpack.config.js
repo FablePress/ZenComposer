@@ -7,10 +7,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 function getOutputConfig(isProduction, isCDN, minify) {
-  const filename = `toastui-${name.replace(/@toast-ui\//, '')}`;
+  const filename = `zenComposer-${name.replace(/@fablepress\//, '')}`;
   const defaultConfig = {
     library: {
-      name: ['toastui', 'Editor', 'plugin', 'chart'],
+      name: ['zenComposer', 'Editor', 'plugin', 'chart'],
       export: 'default',
       type: 'umd',
     },
@@ -44,11 +44,11 @@ function getOutputConfig(isProduction, isCDN, minify) {
 function getExternalsConfig() {
   return [
     {
-      '@toast-ui/chart': {
-        commonjs: '@toast-ui/chart',
-        commonjs2: '@toast-ui/chart',
-        amd: '@toast-ui/chart',
-        root: ['toastui', 'Chart'],
+      '@fablepress/chart': {
+        commonjs: '@fablepress/chart',
+        commonjs2: '@fablepress/chart',
+        amd: '@fablepress/chart',
+        root: ['zenComposer', 'Chart'],
       },
     },
   ];
@@ -114,7 +114,7 @@ module.exports = (env) => {
     config.plugins.push(
       new webpack.BannerPlugin(
         [
-          'TOAST UI Editor : Chart Plugin',
+          'Zen Composer : Chart Plugin',
           `@version ${version} | ${new Date().toDateString()}`,
           `@author ${author}`,
           `@license ${license}`,

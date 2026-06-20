@@ -8,7 +8,7 @@ import { decodeHTML } from 'entities';
 import NodeWalker from './nodeWalker';
 import { convertExtAutoLinks } from './gfm/autoLinks';
 import { last, normalizeReference } from '../helper';
-import { createRefDefState } from '../toastmark';
+import { createRefDefState } from '../zenmark';
 
 export const C_NEWLINE = 10;
 const C_ASTERISK = 42;

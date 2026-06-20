@@ -75,15 +75,15 @@ export class LinkPopupBody extends Component<Props> {
   render() {
     return html`
       <div aria-label="${i18n.get('Insert link')}">
-        <label for="toastuiLinkUrlInput">${i18n.get('URL')}</label>
+        <label for="zenComposerLinkUrlInput">${i18n.get('URL')}</label>
         <input
-          id="toastuiLinkUrlInput"
+          id="zenComposerLinkUrlInput"
           type="text"
           ref=${(el: HTMLInputElement) => (this.refs.url = el)}
         />
-        <label for="toastuiLinkTextInput">${i18n.get('Link text')}</label>
+        <label for="zenComposerLinkTextInput">${i18n.get('Link text')}</label>
         <input
-          id="toastuiLinkTextInput"
+          id="zenComposerLinkTextInput"
           type="text"
           ref=${(el: HTMLInputElement) => (this.refs.text = el)}
         />

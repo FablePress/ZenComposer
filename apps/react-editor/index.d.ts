@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import ToastuiEditor, { EditorOptions, ViewerOptions, EventMap } from '@toast-ui/editor';
-import ToastuiEditorViewer from '@toast-ui/editor/dist/toastui-editor-viewer';
+import ZenComposer, { EditorOptions, ViewerOptions, EventMap } from '@fablepress/zen-composer';
+import ZenComposerViewer from '@fablepress/zen-composer/dist/zen-composer-viewer';
 
 export interface EventMapping {
   onLoad: EventMap['load'];
@@ -20,13 +20,13 @@ export type EditorProps = Omit<EditorOptions, 'el'> & Partial<EventMapping>;
 export type ViewerProps = Omit<ViewerOptions, 'el'> & Partial<EventMapping>;
 
 export class Editor extends Component<EditorProps> {
-  getInstance(): ToastuiEditor;
+  getInstance(): ZenComposer;
 
   getRootElement(): HTMLElement;
 }
 
 export class Viewer extends Component<ViewerProps> {
-  getInstance(): ToastuiEditorViewer;
+  getInstance(): ZenComposerViewer;
 
   getRootElement(): HTMLElement;
 }

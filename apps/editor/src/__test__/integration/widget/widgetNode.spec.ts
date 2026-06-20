@@ -69,7 +69,7 @@ describe('widgetNode', () => {
 
       const expectedEditor = oneLineTrim`
         <div>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test</a></span>
           </span>
           c
@@ -77,7 +77,7 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test</a></span>
           </span>
           c
@@ -92,10 +92,10 @@ describe('widgetNode', () => {
       editor.setMarkdown('@test1 @test2');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -103,12 +103,12 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test1</a>
             </span>
           </span> 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test2</a></span>
           </span>
         </p>
@@ -122,10 +122,10 @@ describe('widgetNode', () => {
       editor.insertText('@test1 @test2');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -133,12 +133,12 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test1</a>
             </span>
           </span> 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test2</a></span>
           </span>
         </p>
@@ -152,13 +152,13 @@ describe('widgetNode', () => {
       editor.replaceWithWidget([1, 1], [1, 1], '[#toast](ui.toast.com)');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="ui.toast.com">#toast</a></span>
         </span>
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="ui.toast.com">#toast</a></span>
           </span>
         </p>
@@ -172,13 +172,13 @@ describe('widgetNode', () => {
       editor.insertText('@test1 [#toast](ui.toast.com) @test2');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="ui.toast.com">#toast</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -186,15 +186,15 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test1</a>
             </span>
           </span> 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="ui.toast.com">#toast</a></span>
           </span> 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test2</a></span>
           </span>
         </p>
@@ -209,10 +209,10 @@ describe('widgetNode', () => {
       editor.changeMode('wysiwyg');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -226,11 +226,11 @@ describe('widgetNode', () => {
       editor.setMarkdown('@test1 $$myText @test2');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
         $$myText 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -238,13 +238,13 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test1</a>
             </span>
           </span> 
           $$myText 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test2</a></span>
           </span>
         </p>
@@ -260,12 +260,12 @@ describe('widgetNode', () => {
       editor.replaceSelection('@test1 @test2', [1, 1], [1, 13]);
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test1</a>
           </span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -273,12 +273,12 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test1</a>
             </span>
           </span> 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test2</a>
             </span>
@@ -292,8 +292,8 @@ describe('widgetNode', () => {
 
     it('should return the markdown text without widget syntax through calling getMarkdown() API', () => {
       const markdownText = oneLineTrim`
-        Brand site: [#toast](https://ui.toast.com), editor: [#toastui-editor](https://github.com/nhn/tui.editor)\n
-        The Toastui-editor...
+        Brand site: [#toast](https://ui.toast.com), editor: [#zen-composer](https://github.com/nhn/zen-composer)\n
+        The Toaszen-composer...
       `;
 
       editor.setMarkdown(markdownText);
@@ -308,7 +308,7 @@ describe('widgetNode', () => {
       editor.replaceWithWidget(1, 1, '@test');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test</a></span>
         </span>
       `;
@@ -321,7 +321,7 @@ describe('widgetNode', () => {
       editor.replaceWithWidget(1, 1, '[#toast](ui.toast.com)');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="ui.toast.com">#toast</a></span>
         </span>
       `;
@@ -335,10 +335,10 @@ describe('widgetNode', () => {
       editor.changeMode('markdown');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -346,12 +346,12 @@ describe('widgetNode', () => {
       `;
       const expectedPreview = oneLineTrim`
         <p>
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span>
               <a href="www.google.com">@test1</a>
             </span>
           </span> 
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test2</a></span>
           </span>
         </p>
@@ -368,12 +368,12 @@ describe('widgetNode', () => {
       editor.replaceSelection('@test1 @test2', 1, 12);
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test1</a>
           </span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>
@@ -389,10 +389,10 @@ describe('widgetNode', () => {
       editor.insertText('@test1 @test2');
 
       const expectedEditor = oneLineTrim`
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span><a href="www.google.com">@test1</a></span>
         </span> 
-        <span class="tui-widget">
+        <span class="zen-composer-widget">
           <span>
             <a href="www.google.com">@test2</a>
           </span>

@@ -5,10 +5,10 @@
     <title>2. Editor With Horizontal Preview</title>
     <link rel="stylesheet" href="./css/tuidoc-example-style.css" />
     <!-- Editor -->
-    <link rel="stylesheet" href="../dist/cdn/toastui-editor.css" />
+    <link rel="stylesheet" href="../dist/cdn/zen-composer.css" />
   </head>
   <body>
-    <div class="tui-doc-description">
+    <div class="zen-composer-doc-description">
       <strong
         >The example code can be slower than your environment because the code is transpiled by
         babel-standalone in runtime.</strong
@@ -16,7 +16,7 @@
       <br />
       You can see the tutorial
       <a
-        href="https://github.com/nhn/tui.editor/blob/master/docs/en/getting-started.md"
+        href="https://github.com/nhn/zen-composer/blob/master/docs/en/getting-started.md"
         rel="noopener noreferrer" target="_blank"
          >here</a>
     </div>
@@ -27,9 +27,9 @@
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <script src="./data/md-default.js"></script>
     <!-- Editor -->
-    <script src="../dist/cdn/toastui-editor-all.js"></script>
+    <script src="../dist/cdn/zen-composer-all.js"></script>
     <script type="text/babel" class="code-js">
-      const editor = new toastui.Editor({
+      const editor = new zenComposer.Editor({
         el: document.querySelector('#editor'),
         previewStyle: 'tab',
         height: '500px',

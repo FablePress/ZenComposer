@@ -14,9 +14,9 @@ jobs:
       - name: Install
         run: |
           npm install
-      - name: build toastmark
+      - name: build zenmark
         run: |
-          npm run build toastmark
+          npm run build zenmark
       - name: build editor
         run: |
           npm run build editor

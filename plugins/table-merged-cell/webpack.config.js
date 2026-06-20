@@ -8,7 +8,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
-const filename = `toastui-${name.replace(/@toast-ui\//, '')}`;
+const filename = `zenComposer-${name.replace(/@fablepress\//, '')}`;
 
 function getOutputConfig(isProduction, isCDN, minify) {
   const defaultConfig = {
@@ -22,7 +22,7 @@ function getOutputConfig(isProduction, isCDN, minify) {
     const config = {
       ...defaultConfig,
       library: {
-        name: ['toastui', 'Editor', 'plugin', 'tableMergedCell'],
+        name: ['zenComposer', 'Editor', 'plugin', 'tableMergedCell'],
         export: 'default',
         type: 'umd',
       },
@@ -115,7 +115,7 @@ module.exports = (env) => {
     config.plugins.push(
       new webpack.BannerPlugin(
         [
-          'TOAST UI Editor : Table Merged Cell Plugin',
+          'Zen Composer : Table Merged Cell Plugin',
           `@version ${version} | ${new Date().toDateString()}`,
           `@author ${author}`,
           `@license ${license}`,

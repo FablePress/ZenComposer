@@ -1,4 +1,4 @@
-import { ToastMark } from '@toast-ui/toastmark';
+import { ZenMark } from '@fablepress/zenmark';
 import forEachOwnProperties from 'tui-code-snippet/collection/forEachOwnProperties';
 import extend from 'tui-code-snippet/object/extend';
 import on from 'tui-code-snippet/domEvent/on';
@@ -27,7 +27,7 @@ function registerHTMLTagToWhitelist(convertorMap: CustomHTMLRenderer) {
 }
 
 /**
- * Class ToastUIEditorViewer
+ * Class ZenComposerViewer
  * @param {object} options Option object
  *     @param {HTMLElement} options.el - container element
  *     @param {string} [options.initialValue] Editor's initial value
@@ -44,12 +44,12 @@ function registerHTMLTagToWhitelist(convertorMap: CustomHTMLRenderer) {
  *     @param {boolean} [options.referenceDefinition=false] - whether use the specification of link reference definition
  *     @param {function} [options.customHTMLSanitizer=null] - custom HTML sanitizer
  *     @param {boolean} [options.frontMatter=false] - whether use the front matter
- *     @param {string} [options.theme] - The theme to style the viewer with. The default is included in toastui-editor.css.
+ *     @param {string} [options.theme] - The theme to style the viewer with. The default is included in zen-composer.css.
  */
-class ToastUIEditorViewer {
+class ZenComposerViewer {
   private options: Required<ViewerOptions>;
 
-  private toastMark: ToastMark;
+  private toastMark: ZenMark;
 
   private eventEmitter: Emitter;
 
@@ -112,7 +112,7 @@ class ToastUIEditorViewer {
     }
     el.innerHTML = '';
 
-    this.toastMark = new ToastMark('', {
+    this.toastMark = new ZenMark('', {
       disallowedHtmlBlockTags: ['br', 'img'],
       extendedAutolinks,
       referenceDefinition,
@@ -234,4 +234,4 @@ class ToastUIEditorViewer {
   }
 }
 
-export default ToastUIEditorViewer;
+export default ZenComposerViewer;

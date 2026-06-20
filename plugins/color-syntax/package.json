@@ -1,19 +1,19 @@
 {
-  "name": "@toast-ui/editor-plugin-color-syntax",
+  "name": "@fablepress/zen-composer-plugin-color-syntax",
   "version": "3.1.0",
-  "description": "TOAST UI Editor : Color Syntax Plugin",
+  "description": "Zen Composer : Color Syntax Plugin",
   "keywords": [
     "nhn",
     "nhn cloud",
     "toast",
-    "toastui",
+    "zenComposer",
     "toast-ui",
     "editor",
     "plugin",
     "color-syntax",
     "color-picker"
   ],
-  "main": "dist/toastui-editor-plugin-color-syntax.js",
+  "main": "dist/zen-composer-plugin-color-syntax.js",
   "files": [
     "dist/*.js",
     "dist/*.css",
@@ -24,11 +24,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "plugins/color-syntax"
   },
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "homepage": "https://ui.toast.com",
   "browserslist": "last 2 versions, not ie <= 10",

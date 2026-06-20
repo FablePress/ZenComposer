@@ -1,6 +1,6 @@
 import ColorPicker from 'tui-color-picker';
-import type { Context } from '@toast-ui/toastmark';
-import type { PluginContext, PluginInfo, HTMLMdNode, I18n } from '@toast-ui/editor';
+import type { Context } from '@fablepress/zenmark';
+import type { PluginContext, PluginInfo, HTMLMdNode, I18n } from '@fablepress/zen-composer';
 import type { Transaction, Selection, TextSelection } from 'prosemirror-state';
 import { PluginOptions } from '@t/index';
 import { addLangs } from './i18n/langs';
@@ -8,7 +8,7 @@ import { addLangs } from './i18n/langs';
 import './css/plugin.css';
 import { findParentByClassName } from './utils/dom';
 
-const PREFIX = 'toastui-editor-';
+const PREFIX = 'zen-composer-';
 
 function createApplyButton(text: string) {
   const button = document.createElement('button');

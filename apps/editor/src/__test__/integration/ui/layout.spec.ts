@@ -4,7 +4,7 @@ import { Editor } from '@/index';
 import { Emitter } from '@t/event';
 import { screen } from '@testing-library/dom';
 
-const EDITOR_CLASS = 'toastui-editor';
+const EDITOR_CLASS = 'zen-composer';
 
 function getElement(selector: string) {
   return document.querySelector<HTMLElement>(selector)!;

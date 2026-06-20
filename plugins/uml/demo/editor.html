@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Editor</title>
     <!-- Editor -->
-    <link rel="stylesheet" href="http://localhost:8080/dist/cdn/toastui-editor.css" />
+    <link rel="stylesheet" href="http://localhost:8080/dist/cdn/zen-composer.css" />
   </head>
   <body>
     <div class="code-html">
@@ -16,9 +16,9 @@
       <div id="viewer"></div>
     </div>
     <!-- Editor -->
-    <script src="http://localhost:8080/dist/cdn/toastui-editor-all.js"></script>
+    <script src="http://localhost:8080/dist/cdn/zen-composer-all.js"></script>
     <!-- Plugin -->
-    <script src="../dist/cdn/toastui-editor-plugin-uml.js"></script>
+    <script src="../dist/cdn/zen-composer-plugin-uml.js"></script>
     <script class="code-js">
       const content = [
         '$$uml',
@@ -45,7 +45,7 @@
         '$$'
       ].join('\n');
 
-      const { Editor } = toastui;
+      const { Editor } = zenComposer;
       const { uml } = Editor.plugin;
 
       const editor = new Editor({

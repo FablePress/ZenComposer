@@ -31,7 +31,7 @@ const commonConfig = {
       arrowFunction: false,
       const: false,
     },
-    filename: 'toastmark.js',
+    filename: 'zenmark.js',
     library: {
       type: 'commonjs',
     },

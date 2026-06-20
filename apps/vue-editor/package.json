@@ -1,8 +1,8 @@
 {
-  "name": "@toast-ui/vue-editor",
+  "name": "@fablepress/zen-composer-vue",
   "version": "3.2.3",
-  "description": "TOAST UI Editor for Vue",
-  "main": "dist/toastui-vue-editor.js",
+  "description": "Zen Composer for Vue",
+  "main": "dist/zen-composer-vue.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist",
@@ -15,12 +15,12 @@
   },
   "homepage": "https://ui.toast.com",
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "author": "NHN Cloud FE Development Lab <dl_javascript@nhn.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "apps/vue-editor"
   },
   "license": "MIT",
@@ -34,6 +34,6 @@
     "vue": "^2.5.0"
   },
   "dependencies": {
-    "@toast-ui/editor": "^3.2.2"
+    "@fablepress/zen-composer": "^3.2.2"
   }
 }

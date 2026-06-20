@@ -1,18 +1,18 @@
 {
-  "name": "@toast-ui/editor-plugin-uml",
+  "name": "@fablepress/zen-composer-plugin-uml",
   "version": "3.0.1",
-  "description": "TOAST UI Editor : UML Plugin",
+  "description": "Zen Composer : UML Plugin",
   "keywords": [
     "nhn",
     "nhn cloud",
     "toast",
-    "toastui",
+    "zenComposer",
     "toast-ui",
     "editor",
     "plugin",
     "uml"
   ],
-  "main": "dist/toastui-editor-plugin-uml.js",
+  "main": "dist/zen-composer-plugin-uml.js",
   "types": "index.d.ts",
   "files": [
     "dist/*.js",
@@ -22,11 +22,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "plugins/uml"
   },
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "homepage": "https://ui.toast.com",
   "browserslist": "last 2 versions, not ie <= 10",

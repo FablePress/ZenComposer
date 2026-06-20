@@ -2,13 +2,13 @@
 
 ## What Is Viewer?
 
-TOAST UI Editor (henceforth referred to as 'Editor') provides the **viewer** in case you want to show _Markdown_ content without loading the Editor. The Viewer is much **lighter** than the Editor.
+Zen Composer (henceforth referred to as 'Editor') provides the **viewer** in case you want to show _Markdown_ content without loading the Editor. The Viewer is much **lighter** than the Editor.
 
 ## Creating Viewer
 
 The method of creating the Viewer is similar to that of the Editor.
 
-> Ref. [Getting Started](https://github.com/nhn/tui.editor/blob/master/docs/en/getting-started.md)
+> Ref. [Getting Started](https://github.com/nhn/zen-composer/blob/master/docs/en/getting-started.md)
 
 ### Adding Wrapper Element
 
@@ -31,19 +31,19 @@ The Viewer can be used by creating an instance with the constructor function. To
 - ES6 Modules
 
 ```javascript
-import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
+import Viewer from '@fablepress/zen-composer/dist/zen-composer-viewer';
 ```
 
 - CommonJS
 
 ```javascript
-const Viewer = require('@toast-ui/dist/toastui-editor-viewer');
+const Viewer = require('@fablepress/dist/zen-composer-viewer');
 ```
 
 #### Using Namespace in Browser Environment
 
 ```javascript
-const Viewer = toastui.Editor;
+const Viewer = zenComposer.Editor;
 ```
 
 Note that the CDN file of the Viewer should use the following:
@@ -52,7 +52,7 @@ Note that the CDN file of the Viewer should use the following:
 ...
 <body>
   ...
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-viewer.js"></script>
 </body>
 ...
 ```
@@ -66,13 +66,13 @@ You need to add the CSS files needed for the Viewer. Import CSS files in node en
 - ES6 Modules
 
 ```javascript
-import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import '@fablepress/zen-composer/dist/zen-composer-viewer.css';
 ```
 
 - CommonJS
 
 ```javascript
-require('@toast-ui/editor/dist/toastui-editor-viewer.css');
+require('@fablepress/zen-composer/dist/zen-composer-viewer.css');
 ```
 
 #### Using in Browser Environment by CDN
@@ -81,7 +81,7 @@ require('@toast-ui/editor/dist/toastui-editor-viewer.css');
 ...
 <head>
   ...
-  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.min.css" />
+  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/zen-composer-viewer.min.css" />
 </head>
 ...
 ```
@@ -105,14 +105,14 @@ The basic options available are:
 - `height`: Height in string or auto ex) `300px` | `auto`
 - `initialValue`: Initial value. Set Markdown string
 
-Find out more options [here](https://nhn.github.io/tui.editor/latest/ToastUIEditorViewer).
+Find out more options [here](https://nhn.github.io/zen-composer/latest/ZenComposerViewer).
 
 ## Another Way to Create Viewer
 
 Be careful not to load both an editor and a viewer at the same time because an editor already contains a viewer function, you can initialize with `Editor.factory()` of an editor and set the `viewer` option to value `true` in order to make the a viewer.
 
 ```js
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 
 const viewer = Editor.factory({
   el: document.querySelector('#viewer'),
@@ -124,4 +124,4 @@ const viewer = Editor.factory({
 
 ## Example
 
-You can see the example [here](https://nhn.github.io/tui.editor/latest/tutorial-example04-viewer).
+You can see the example [here](https://nhn.github.io/zen-composer/latest/tutorial-example04-viewer).

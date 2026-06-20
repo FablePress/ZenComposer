@@ -5,10 +5,10 @@
     <title>11. Editor with UML Plugin</title>
     <link rel="stylesheet" href="./css/tuidoc-example-style.css" />
     <!-- Editor -->
-    <link rel="stylesheet" href="../dist/cdn/toastui-editor.css" />
+    <link rel="stylesheet" href="../dist/cdn/zen-composer.css" />
   </head>
   <body>
-    <div class="tui-doc-description">
+    <div class="zen-composer-doc-description">
       <strong
         >The example code can be slower than your environment because the code is transpiled by
         babel-standalone in runtime.</strong
@@ -16,7 +16,7 @@
       <br />
       You can see the tutorial
       <a
-        href="https://github.com/nhn/tui.editor/blob/master/docs/en/plugins.md"
+        href="https://github.com/nhn/zen-composer/blob/master/docs/en/plugins.md"
         rel="noopener noreferrer" target="_blank"
         >here</a
       >.
@@ -33,11 +33,11 @@
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <script src="./data/md-plugins.js"></script>
     <!-- Editor -->
-    <script src="../dist/cdn/toastui-editor-all.js"></script>
+    <script src="../dist/cdn/zen-composer-all.js"></script>
     <!-- Editor's Plugin -->
-    <script src="https://uicdn.toast.com/editor-plugin-uml/3.0.0/toastui-editor-plugin-uml.min.js"></script>
+    <script src="https://uicdn.toast.com/editor-plugin-uml/3.0.0/zen-composer-plugin-uml.min.js"></script>
     <script type="text/babel" class="code-js">
-      const { Editor } = toastui;
+      const { Editor } = zenComposer;
       const { uml } = Editor.plugin;
 
       const editor = new Editor({

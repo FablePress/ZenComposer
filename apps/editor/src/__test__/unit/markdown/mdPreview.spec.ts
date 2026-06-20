@@ -1,4 +1,4 @@
-import { MdPos, ToastMark } from '@toast-ui/toastmark';
+import { MdPos, ZenMark } from '@fablepress/zenmark';
 import MarkdownPreview, { CLASS_HIGHLIGHT } from '@/markdown/mdPreview';
 import MarkdownEditor from '@/markdown/mdEditor';
 import EventEmitter from '@/event/eventEmitter';
@@ -36,7 +36,7 @@ describe('Preview', () => {
   });
 
   it('listen to updatePreview and update the preview', () => {
-    const doc = new ToastMark();
+    const doc = new ZenMark();
     const editResult = doc.editMarkdown([1, 7], [1, 7], 'changed');
 
     eventEmitter.emit('updatePreview', editResult);
@@ -45,7 +45,7 @@ describe('Preview', () => {
   });
 
   it('should call sanitizeHTML', () => {
-    const doc = new ToastMark();
+    const doc = new ZenMark();
     const editResult = doc.editMarkdown(
       [1, 1],
       [1, 1],
@@ -74,7 +74,7 @@ describe('preview highlight', () => {
     };
 
     eventEmitter = new EventEmitter();
-    editor = new MarkdownEditor(eventEmitter, { toastMark: new ToastMark() });
+    editor = new MarkdownEditor(eventEmitter, { toastMark: new ZenMark() });
     preview = new MarkdownPreview(eventEmitter, options);
     editorEl = editor.getElement();
 
@@ -239,7 +239,7 @@ describe('Preview with html renderer', () => {
   });
 
   it('should render iframe node to preview ignoring sanitizer tag', () => {
-    const doc = new ToastMark();
+    const doc = new ZenMark();
     const editResult = doc.editMarkdown(
       [1, 1],
       [1, 1],
@@ -254,7 +254,7 @@ describe('Preview with html renderer', () => {
   });
 
   it('should render html inline node', () => {
-    const doc = new ToastMark();
+    const doc = new ZenMark();
     const editResult = doc.editMarkdown([1, 1], [1, 1], '<big class="my-big">content</big>');
 
     eventEmitter.emit('updatePreview', editResult);

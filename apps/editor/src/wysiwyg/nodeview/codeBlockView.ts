@@ -16,8 +16,8 @@ type InputPos = {
   right: number;
 };
 
-const WRAPPER_CLASS_NAME = 'toastui-editor-ww-code-block';
-const CODE_BLOCK_LANG_CLASS_NAME = 'toastui-editor-ww-code-block-language';
+const WRAPPER_CLASS_NAME = 'zen-composer-ww-code-block';
+const CODE_BLOCK_LANG_CLASS_NAME = 'zen-composer-ww-code-block-language';
 
 export class CodeBlockView implements NodeView {
   dom!: HTMLElement;

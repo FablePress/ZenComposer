@@ -5,20 +5,20 @@
     <title>15. Customizing Toolbar Buttons</title>
     <link rel="stylesheet" href="./css/tuidoc-example-style.css" />
     <!-- Editor -->
-    <link rel="stylesheet" href="../dist/cdn/toastui-editor.css" />
+    <link rel="stylesheet" href="../dist/cdn/zen-composer.css" />
     <!-- Customizing Button's Style in Example -->
     <style type="text/css">
-      .toastui-editor-defaultUI button.first {
+      .zen-composer-defaultUI button.first {
         color: red;
       }
 
-      .toastui-editor-defaultUI button.last {
+      .zen-composer-defaultUI button.last {
         color: orange;
       }
     </style>
   </head>
   <body>
-    <div class="tui-doc-description">
+    <div class="zen-composer-doc-description">
       <strong
         >The example code can be slower than your environment because the code is transpiled by
         babel-standalone in runtime.</strong
@@ -30,12 +30,12 @@
     <!-- Added to check demo page in Internet Explorer -->
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <!-- Editor -->
-    <script src="../dist/cdn/toastui-editor-all.js"></script>
+    <script src="../dist/cdn/zen-composer-all.js"></script>
     <script type="text/babel" class="code-js">
       function createLastButton() {
         const button = document.createElement('button');
 
-        button.className = 'toastui-editor-toolbar-icons last';
+        button.className = 'zen-composer-toolbar-icons last';
         button.style.backgroundImage = 'none';
         button.style.margin = '0';
         button.innerHTML = `<i>B</i>`;
@@ -46,7 +46,7 @@
         return button;
       }
 
-      const editor = new toastui.Editor({
+      const editor = new zenComposer.Editor({
         el: document.querySelector('#editor'),
         previewStyle: 'vertical',
         height: '500px',
@@ -71,7 +71,7 @@
         tooltip: 'Custom Button',
         command: 'bold',
         text: '@',
-        className: 'toastui-editor-toolbar-icons first',
+        className: 'zen-composer-toolbar-icons first',
         style: { backgroundImage: 'none' }
       });
     </script>

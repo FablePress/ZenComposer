@@ -38,4 +38,4 @@
 
 
 ---
-Thank you for your contribution to TOAST UI product. 🎉 😘 ✨
+Thank you for your contribution to Zen Composer product. 🎉 😘 ✨

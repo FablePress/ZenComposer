@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`codeSyntaxHighlightPlugin should render highlighted codeblock element in markdown preview 1`] = `
-<pre class="lang-yaml toastui-editor-md-preview-highlight">
+<pre class="lang-yaml zen-composer-md-preview-highlight">
   <code data-language="yaml">
     <span class="token key atrule">
       martin
@@ -36,7 +36,7 @@ exports[`codeSyntaxHighlightPlugin should render highlighted codeblock element i
 
 exports[`codeSyntaxHighlightPlugin should render highlighted codeblock element in wysiwyg 1`] = `
 <div data-language="yaml"
-     class="toastui-editor-ww-code-block-highlighting"
+     class="zen-composer-ww-code-block-highlighting"
 >
   <pre class="language-yaml">
     <code data-language="yaml"

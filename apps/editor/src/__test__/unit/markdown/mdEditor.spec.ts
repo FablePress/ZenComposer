@@ -1,4 +1,4 @@
-import { ToastMark } from '@toast-ui/toastmark';
+import { ZenMark } from '@fablepress/zenmark';
 import MarkdownEditor from '@/markdown/mdEditor';
 import EventEmitter from '@/event/eventEmitter';
 import { getTextContent } from './util';
@@ -18,7 +18,7 @@ describe('MarkdownEditor', () => {
 
   beforeEach(() => {
     em = new EventEmitter();
-    mde = new MarkdownEditor(em, { toastMark: new ToastMark() });
+    mde = new MarkdownEditor(em, { toastMark: new ZenMark() });
     el = mde.el;
     document.body.appendChild(el);
   });

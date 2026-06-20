@@ -1,5 +1,5 @@
 import { ProsemirrorNode, Schema } from 'prosemirror-model';
-import { ListItemMdNode, MdNode, ToastMark } from '@toast-ui/toastmark';
+import { ListItemMdNode, MdNode, ZenMark } from '@fablepress/zenmark';
 import { findClosestNode, isListNode, isOrderedListNode } from '@/utils/markdown';
 import { createTextNode } from '@/helper/manipulation';
 import { getTextByMdLine } from './query';
@@ -7,7 +7,7 @@ import { getTextByMdLine } from './query';
 export interface ToListContext<T = ListItemMdNode> {
   mdNode: T;
   line: number;
-  toastMark: ToastMark;
+  toastMark: ZenMark;
   doc: ProsemirrorNode;
   startLine: number;
 }
@@ -84,7 +84,7 @@ function getListDepth(mdNode: MdNode) {
 }
 
 function findSameDepthList(
-  toastMark: ToastMark,
+  toastMark: ZenMark,
   currentLine: number,
   depth: number,
   backward: boolean

@@ -1,12 +1,12 @@
 {
-  "name": "@toast-ui/react-editor",
+  "name": "@fablepress/zen-composer-react",
   "version": "3.2.3",
-  "description": "TOAST UI Editor for React",
+  "description": "Zen Composer for React",
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "main": "dist/toastui-react-editor.js",
+  "main": "dist/zen-composer-react.js",
   "module": "dist/esm/index.js",
   "scripts": {
     "test:types": "tsc",
@@ -16,12 +16,12 @@
   },
   "homepage": "https://ui.toast.com",
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "author": "NHN Cloud FE Development Lab <dl_javascript@nhn.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "apps/react-editor"
   },
   "license": "MIT",
@@ -35,6 +35,6 @@
     "react-dom": "^17.0.1"
   },
   "dependencies": {
-    "@toast-ui/editor": "^3.2.2"
+    "@fablepress/zen-composer": "^3.2.2"
   }
 }

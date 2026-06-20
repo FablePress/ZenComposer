@@ -5,7 +5,7 @@ import {
   LIST_CLASS_NAME,
 } from '@/nodeViews/languageSelectBox';
 import { cls } from '@/utils/dom';
-import type { Emitter } from '@toast-ui/editor';
+import type { Emitter } from '@fablepress/zen-composer';
 
 Element.prototype.scrollIntoView = jest.fn();
 
@@ -29,7 +29,7 @@ describe('languageSelectBox', () => {
     };
 
     wwContainer = document.createElement('div');
-    wwContainer.className = 'toastui-editor ww-mode';
+    wwContainer.className = 'zen-composer ww-mode';
     document.body.appendChild(wwContainer);
 
     selectBox = new LanguageSelectBox(document.body, eventEmitter, ['js', 'css', 'ts']);

@@ -1,12 +1,12 @@
 <template>
-  <div ref="toastuiEditorViewer"></div>
+  <div ref="zenComposerEditorViewer"></div>
 </template>
 <script>
-import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
+import Viewer from '@fablepress/zen-composer/dist/zen-composer-viewer';
 import { optionsMixin } from './mixin/option';
 
 export default {
-  name: 'ToastuiEditorViewer',
+  name: 'ZenComposerViewer',
   mixins: [optionsMixin],
   props: {
     height: {
@@ -20,13 +20,13 @@ export default {
     },
   },
   mounted() {
-    const options = { ...this.computedOptions, el: this.$refs.toastuiEditorViewer };
+    const options = { ...this.computedOptions, el: this.$refs.zenComposerEditorViewer };
 
     this.editor = new Viewer(options);
   },
   methods: {
     getRootElement() {
-      return this.$refs.toastuiEditorViewer;
+      return this.$refs.zenComposerEditorViewer;
     },
   },
 };

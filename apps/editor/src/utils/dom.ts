@@ -20,7 +20,7 @@ export function isPositionInBox(style: CSSStyleDeclaration, offsetX: number, off
   return offsetX >= left && offsetX <= left + width && offsetY >= top && offsetY <= top + height;
 }
 
-const CLS_PREFIX = 'toastui-editor-';
+const CLS_PREFIX = 'zen-composer-';
 
 export function cls(...names: (string | [boolean, string])[]) {
   const result = [];

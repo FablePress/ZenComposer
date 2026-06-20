@@ -1,6 +1,6 @@
 import { source, oneLineTrim } from 'common-tags';
 
-import { Context, MdNode, Parser, HTMLConvertorMap } from '@toast-ui/toastmark';
+import { Context, MdNode, Parser, HTMLConvertorMap } from '@fablepress/zenmark';
 
 import { Node, Schema } from 'prosemirror-model';
 import { createSpecs } from '@/wysiwyg/specCreator';
@@ -174,7 +174,7 @@ describe('Convertor', () => {
         [](url)foo
         [text](url)
         [text](ur*l)
-        [Editor](https://github.com/nhn_test/tui.editor)
+        [Editor](https://github.com/nhn_test/zen-composer)
         [this.is_a_test_link.com](this.is_a_test_link.com)
         [text](url?key=abc&attribute=abc)
         `;
@@ -182,7 +182,7 @@ describe('Convertor', () => {
         foo
         [text](url)
         [text](ur*l)
-        [Editor](https://github.com/nhn_test/tui.editor)
+        [Editor](https://github.com/nhn_test/zen-composer)
         [this.is_a_test_link.com](this.is_a_test_link.com)
         [text](url?key=abc&attribute=abc)
     	`;

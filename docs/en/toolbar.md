@@ -1,6 +1,6 @@
 # 🛠 Toolbar
 
-Typically, the editor can use shortcuts or toolbar to enter specific text or nodes. In particular, in WYSIWYG editors, where no specific textual syntax exists, the role of the toolbar is important because most of the operation are done through the toolbar. The TOAST UI Editor (henceforth referred to as 'Editor') also provides a toolbar as the default UI, as well as options and APIs for customization.
+Typically, the editor can use shortcuts or toolbar to enter specific text or nodes. In particular, in WYSIWYG editors, where no specific textual syntax exists, the role of the toolbar is important because most of the operation are done through the toolbar. The Zen Composer (henceforth referred to as 'Editor') also provides a toolbar as the default UI, as well as options and APIs for customization.
 
 ## Toolbar Option
 The editor provides a total of 16 toolbar items, including bold, italic, and strike. Unless otherwise specified, the default toolbar option is shown below.
@@ -65,7 +65,7 @@ const editor = new Editor({
       tooltip: 'myItem',
       command: 'bold',
       text: '@',
-      className: 'toastui-editor-toolbar-icons',
+      className: 'zen-composer-toolbar-icons',
       style: { backgroundImage: 'none', color: 'red' }
     }]
   ],
@@ -170,7 +170,7 @@ const editor = new Editor({
       tooltip: 'myItem',
       command: 'bold',
       text: '@',
-      className: 'toastui-editor-toolbar-icons',
+      className: 'zen-composer-toolbar-icons',
       style: { backgroundImage: 'none', color: 'red' },
       // If it is located on the `strong` node, the `active` CSS class is added to this toolbar element.
       state: 'strong',
@@ -234,4 +234,4 @@ The `onUpdated()` function passes the object that represent `active` and `disabl
 
 ## Example
 
-You can see the example [here](https://nhn.github.io/tui.editor/latest/tutorial-example15-customizing-toolbar-buttons)
+You can see the example [here](https://nhn.github.io/zen-composer/latest/tutorial-example15-customizing-toolbar-buttons)

@@ -1,19 +1,19 @@
 {
-  "name": "@toast-ui/editor-plugin-code-syntax-highlight",
+  "name": "@fablepress/zen-composer-plugin-code-syntax-highlight",
   "version": "3.1.0",
-  "description": "TOAST UI Editor : Code Syntax Highlight Plugin",
+  "description": "Zen Composer : Code Syntax Highlight Plugin",
   "keywords": [
     "nhn",
     "nhn cloud",
     "toast",
-    "toastui",
+    "zenComposer",
     "toast-ui",
     "editor",
     "plugin",
     "codeblock",
     "highlight"
   ],
-  "main": "dist/toastui-editor-plugin-code-syntax-highlight.js",
+  "main": "dist/zen-composer-plugin-code-syntax-highlight.js",
   "types": "types/index.d.ts",
   "files": [
     "dist/*.js",
@@ -24,11 +24,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "plugins/code-syntax-highlight"
   },
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "homepage": "https://ui.toast.com",
   "browserslist": "last 2 versions, not ie <= 10",

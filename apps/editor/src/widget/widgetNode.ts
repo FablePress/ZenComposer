@@ -6,7 +6,7 @@ export function widgetNodeView(pmNode: ProsemirrorNode) {
   const dom = document.createElement('span');
   const node = widgetToDOM(pmNode.attrs.info, pmNode.textContent);
 
-  dom.className = 'tui-widget';
+  dom.className = 'zen-composer-widget';
   dom.appendChild(node);
 
   return { dom };
@@ -32,11 +32,11 @@ export class Widget extends SpecNode {
       selectable: false,
       atom: true,
       toDOM(): DOMOutputSpec {
-        return ['span', { class: 'tui-widget' }, 0];
+        return ['span', { class: 'zen-composer-widget' }, 0];
       },
       parseDOM: [
         {
-          tag: 'span.tui-widget',
+          tag: 'span.zen-composer-widget',
           getAttrs(dom: Node | string) {
             const text = (dom as HTMLElement).textContent!;
             const [, info] = text.match(/\$\$(widget\d+)/)!;

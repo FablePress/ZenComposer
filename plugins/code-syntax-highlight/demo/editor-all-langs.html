@@ -8,9 +8,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css"
     />
     <!-- Editor -->
-    <link rel="stylesheet" href="http://localhost:8080/dist/cdn/toastui-editor.css" />
+    <link rel="stylesheet" href="http://localhost:8080/dist/cdn/zen-composer.css" />
     <!-- Plugin -->
-    <link rel="stylesheet" href="../dist/cdn/toastui-editor-plugin-code-syntax-highlight.css" />
+    <link rel="stylesheet" href="../dist/cdn/zen-composer-plugin-code-syntax-highlight.css" />
   </head>
   <body>
     <div class="code-html">
@@ -22,9 +22,9 @@
       <div id="viewer"></div>
     </div>
     <!-- Editor -->
-    <script src="http://localhost:8080/dist/cdn/toastui-editor-all.js"></script>
+    <script src="http://localhost:8080/dist/cdn/zen-composer-all.js"></script>
     <!-- Plugin -->
-    <script src="../dist/cdn/toastui-editor-plugin-code-syntax-highlight-all.js"></script>
+    <script src="../dist/cdn/zen-composer-plugin-code-syntax-highlight-all.js"></script>
     <script class="code-js">
       const content = [
         '```js',
@@ -44,7 +44,7 @@
         '```',
       ].join('\n');
 
-      const { Editor } = toastui;
+      const { Editor } = zenComposer;
       const { codeSyntaxHighlight } = Editor.plugin;
 
       const editor = new Editor({

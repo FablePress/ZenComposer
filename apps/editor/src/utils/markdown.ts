@@ -7,7 +7,7 @@ import {
   MdNodeType,
   TableCellMdNode,
   MdPos,
-} from '@toast-ui/toastmark';
+} from '@fablepress/zenmark';
 import { includes } from './common';
 
 export function hasSpecificTypeAncestor(mdNode: MdNode, ...types: MdNodeType[]) {

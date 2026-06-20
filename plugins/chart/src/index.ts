@@ -18,7 +18,7 @@
  * y.title: Month              => yAxis.title
  * $$
  */
-import type { PluginInfo, MdNode, PluginContext } from '@toast-ui/editor';
+import type { PluginInfo, MdNode, PluginContext } from '@fablepress/zen-composer';
 import Chart, {
   BaseOptions,
   LineChart,
@@ -312,11 +312,11 @@ function renderChart(
         } else if (SUPPORTED_CHART_TYPES.indexOf(chartType) < 0) {
           chartContainer.innerHTML = `invalid chart type. type: bar, column, line, area, pie`;
         } else {
-          const toastuiChart = chart[chartType];
+          const zenComposerChart = chart[chartType];
 
           chartOptions.usageStatistics = usageStatistics;
           // @ts-ignore
-          chartMap[id] = toastuiChart({ el: chartContainer, data, options: chartOptions });
+          chartMap[id] = zenComposerChart({ el: chartContainer, data, options: chartOptions });
         }
       });
     } catch (e) {

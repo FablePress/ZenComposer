@@ -7,10 +7,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 function getOutputConfig(isProduction, isCDN, minify) {
-  const filename = `toastui-${name.replace(/@toast-ui\//, '')}`;
+  const filename = `zenComposer-${name.replace(/@fablepress\//, '')}`;
   const defaultConfig = {
     library: {
-      name: ['toastui', 'Editor', 'plugin', 'uml'],
+      name: ['zenComposer', 'Editor', 'plugin', 'uml'],
       export: 'default',
       type: 'umd',
     },
@@ -98,7 +98,7 @@ module.exports = (env) => {
     config.plugins = [
       new webpack.BannerPlugin(
         [
-          'TOAST UI Editor : UML Plugin',
+          'Zen Composer : UML Plugin',
           `@version ${version} | ${new Date().toDateString()}`,
           `@author ${author}`,
           `@license ${license}`,

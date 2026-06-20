@@ -1,5 +1,5 @@
 import { NodeType, MarkType, Schema, ProsemirrorNode, Mark } from 'prosemirror-model';
-import { MdNode, MdNodeType, RendererOptions, HTMLToken, MdPos } from './toastmark';
+import { MdNode, MdNodeType, RendererOptions, HTMLToken, MdPos } from './zenmark';
 import { WwNodeType, WwMarkType } from './wysiwyg';
 
 export type Attrs = { [name: string]: any } | null;

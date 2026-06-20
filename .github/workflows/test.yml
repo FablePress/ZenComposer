@@ -14,12 +14,12 @@ jobs:
       - name: Install
         run: |
           npm install
-      - name: build toastmark
+      - name: build zenmark
         run: |
-          npm run build toastmark
-      - name: toastmark unit, integration test
+          npm run build zenmark
+      - name: zenmark unit, integration test
         run: |
-          npm run test:ci toastmark
+          npm run test:ci zenmark
       - name: editor unit, integration test
         run: |
           npm run test:ci editor

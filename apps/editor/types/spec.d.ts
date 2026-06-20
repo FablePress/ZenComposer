@@ -2,7 +2,7 @@ import { Schema } from 'prosemirror-model';
 import { Transaction, Plugin } from 'prosemirror-state';
 import { EditorView } from 'prosemirror-view';
 import { Command } from 'prosemirror-commands';
-import { ToastMark } from './toastmark';
+import { ZenMark } from './zenmark';
 import { Emitter } from './event';
 
 export interface Context {
@@ -11,7 +11,7 @@ export interface Context {
 }
 
 export interface MdContext extends Context {
-  toastMark: ToastMark;
+  toastMark: ZenMark;
 }
 
 export interface SpecContext extends Context {
@@ -19,7 +19,7 @@ export interface SpecContext extends Context {
 }
 
 export interface MdSpecContext extends SpecContext {
-  toastMark: ToastMark;
+  toastMark: ZenMark;
 }
 
 export type DefaultPayload = Record<string, any>;

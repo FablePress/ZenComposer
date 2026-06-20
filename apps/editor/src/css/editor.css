@@ -1,29 +1,29 @@
 /* height */
 .auto-height,
-.auto-height .toastui-editor-defaultUI {
+.auto-height .zen-composer-defaultUI {
   height: auto;
 }
 
-.auto-height .toastui-editor-md-container {
+.auto-height .zen-composer-md-container {
   position: relative;
 }
 
-:not(.auto-height) > .toastui-editor-defaultUI,
-:not(.auto-height) > .toastui-editor-defaultUI > .toastui-editor-main {
+:not(.auto-height) > .zen-composer-defaultUI,
+:not(.auto-height) > .zen-composer-defaultUI > .zen-composer-main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-:not(.auto-height) > .toastui-editor-defaultUI > .toastui-editor-main {
+:not(.auto-height) > .zen-composer-defaultUI > .zen-composer-main {
   -ms-flex: 1;
   flex: 1;
 }
 
-/* toastui editor */
-.toastui-editor-md-container::after,
-.toastui-editor-defaultUI-toolbar::after {
+/* zenComposer editor */
+.zen-composer-md-container::after,
+.zen-composer-defaultUI-toolbar::after {
   content: '';
   display: block;
   height: 0;
@@ -31,72 +31,72 @@
 }
 
 
-.toastui-editor-main {
+.zen-composer-main {
   min-height: 0px;
   position: relative;
   height: inherit;
   box-sizing: border-box;
 }
 
-.toastui-editor-md-container {
+.zen-composer-md-container {
   display: none;
   overflow: hidden;
   height: 100%;
 }
 
-.toastui-editor-md-container .toastui-editor {
+.zen-composer-md-container .zen-composer {
   line-height: 1.5;
   position: relative;
 }
 
-.toastui-editor-md-container .toastui-editor,
-.toastui-editor-md-container .toastui-editor-md-preview {
+.zen-composer-md-container .zen-composer,
+.zen-composer-md-container .zen-composer-md-preview {
   box-sizing: border-box;
   padding: 0;
   height: inherit;
 }
 
-.toastui-editor-md-container .toastui-editor-md-preview {
+.zen-composer-md-container .zen-composer-md-preview {
   overflow: auto;
   padding: 0 25px;
   height: 100%;
 }
 
-.toastui-editor-md-container .toastui-editor-md-preview > p:first-child {
+.zen-composer-md-container .zen-composer-md-preview > p:first-child {
   margin-top: 0 !important;
 }
 
-.toastui-editor-md-container .toastui-editor-md-preview .toastui-editor-contents {
+.zen-composer-md-container .zen-composer-md-preview .zen-composer-contents {
   padding-top: 8px;
 }
 
-.toastui-editor-main .toastui-editor-md-tab-style > .toastui-editor,
-.toastui-editor-main .toastui-editor-md-tab-style > .toastui-editor-md-preview {
+.zen-composer-main .zen-composer-md-tab-style > .zen-composer,
+.zen-composer-main .zen-composer-md-tab-style > .zen-composer-md-preview {
   width: 100%;
   display: none;
 }
 
-.toastui-editor-main .toastui-editor-md-tab-style > .active {
+.zen-composer-main .zen-composer-md-tab-style > .active {
   display: block;
 }
 
-.toastui-editor-main .toastui-editor-md-vertical-style > .toastui-editor-tabs {
+.zen-composer-main .zen-composer-md-vertical-style > .zen-composer-tabs {
   display: none;
 }
 
-.toastui-editor-main .toastui-editor-md-tab-style > .toastui-editor-tabs {
+.zen-composer-main .zen-composer-md-tab-style > .zen-composer-tabs {
   display: block;
 }
 
-.toastui-editor-main .toastui-editor-md-vertical-style .toastui-editor {
+.zen-composer-main .zen-composer-md-vertical-style .zen-composer {
   width: 50%;
 }
 
-.toastui-editor-main .toastui-editor-md-vertical-style .toastui-editor-md-preview {
+.zen-composer-main .zen-composer-md-vertical-style .zen-composer-md-preview {
   width: 50%;
 }
 
-.toastui-editor-main .toastui-editor-md-splitter {
+.zen-composer-main .zen-composer-md-splitter {
   display: none;
   height: 100%;
   width: 1px;
@@ -105,22 +105,22 @@
   left: 50%;
 }
 
-.toastui-editor-main .toastui-editor-md-vertical-style .toastui-editor-md-splitter {
+.zen-composer-main .zen-composer-md-vertical-style .zen-composer-md-splitter {
   display: block;
 }
 
-.toastui-editor-ww-container {
+.zen-composer-ww-container {
   display: none;
   overflow: hidden;
   height: inherit;
   background-color: #fff;
 }
 
-.auto-height .toastui-editor-main-container {
+.auto-height .zen-composer-main-container {
   position: relative;
 }
 
-.toastui-editor-main-container {
+.zen-composer-main-container {
   position: absolute;
   line-height: 1;
   color: #222;
@@ -128,13 +128,13 @@
   height: inherit;
 }
 
-.toastui-editor-ww-container > .toastui-editor {
+.zen-composer-ww-container > .zen-composer {
   height: inherit;
   position: relative;
   width: 100%;
 }
 
-.toastui-editor-ww-container .toastui-editor-contents {
+.zen-composer-ww-container .zen-composer-contents {
   overflow: auto;
   box-sizing: border-box;
   margin: 0px;
@@ -142,32 +142,32 @@
   height: inherit;
 }
 
-.toastui-editor-ww-container .toastui-editor-contents p {
+.zen-composer-ww-container .zen-composer-contents p {
   margin: 0;
 }
 
-.toastui-editor-md-mode .toastui-editor-md-container,
-.toastui-editor-ww-mode .toastui-editor-ww-container {
+.zen-composer-md-mode .zen-composer-md-container,
+.zen-composer-ww-mode .zen-composer-ww-container {
   display: block;
   z-index: 20;
 }
 
-.toastui-editor-md-mode .toastui-editor-md-vertical-style {
+.zen-composer-md-mode .zen-composer-md-vertical-style {
   display: -ms-flexbox;
   display: flex;
 }
 
-.toastui-editor-main.hidden,
-.toastui-editor-defaultUI.hidden {
+.zen-composer-main.hidden,
+.zen-composer-defaultUI.hidden {
   display: none;
 }
 
 /* default UI Styles */
-.toastui-editor-defaultUI .ProseMirror {
+.zen-composer-defaultUI .ProseMirror {
   padding: 18px 25px;
 }
 
-.toastui-editor-defaultUI {
+.zen-composer-defaultUI {
   position: relative;
   border: 1px solid #dadde6;
   height: 100%;
@@ -176,7 +176,7 @@
   border-radius: 4px;
 }
 
-.toastui-editor-defaultUI button {
+.zen-composer-defaultUI button {
   color: #333;
   height: 28px;
   font-size: 13px;
@@ -185,7 +185,7 @@
   border-radius: 2px;
 }
 
-.toastui-editor-defaultUI .toastui-editor-ok-button {
+.zen-composer-defaultUI .zen-composer-ok-button {
   min-width: 63px;
   height: 32px;
   background-color: #00a9ff;
@@ -193,11 +193,11 @@
   outline-color: #009bf2;
 }
 
-.toastui-editor-defaultUI .toastui-editor-ok-button:hover {
+.zen-composer-defaultUI .zen-composer-ok-button:hover {
   background-color: #009bf2;
 }
 
-.toastui-editor-defaultUI .toastui-editor-close-button {
+.zen-composer-defaultUI .zen-composer-close-button {
   min-width: 63px;
   height: 32px;
   background-color: #f7f9fc;
@@ -206,12 +206,12 @@
   outline-color: #cbcfdb;
 }
 
-.toastui-editor-defaultUI .toastui-editor-close-button:hover {
+.zen-composer-defaultUI .zen-composer-close-button:hover {
   border-color: #cbcfdb;
 }
 
 /* mode switch tab */
-.toastui-editor-mode-switch {
+.zen-composer-mode-switch {
   background-color: #fff;
   border-top: 1px solid #dadde6;
   font-size: 12px;
@@ -221,7 +221,7 @@
   border-radius: 0 0 3px 3px;
 }
 
-.toastui-editor-mode-switch .tab-item {
+.zen-composer-mode-switch .tab-item {
   display: inline-block;
   width: 96px;
   height: 24px;
@@ -238,14 +238,14 @@
   box-sizing: border-box;
 }
 
-.toastui-editor-mode-switch .tab-item.active {
+.zen-composer-mode-switch .tab-item.active {
   border-top: 1px solid #fff;
   background-color: #fff;
   color: #555;
 }
 
 /* markdown tab */
-.toastui-editor-defaultUI .toastui-editor-md-tab-container {
+.zen-composer-defaultUI .zen-composer-md-tab-container {
   float: left;
   height: 45px;
   font-size: 13px;
@@ -254,12 +254,12 @@
   border-top-left-radius: 3px;
 }
 
-.toastui-editor-md-tab-container .toastui-editor-tabs {
+.zen-composer-md-tab-container .zen-composer-tabs {
   margin-left: 15px;
   height: 100%;
 }
 
-.toastui-editor-md-tab-container .tab-item {
+.zen-composer-md-tab-container .tab-item {
   display: inline-block;
   width: 70px;
   height: 33px;
@@ -276,18 +276,18 @@
   margin-top: 13px;
 }
 
-.toastui-editor-md-tab-container .tab-item.active {
+.zen-composer-md-tab-container .tab-item.active {
   border-bottom: 1px solid #fff;
   background-color: #fff;
   color: #555;
 }
 
-.toastui-editor-md-tab-container .tab-item:last-child {
+.zen-composer-md-tab-container .tab-item:last-child {
   margin-left: -1px;
 }
 
 /* toolbar */
-.toastui-editor-defaultUI-toolbar {
+.zen-composer-defaultUI-toolbar {
   display: -ms-flexbox;
   display: flex;
   padding: 0 25px;
@@ -297,12 +297,12 @@
   border-radius: 3px 3px 0 0;
 }
 
-.toastui-editor-toolbar {
+.zen-composer-toolbar {
   height: 46px;
   box-sizing: border-box;
 }
 
-.toastui-editor-toolbar-divider {
+.zen-composer-toolbar-divider {
   display: inline-block;
   width: 1px;
   height: 18px;
@@ -310,12 +310,12 @@
   margin: 14px 12px;
 }
 
-.toastui-editor-toolbar-group {
+.zen-composer-toolbar-group {
   display: -ms-flexbox;
   display: flex;
 }
 
-.toastui-editor-defaultUI-toolbar button {
+.zen-composer-defaultUI-toolbar button {
   box-sizing: border-box;
   cursor: pointer;
   width: 32px;
@@ -326,12 +326,12 @@
   border: 1px solid #f7f9fc;
 }
 
-.toastui-editor-defaultUI-toolbar button:not(:disabled):hover {
+.zen-composer-defaultUI-toolbar button:not(:disabled):hover {
   border: 1px solid #e4e7ee;
   background-color: #fff;
 }
 
-.toastui-editor-defaultUI-toolbar .scroll-sync {
+.zen-composer-defaultUI-toolbar .scroll-sync {
   display: inline-block;
   position: relative;
   width: 70px;
@@ -342,24 +342,24 @@
   cursor: pointer;
 }
 
-.toastui-editor-defaultUI-toolbar .scroll-sync::before {
+.zen-composer-defaultUI-toolbar .scroll-sync::before {
   content: 'Scroll';
   position: absolute;
   left: 0;
   font-size: 14px;
 }
 
-.toastui-editor-defaultUI-toolbar .scroll-sync.active::before {
+.zen-composer-defaultUI-toolbar .scroll-sync.active::before {
   color: #00a9ff;
 }
 
-.toastui-editor-defaultUI-toolbar .scroll-sync input {
+.zen-composer-defaultUI-toolbar .scroll-sync input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.toastui-editor-defaultUI-toolbar .switch {
+.zen-composer-defaultUI-toolbar .switch {
   position: absolute;
   top: 0;
   left: 45px;
@@ -371,11 +371,11 @@
   border-radius: 50px;
 }
 
-.toastui-editor-defaultUI-toolbar input:checked + .switch {
+.zen-composer-defaultUI-toolbar input:checked + .switch {
   background-color: #acddfa;
 }
 
-.toastui-editor-defaultUI-toolbar .switch::before {
+.zen-composer-defaultUI-toolbar .switch::before {
   position: absolute;
   content: '';
   height: 14px;
@@ -388,7 +388,7 @@
   border-radius: 50%;
 }
 
-.toastui-editor-defaultUI-toolbar input:checked + .switch::before {
+.zen-composer-defaultUI-toolbar input:checked + .switch::before {
   background-color: #00a9ff;
   -webkit-transform: translateX(12px);
   -moz-transform: translateX(12px);
@@ -396,11 +396,11 @@
   transform: translateX(12px);
 }
 
-.toastui-editor-dropdown-toolbar .scroll-sync {
+.zen-composer-dropdown-toolbar .scroll-sync {
   margin: 0 5px;
 }
 
-.toastui-editor-dropdown-toolbar {
+.zen-composer-dropdown-toolbar {
   position: absolute;
   height: 46px;
   z-index: 30;
@@ -412,14 +412,14 @@
   display: flex;
 }
 
-.toastui-editor-toolbar-item-wrapper {
+.zen-composer-toolbar-item-wrapper {
   margin: 7px 5px;
   height: 32px;
   line-height: 32px;
 }
 
 /* toolbar popup */
-.toastui-editor-popup {
+.zen-composer-popup {
   width: 400px;
   margin-right: auto;
   background: #fff;
@@ -430,24 +430,24 @@
   border: 1px solid #dadde6;
 }
 
-.toastui-editor-popup-body {
+.zen-composer-popup-body {
   padding: 15px;
   font-size: 12px;
 }
 
-.toastui-editor-popup-body label {
+.zen-composer-popup-body label {
   font-weight: 600;
   color: #555;
   display: block;
   margin: 20px 0 5px;
 }
 
-.toastui-editor-popup-body .toastui-editor-button-container {
+.zen-composer-popup-body .zen-composer-button-container {
   text-align: right;
   margin-top: 20px;
 }
 
-.toastui-editor-popup-body input[type='text'] {
+.zen-composer-popup-body input[type='text'] {
   width: calc(100% - 26px);
   height: 30px;
   padding: 0 12px;
@@ -456,18 +456,18 @@
   color: #333;
 }
 
-.toastui-editor-popup-body input[type='text']:focus {
+.zen-composer-popup-body input[type='text']:focus {
   outline: 1px solid #00a9ff;
   border-color: transparent;
 }
 
-.toastui-editor-popup-body input[type='text'].disabled {
+.zen-composer-popup-body input[type='text'].disabled {
   background-color: #f7f9fc;
   border-color: #e1e3e9;
   color: #969aa5;
 }
 
-.toastui-editor-popup-body input[type='file'] {
+.zen-composer-popup-body input[type='file'] {
   opacity: 0;
   border: none;
   width: 1px;
@@ -477,21 +477,21 @@
   left: 0;
 }
 
-.toastui-editor-popup-body input.wrong,
-.toastui-editor-popup-body span.wrong {
+.zen-composer-popup-body input.wrong,
+.zen-composer-popup-body span.wrong {
   border-color: #fa2828;
 }
 
-.toastui-editor-popup-add-link .toastui-editor-popup-body,
-.toastui-editor-popup-add-image .toastui-editor-popup-body {
+.zen-composer-popup-add-link .zen-composer-popup-body,
+.zen-composer-popup-add-image .zen-composer-popup-body {
   padding: 0 20px 20px;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-tabs {
+.zen-composer-popup-add-image .zen-composer-tabs {
   margin: 5px 0 10px;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-tabs .tab-item {
+.zen-composer-popup-add-image .zen-composer-tabs .tab-item {
   display: inline-block;
   width: 60px;
   height: 40px;
@@ -505,16 +505,16 @@
   box-sizing: border-box;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-tabs .tab-item:hover {
+.zen-composer-popup-add-image .zen-composer-tabs .tab-item:hover {
   border-bottom: 1px solid #cbcfdb;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-tabs .tab-item.active {
+.zen-composer-popup-add-image .zen-composer-tabs .tab-item.active {
   color: #00a9ff;
   border-bottom: 2px solid #00a9ff;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-file-name {
+.zen-composer-popup-add-image .zen-composer-file-name {
   width: 58%;
   display: inline-block;
   border-radius: 2px;
@@ -529,11 +529,11 @@
   cursor: pointer;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-file-name.has-file {
+.zen-composer-popup-add-image .zen-composer-file-name.has-file {
   color: #333;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-file-select-button {
+.zen-composer-popup-add-image .zen-composer-file-select-button {
   width: 33%;
   margin-left: 5px;
   height: 32px;
@@ -543,19 +543,19 @@
   vertical-align: top;
 }
 
-.toastui-editor-popup-add-image .toastui-editor-file-select-button:hover {
+.zen-composer-popup-add-image .zen-composer-file-select-button:hover {
   border-color: #cbcfdb;
 }
 
-.toastui-editor-popup-add-table {
+.zen-composer-popup-add-table {
   width: auto;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table-selection {
+.zen-composer-popup-add-table .zen-composer-table-selection {
   position: relative;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table-cell {
+.zen-composer-popup-add-table .zen-composer-table-cell {
   display: table-cell;
   width: 20px;
   height: 20px;
@@ -564,20 +564,20 @@
   box-sizing: border-box;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table-cell.header {
+.zen-composer-popup-add-table .zen-composer-table-cell.header {
   background: #f7f9fc;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table-row {
+.zen-composer-popup-add-table .zen-composer-table-row {
   display: table-row;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table {
+.zen-composer-popup-add-table .zen-composer-table {
   display: table;
   border-collapse: collapse;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table-selection-layer {
+.zen-composer-popup-add-table .zen-composer-table-selection-layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -586,72 +586,72 @@
   z-index: 30;
 }
 
-.toastui-editor-popup-add-table .toastui-editor-table-description {
+.zen-composer-popup-add-table .zen-composer-table-description {
   margin: 5px 0 0;
   text-align: center;
   color: #333
 }
 
-.toastui-editor-popup-add-heading {
+.zen-composer-popup-add-heading {
   width: auto;
 }
 
-.toastui-editor-popup-add-heading .toastui-editor-popup-body {
+.zen-composer-popup-add-heading .zen-composer-popup-body {
   padding: 0;
 }
 
-.toastui-editor-popup-add-heading h1,
-.toastui-editor-popup-add-heading h2,
-.toastui-editor-popup-add-heading h3,
-.toastui-editor-popup-add-heading h4,
-.toastui-editor-popup-add-heading h5,
-.toastui-editor-popup-add-heading h6,
-.toastui-editor-popup-add-heading ul,
-.toastui-editor-popup-add-heading p {
+.zen-composer-popup-add-heading h1,
+.zen-composer-popup-add-heading h2,
+.zen-composer-popup-add-heading h3,
+.zen-composer-popup-add-heading h4,
+.zen-composer-popup-add-heading h5,
+.zen-composer-popup-add-heading h6,
+.zen-composer-popup-add-heading ul,
+.zen-composer-popup-add-heading p {
   padding: 0;
   margin: 0;
 }
 
-.toastui-editor-popup-add-heading ul {
+.zen-composer-popup-add-heading ul {
   padding: 5px 0;
   list-style: none;
 }
 
-.toastui-editor-popup-add-heading ul li {
+.zen-composer-popup-add-heading ul li {
   padding: 4px 12px;
   cursor: pointer;
 }
 
-.toastui-editor-popup-add-heading ul li:hover {
+.zen-composer-popup-add-heading ul li:hover {
   background-color: #dff4ff;
 }
 
-.toastui-editor-popup-add-heading h1 {
+.zen-composer-popup-add-heading h1 {
   font-size: 24px;
 }
 
-.toastui-editor-popup-add-heading h2 {
+.zen-composer-popup-add-heading h2 {
   font-size: 22px;
 }
 
-.toastui-editor-popup-add-heading h3 {
+.zen-composer-popup-add-heading h3 {
   font-size: 20px;
 }
 
-.toastui-editor-popup-add-heading h4 {
+.zen-composer-popup-add-heading h4 {
   font-size: 18px;
 }
 
-.toastui-editor-popup-add-heading h5 {
+.zen-composer-popup-add-heading h5 {
   font-size: 16px;
 }
 
-.toastui-editor-popup-add-heading h6 {
+.zen-composer-popup-add-heading h6 {
   font-size: 14px;
 }
 
 /* table context menu */
-.toastui-editor-context-menu {
+.zen-composer-context-menu {
   position: absolute;
   width: auto;
   min-width: 197px;
@@ -664,7 +664,7 @@
   background-color: #fff;
 }
 
-.toastui-editor-context-menu .menu-group {
+.zen-composer-context-menu .menu-group {
   list-style: none;
   border-bottom: 1px solid #ebedf2;
   padding: 0;
@@ -672,23 +672,23 @@
   font-size: 13px;
 }
 
-.toastui-editor-context-menu .menu-group:last-child {
+.zen-composer-context-menu .menu-group:last-child {
   border-bottom: none !important;
 }
 
-.toastui-editor-context-menu .menu-item {
+.zen-composer-context-menu .menu-item {
   height: 32px;
   line-height: 32px;
   padding: 0 14px;
   cursor: pointer;
 }
 
-.toastui-editor-context-menu span {
+.zen-composer-context-menu span {
   display: inline-block;
 }
 
-.toastui-editor-context-menu span::before {
-  background: url('../img/toastui-editor.png') no-repeat;
+.zen-composer-context-menu span::before {
+  background: url('../img/zen-composer.png') no-repeat;
   background-size: 466px 146px;
   content: '';
   width: 20px;
@@ -698,59 +698,59 @@
   margin-right: 10px;
 }
 
-.toastui-editor-context-menu .add-row-up::before {
+.zen-composer-context-menu .add-row-up::before {
   background-position: 3px -104px;
 }
 
-.toastui-editor-context-menu .add-row-down::before {
+.zen-composer-context-menu .add-row-down::before {
   background-position: -19px -104px;
 }
 
-.toastui-editor-context-menu .remove-row::before {
+.zen-composer-context-menu .remove-row::before {
   background-position: -41px -104px;
 }
 
-.toastui-editor-context-menu .add-column-left::before {
+.zen-composer-context-menu .add-column-left::before {
   background-position: -63px -104px;
 }
 
-.toastui-editor-context-menu .add-column-right::before {
+.zen-composer-context-menu .add-column-right::before {
   background-position: -85px -104px;
 }
 
-.toastui-editor-context-menu .remove-column::before {
+.zen-composer-context-menu .remove-column::before {
   background-position: -111px -104px;
 }
 
-.toastui-editor-context-menu .align-column-left::before {
+.zen-composer-context-menu .align-column-left::before {
   background-position: -129px -104px;
 }
 
-.toastui-editor-context-menu .align-column-center::before {
+.zen-composer-context-menu .align-column-center::before {
   background-position: -151px -104px;
 }
 
-.toastui-editor-context-menu .align-column-right::before {
+.zen-composer-context-menu .align-column-right::before {
   background-position: -173px -104px;
 }
 
-.toastui-editor-context-menu .remove-table::before {
+.zen-composer-context-menu .remove-table::before {
   background-position: -197px -104px;
 }
 
-.toastui-editor-context-menu .disabled span::before {
+.zen-composer-context-menu .disabled span::before {
   opacity: 0.3;
 }
 
-.toastui-editor-context-menu li:not(.disabled):hover {
+.zen-composer-context-menu li:not(.disabled):hover {
   background-color: #dff4ff;
 }
 
-.toastui-editor-context-menu li.disabled {
+.zen-composer-context-menu li.disabled {
   color: #c9ccd5;
 }
 
-.toastui-editor-tooltip {
+.zen-composer-tooltip {
   position: absolute;
   background-color: #444;
   z-index: 40;
@@ -762,7 +762,7 @@
     'Nanum Barun Gothic', '맑은고딕', 'Malgun Gothic', sans-serif;
 }
 
-.toastui-editor-tooltip .arrow {
+.zen-composer-tooltip .arrow {
   content: '';
   display: inline-block;
   width: 10px;
@@ -779,8 +779,8 @@
   z-index: -1;
 }
 
-.toastui-editor-toolbar-icons {
-  background: url('../img/toastui-editor.png') no-repeat;
+.zen-composer-toolbar-icons {
+  background: url('../img/zen-composer.png') no-repeat;
   background-size: 466px 146px;
 }
 
@@ -790,100 +790,100 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .toastui-editor-toolbar-icons,
-  .toastui-editor-context-menu span::before {
-    background: url('../img/toastui-editor-2x.png') no-repeat;
+  .zen-composer-toolbar-icons,
+  .zen-composer-context-menu span::before {
+    background: url('../img/zen-composer-2x.png') no-repeat;
     background-size: 466px 146px;
   }
 }
 
-.toastui-editor-toolbar-icons {
+.zen-composer-toolbar-icons {
   background-position-y: 3px;
 }
 
-.toastui-editor-toolbar-icons:disabled {
+.zen-composer-toolbar-icons:disabled {
   opacity: 0.3;
 }
 
-.toastui-editor-toolbar-icons.heading {
+.zen-composer-toolbar-icons.heading {
   background-position-x: 3px;
 }
 
-.toastui-editor-toolbar-icons.bold {
+.zen-composer-toolbar-icons.bold {
   background-position-x: -23px;
 }
 
-.toastui-editor-toolbar-icons.italic {
+.zen-composer-toolbar-icons.italic {
   background-position-x: -49px;
 }
 
-.toastui-editor-toolbar-icons.strike {
+.zen-composer-toolbar-icons.strike {
   background-position-x: -75px;
 }
 
-.toastui-editor-toolbar-icons.hrline {
+.zen-composer-toolbar-icons.hrline {
   background-position-x: -101px;
 }
 
-.toastui-editor-toolbar-icons.quote {
+.zen-composer-toolbar-icons.quote {
   background-position-x: -127px;
 }
 
-.toastui-editor-toolbar-icons.bullet-list {
+.zen-composer-toolbar-icons.bullet-list {
   background-position-x: -153px;
 }
 
-.toastui-editor-toolbar-icons.ordered-list {
+.zen-composer-toolbar-icons.ordered-list {
   background-position-x: -179px;
 }
 
-.toastui-editor-toolbar-icons.task-list {
+.zen-composer-toolbar-icons.task-list {
   background-position-x: -205px;
 }
 
-.toastui-editor-toolbar-icons.indent {
+.zen-composer-toolbar-icons.indent {
   background-position-x: -231px;
 }
 
-.toastui-editor-toolbar-icons.outdent {
+.zen-composer-toolbar-icons.outdent {
   background-position-x: -257px;
 }
 
-.toastui-editor-toolbar-icons.table {
+.zen-composer-toolbar-icons.table {
   background-position-x: -283px;
 }
 
-.toastui-editor-toolbar-icons.image {
+.zen-composer-toolbar-icons.image {
   background-position-x: -309px;
 }
 
-.toastui-editor-toolbar-icons.link {
+.zen-composer-toolbar-icons.link {
   background-position-x: -334px;
 }
 
-.toastui-editor-toolbar-icons.code {
+.zen-composer-toolbar-icons.code {
   background-position-x: -361px;
 }
 
-.toastui-editor-toolbar-icons.codeblock {
+.zen-composer-toolbar-icons.codeblock {
   background-position-x: -388px;
 }
 
-.toastui-editor-toolbar-icons.more {
+.zen-composer-toolbar-icons.more {
   background-position-x: -412px;
 }
 
-.toastui-editor-toolbar-icons:not(:disabled).active {
+.zen-composer-toolbar-icons:not(:disabled).active {
   background-position-y: -23px;
 }
 
 @media only screen and (max-width: 480px) {
-  .toastui-editor-popup {
+  .zen-composer-popup {
     max-width: 300px;
     margin-left: -150px;
   }
 
-  .toastui-editor-dropdown-toolbar {
+  .zen-composer-dropdown-toolbar {
     max-width: none;
   }
 }

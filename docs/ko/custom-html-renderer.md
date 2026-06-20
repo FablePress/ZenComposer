@@ -1,6 +1,6 @@
 # 🎨 Custom HTML Renderer
 
-TOAST UI Editor(이하 '에디터'라고 명시)는 마크다운 텍스트를 HTML 문자열로 변환하기 위해 `ToastMark`라는 자체 마크 다운 파서를 사용한다. `ToastMark`는 두 단계로 마크다운 텍스트를 변환한다.
+Zen Composer(이하 '에디터'라고 명시)는 마크다운 텍스트를 HTML 문자열로 변환하기 위해 `ZenMark`라는 자체 마크 다운 파서를 사용한다. `ZenMark`는 두 단계로 마크다운 텍스트를 변환한다.
 
 1. 마크다운 텍스트를 AST(Abstract Syntax Tree)로 변환한다.
 2. 변환된 AST를 순회하며 HTML 문자열을 생성한다.
@@ -63,7 +63,7 @@ World
 
 ## HTML 토큰
  
-위의 기본 예시에서 볼 수 있듯이 각 함수는 HTML 문자열을 직접 반환하는 것이 아니라 **토큰 객체**를 반환한다. 토큰 객체는 `ToastMark` 내부 모듈에 의해 HTML 문자열로 자동 변환된다. HTML 텍스트 대신 토큰을 사용하는 이유는 구조적인 정보를 담아 기본 동작을 재정의하고 재사용할 수 있기 때문이다.
+위의 기본 예시에서 볼 수 있듯이 각 함수는 HTML 문자열을 직접 반환하는 것이 아니라 **토큰 객체**를 반환한다. 토큰 객체는 `ZenMark` 내부 모듈에 의해 HTML 문자열로 자동 변환된다. HTML 텍스트 대신 토큰을 사용하는 이유는 구조적인 정보를 담아 기본 동작을 재정의하고 재사용할 수 있기 때문이다.
 
 토큰 객체에 사용할 수 있는 타입은 `openTag`, `closeTag`, `text`, `html` 4가지가 있다.
 
@@ -153,14 +153,14 @@ World
 
 ## Node
 
-옵션으로 지정한 컨버팅 함수의 첫 번째 매개변수는 `Node` 객체이다. 이 객체는 `ToastMark`에 의해 생성된 AST(Abstract Syntax Tree)의 주요 구성 요소이다. 모든 노드는 `parent`, `firstChild`, `lastChild`, `prev`, `next` 등 트리를 구성하기 위한 공통의 속성을 가지고 있다.
+옵션으로 지정한 컨버팅 함수의 첫 번째 매개변수는 `Node` 객체이다. 이 객체는 `ZenMark`에 의해 생성된 AST(Abstract Syntax Tree)의 주요 구성 요소이다. 모든 노드는 `parent`, `firstChild`, `lastChild`, `prev`, `next` 등 트리를 구성하기 위한 공통의 속성을 가지고 있다.
 
 또한 각 노드는 타입에 따른 고유한 프로퍼티가 있다. 예를 들어 `heading` 노드는 헤딩 요소의 레벨을 나타내는 `level` 프로퍼티가 있고, `link` 노드에는 링크 URL을 나타내는 `destination` 프로퍼티가 있다.
 
 아래 예시를 보면 마크다운 텍스트가 AST로 변환되었을 때 어떠한 구조인지 파악할 수 있다.
 
 ```md
-## TOAST UI
+## Zen Composer
 **Hello** World!
 ```
 
@@ -174,7 +174,7 @@ World
     firstChild:
       type: 'text',
       parent: //[heading node],
-      literal: 'TOAST UI'
+      literal: 'Zen Composer'
     },
     next: {
       type: 'paragraph',
@@ -198,7 +198,7 @@ World
 }
 ```
 
-AST를 구성하는 각 노드의 타입은 [이 코드](https://github.com/nhn/tui.editor/blob/master/libs/toastmark/src/commonmark/node.ts)에서 확인할 수 있다.
+AST를 구성하는 각 노드의 타입은 [이 코드](https://github.com/nhn/zen-composer/blob/master/libs/zenmark/src/commonmark/node.ts)에서 확인할 수 있다.
 
 ## Context
 
@@ -206,7 +206,7 @@ AST를 구성하는 각 노드의 타입은 [이 코드](https://github.com/nhn/
 
 ### entering
 
-에디터에서 [이 함수](https://github.com/nhn/tui.editor/blob/master/libs/toastmark/src/commonmark/node.ts#L38)에 정의된 노드 타입들은 AST의 순회 중 두 번씩 방문한다. 첫 번째는 해당 노드로 순회를 시작할 때 방문하며, 두 번째는 모든 자식 노드들을 순회한 후 방문한다. `context` 객체의 `entering` 프로퍼티를 사용하여 컨버팅 함수가 호출되는 시점을 알 수 있다.
+에디터에서 [이 함수](https://github.com/nhn/zen-composer/blob/master/libs/zenmark/src/commonmark/node.ts#L38)에 정의된 노드 타입들은 AST의 순회 중 두 번씩 방문한다. 첫 번째는 해당 노드로 순회를 시작할 때 방문하며, 두 번째는 모든 자식 노드들을 순회한 후 방문한다. `context` 객체의 `entering` 프로퍼티를 사용하여 컨버팅 함수가 호출되는 시점을 알 수 있다.
 
 다음 코드는 `entering` 프로퍼티를 사용하는 예시이다.
 
@@ -235,10 +235,10 @@ const editor = new Editor({
 만약 다음 마크다운 텍스트를 에디터에 입력했을 때,
 
 ```markdown
-# TOAST UI
+# Zen Composer
 ```
 
-`ToastMark`가 생성한 AST는 아래와 같다. (편의상 필수 프로퍼티만 간략하게 나타내었다.)
+`ZenMark`가 생성한 AST는 아래와 같다. (편의상 필수 프로퍼티만 간략하게 나타내었다.)
 
 ```js
 {
@@ -248,7 +248,7 @@ const editor = new Editor({
     level: 1,
     firstChild: {
       type: 'text',
-      literal: 'TOAST UI'
+      literal: 'Zen Composer'
     }
   }
 }
@@ -259,7 +259,7 @@ AST 순회를 모두 마치면 지정한 컨버팅 함수의 결과로 반환된
 ```js
 [
   { type: 'openTag', tagName: 'h1' },
-  { type: 'text', content: 'TOAST UI' },
+  { type: 'text', content: 'Zen Composer' },
   { type: 'closeTag', tagName: 'h1' }
 ]
 ```
@@ -267,7 +267,7 @@ AST 순회를 모두 마치면 지정한 컨버팅 함수의 결과로 반환된
 최종적으로 에디터 내부에서 토큰 배열을 사용하여 HTML 문자열로 생성한다.
 
 ```html
-<h1>TOAST UI</h1>
+<h1>Zen Composer</h1>
 ```
 
 ### origin()
@@ -283,7 +283,7 @@ AST 순회를 모두 마치면 지정한 컨버팅 함수의 결과로 반환된
   tagName: 'a',
   attributes: {
     href: 'http://ui.toast.com',
-    title: 'TOAST UI'
+    title: 'Zen Composer'
   }
 }
 ```
@@ -322,7 +322,7 @@ const editor = new Editor({
   attributes: {
     href: 'http://ui.toast.com',
     target: '_blank',
-    title: 'TOAST UI'  
+    title: 'Zen Composer'  
   }
 }
 ```
@@ -414,7 +414,7 @@ function codeBlock(node) {
 
 ### 개행 추가
 
-일반적인 경우 최종적으로 변환된 HTML 문자열의 포맷에 신경 쓸 필요가 없다. 그러나 `ToastMark`는 [CommonMark Spec](https://spec.commonmark.org/0.29/)을 준수하기 때문에 개행을 제어하는 옵션을 지원해야만 한다.([공식 테스트 데이터](https://spec.commonmark.org/0.29/spec.json))
+일반적인 경우 최종적으로 변환된 HTML 문자열의 포맷에 신경 쓸 필요가 없다. 그러나 `ZenMark`는 [CommonMark Spec](https://spec.commonmark.org/0.29/)을 준수하기 때문에 개행을 제어하는 옵션을 지원해야만 한다.([공식 테스트 데이터](https://spec.commonmark.org/0.29/spec.json))
 
 컨버팅 함수의 토큰 객체에 `outerNewline`과 `innerNewline` 프로퍼티를 추가하여 개행을 제어할 수 있다.
 

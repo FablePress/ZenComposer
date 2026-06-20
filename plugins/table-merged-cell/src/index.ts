@@ -1,4 +1,4 @@
-import type { PluginContext, PluginInfo } from '@toast-ui/editor';
+import type { PluginContext, PluginInfo } from '@fablepress/zen-composer';
 import { markdownParsers } from '@/markdown/parser';
 import { toHTMLRenderers } from '@/markdown/renderer';
 import { toMarkdownRenderers } from '@/wysiwyg/renderer';

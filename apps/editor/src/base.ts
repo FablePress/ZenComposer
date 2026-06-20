@@ -5,7 +5,7 @@ import { keymap } from 'prosemirror-keymap';
 import { baseKeymap } from 'prosemirror-commands';
 import { InputRule, inputRules } from 'prosemirror-inputrules';
 import { history } from 'prosemirror-history';
-import { Sourcepos } from '@toast-ui/toastmark';
+import { Sourcepos } from '@fablepress/zenmark';
 import css from 'tui-code-snippet/domUtil/css';
 import { WidgetStyle, EditorType, EditorPos, Base, NodeRangeInfo } from '@t/editor';
 import { Emitter } from '@t/event';
@@ -48,7 +48,7 @@ export default abstract class EditorBase implements Base {
 
   constructor(eventEmitter: Emitter) {
     this.el = document.createElement('div');
-    this.el.className = 'toastui-editor';
+    this.el.className = 'zen-composer';
 
     this.eventEmitter = eventEmitter;
     this.placeholder = { text: '' };

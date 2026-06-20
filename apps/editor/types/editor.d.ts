@@ -12,7 +12,7 @@ import {
   Context as MdContext,
   HTMLToken,
   HTMLConvertorMap,
-} from './toastmark';
+} from './zenmark';
 import { Emitter, Handler } from './event';
 import { Context, EditorAllCommandMap, EditorCommandFn, SpecManager } from './spec';
 import { ToMdConvertorMap } from './convertor';

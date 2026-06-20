@@ -1,6 +1,6 @@
-# ![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
+# ![Zen Composer](https://uicdn.toast.com/zenComposer/img/zen-composer-bi.png)
 
-[![npm](https://img.shields.io/npm/v/@toast-ui/editor.svg)](https://www.npmjs.com/package/@toast-ui/editor)
+[![npm](https://img.shields.io/npm/v/@fablepress/zen-composer.svg)](https://www.npmjs.com/package/@fablepress/zen-composer)
 
 ## 🚩 Table of Contents
 
@@ -12,7 +12,7 @@
 
 ## Collect Statistics on the Use of Open Source
 
-TOAST UI products apply Google Analytics (GA) to collect statistics on the use of open source, in order to identify how widely TOAST UI Editor is used throughout the world. It also serves as important index to determine the future course of projects. `location.hostname` (e.g. ui.toast.com) is to be collected and the sole purpose is nothing but to measure statistics on the usage.
+Zen Composer products apply Google Analytics (GA) to collect statistics on the use of open source, in order to identify how widely Zen Composer is used throughout the world. It also serves as important index to determine the future course of projects. `location.hostname` (e.g. ui.toast.com) is to be collected and the sole purpose is nothing but to measure statistics on the usage.
 
 To disable GA, use the following `usageStatistics` option when creating the instance.
 
@@ -27,32 +27,32 @@ const editor = new Editor(options);
 
 ## 📙 Documents
 
-- [Getting Started](https://github.com/nhn/tui.editor/blob/master/docs/en/getting-started.md)
-- [APIs](https://nhn.github.io/tui.editor/latest/)
+- [Getting Started](https://github.com/nhn/zen-composer/blob/master/docs/en/getting-started.md)
+- [APIs](https://nhn.github.io/zen-composer/latest/)
 - v3.0 Migration Guide
-  - [English](https://github.com/nhn/tui.editor/blob/master/docs/v3.0-migration-guide.md)
-  - [한국어](https://github.com/nhn/tui.editor/blob/master/docs/v3.0-migration-guide-ko.md)
+  - [English](https://github.com/nhn/zen-composer/blob/master/docs/v3.0-migration-guide.md)
+  - [한국어](https://github.com/nhn/zen-composer/blob/master/docs/v3.0-migration-guide-ko.md)
 
-You can also see the older versions of API page on the [releases page](https://github.com/nhn/tui.editor/releases).
+You can also see the older versions of API page on the [releases page](https://github.com/nhn/zen-composer/releases).
 
 ## 💾 Install
 
-TOAST UI products can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
+Zen Composer products can be used by using the package manager or downloading the source directly. However, we highly recommend using the package manager.
 
 ### Via Package Manager
 
-TOAST UI products are registered in two package managers, [npm](https://www.npmjs.com/). You can conveniently install it using the commands provided by the package manager. When using npm, be sure to use it in the environment [Node.js](https://nodejs.org/en/) is installed.
+Zen Composer products are registered in two package managers, [npm](https://www.npmjs.com/). You can conveniently install it using the commands provided by the package manager. When using npm, be sure to use it in the environment [Node.js](https://nodejs.org/en/) is installed.
 
 #### npm
 
 ```sh
-$ npm install --save @toast-ui/editor # Latest Version
-$ npm install --save @toast-ui/editor@<version> # Specific Version
+$ npm install --save @fablepress/zen-composer # Latest Version
+$ npm install --save @fablepress/zen-composer@<version> # Specific Version
 ```
 
 ### Via Contents Delivery Network (CDN)
 
-TOAST UI products are available over the CDN powered by [NHN Cloud](https://www.toast.com).
+Zen Composer products are available over the CDN powered by [NHN Cloud](https://www.toast.com).
 
 You can use the CDN as below.
 
@@ -60,7 +60,7 @@ You can use the CDN as below.
 ...
 <body>
   ...
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-all.min.js"></script>
 </body>
 ...
 ```
@@ -73,19 +73,19 @@ The CDN directory has the following structure:
 - uicdn.toast.com/
    ├─ editor/
    │     ├─ latest/
-   │     │    ├─ toastui-editor-all.js
-   │     │    ├─ toastui-editor-all.min.js
-   │     │    ├─ toastui-editor-viewer.js
-   │     │    ├─ toastui-editor-viewer.min.js
-   │     │    ├─ toastui-editor.css
-   │     │    ├─ toastui-editor.min.css
-   │     │    ├─ toastui-editor-viewer.css
-   │     │    ├─ toastui-editor-viewer.min.css
-   │     │    ├─ toastui-editor-only.css
-   │     │    ├─ toastui-editor-only.min.css
+   │     │    ├─ zen-composer-all.js
+   │     │    ├─ zen-composer-all.min.js
+   │     │    ├─ zen-composer-viewer.js
+   │     │    ├─ zen-composer-viewer.min.js
+   │     │    ├─ zen-composer.css
+   │     │    ├─ zen-composer.min.css
+   │     │    ├─ zen-composer-viewer.css
+   │     │    ├─ zen-composer-viewer.min.css
+   │     │    ├─ zen-composer-only.css
+   │     │    ├─ zen-composer-only.min.css
    │     │    └─ theme/
-   │     │         ├─ toastui-editor-dark.css
-   │     │         └─ toastui-editor-dark.min.css
+   │     │         ├─ zen-composer-dark.css
+   │     │         └─ zen-composer-dark.min.css
    │     │    └─ i18n/
    │     │         └─ ...
    │     ├─ 2.0.0/
@@ -94,7 +94,7 @@ The CDN directory has the following structure:
 
 ## 🔨 Usage
 
-First, you need to add the container element where TOAST UI Editor (henceforth referred to as 'Editor') will be created.
+First, you need to add the container element where Zen Composer (henceforth referred to as 'Editor') will be created.
 
 ```html
 ...
@@ -111,19 +111,19 @@ The editor can be used by creating an instance with the constructor function. To
 - ES6 Modules
 
 ```javascript
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 ```
 
 - CommonJS
 
 ```javascript
-const Editor = require('@toast-ui/editor');
+const Editor = require('@fablepress/zen-composer');
 ```
 
 ### Using Namespace in Browser Environment
 
 ```javascript
-const Editor = toastui.Editor;
+const Editor = zenComposer.Editor;
 ```
 
 Then, you need to add the CSS files needed for the Editor. Import CSS files in node environment, and add it to html file when using CDN.
@@ -131,7 +131,7 @@ Then, you need to add the CSS files needed for the Editor. Import CSS files in n
 ### Using in Node Environment
 
 ```javascript
-import '@toast-ui/editor/dist/toastui-editor.css'; // Editor's Style
+import '@fablepress/zen-composer/dist/zen-composer.css'; // Editor's Style
 ```
 
 ### Using in Browser Environment by CDN
@@ -141,7 +141,7 @@ import '@toast-ui/editor/dist/toastui-editor.css'; // Editor's Style
 <head>
   ...
   <!-- Editor's Style -->
-  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+  <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/zen-composer.min.css" />
 </head>
 ...
 ```
@@ -167,10 +167,10 @@ editor.getMarkdown();
 - `previewStyle`: Preview style of Markdown mode `tab` | `vertical`
 - `usageStatistics`: Let us know the _hostname_. We want to learn from you how you are using the Editor. You are free to disable it. `true` | `false`
 
-Find out more options [here](https://nhn.github.io/tui.editor/latest/ToastUIEditor).
+Find out more options [here](https://nhn.github.io/zen-composer/latest/ZenComposer).
 
 ## 🦄 Tutorials
 
-- [Viewer](https://github.com/nhn/tui.editor/blob/master/docs/en/viewer.md)
-- [Plugins](https://github.com/nhn/tui.editor/blob/master/docs/en/plugin.md)
-- [Internationalization (i18n)](https://github.com/nhn/tui.editor/blob/master/docs/en/i18n.md)
+- [Viewer](https://github.com/nhn/zen-composer/blob/master/docs/en/viewer.md)
+- [Plugins](https://github.com/nhn/zen-composer/blob/master/docs/en/plugin.md)
+- [Internationalization (i18n)](https://github.com/nhn/zen-composer/blob/master/docs/en/i18n.md)

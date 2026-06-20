@@ -37,7 +37,7 @@ table.ProseMirror-selectednode {
   outline: 2px solid #00a9ff;
 }
 
-.toastui-editor-contents {
+.zen-composer-contents {
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -46,45 +46,45 @@ table.ProseMirror-selectednode {
   z-index: 20;
 }
 
-.toastui-editor-contents *:not(table) {
+.zen-composer-contents *:not(table) {
   line-height: 160%;
   box-sizing: content-box;
 }
 
-.toastui-editor-contents i,
-.toastui-editor-contents cite,
-.toastui-editor-contents em,
-.toastui-editor-contents var,
-.toastui-editor-contents address,
-.toastui-editor-contents dfn {
+.zen-composer-contents i,
+.zen-composer-contents cite,
+.zen-composer-contents em,
+.zen-composer-contents var,
+.zen-composer-contents address,
+.zen-composer-contents dfn {
   font-style: italic;
 }
 
-.toastui-editor-contents strong {
+.zen-composer-contents strong {
   font-weight: bold;
 }
 
-.toastui-editor-contents p {
+.zen-composer-contents p {
   margin: 10px 0;
   color: #222;
 }
 
-.toastui-editor-contents > h1:first-of-type,
-.toastui-editor-contents > div > div:first-of-type h1 {
+.zen-composer-contents > h1:first-of-type,
+.zen-composer-contents > div > div:first-of-type h1 {
   margin-top: 14px;
 }
 
-.toastui-editor-contents h1,
-.toastui-editor-contents h2,
-.toastui-editor-contents h3,
-.toastui-editor-contents h4,
-.toastui-editor-contents h5,
-.toastui-editor-contents h6 {
+.zen-composer-contents h1,
+.zen-composer-contents h2,
+.zen-composer-contents h3,
+.zen-composer-contents h4,
+.zen-composer-contents h5,
+.zen-composer-contents h6 {
   font-weight: bold;
   color: #222;
 }
 
-.toastui-editor-contents h1 {
+.zen-composer-contents h1 {
   font-size: 24px;
   line-height: 28px;
   border-bottom: 3px double #999;
@@ -92,7 +92,7 @@ table.ProseMirror-selectednode {
   padding-bottom: 7px;
 }
 
-.toastui-editor-contents h2 {
+.zen-composer-contents h2 {
   font-size: 22px;
   line-height: 23px;
   border-bottom: 1px solid #dbdbdb;
@@ -100,75 +100,75 @@ table.ProseMirror-selectednode {
   padding-bottom: 7px;
 }
 
-.toastui-editor-contents h3 {
+.zen-composer-contents h3 {
   font-size: 20px;
   margin: 18px 0 2px;
 }
 
-.toastui-editor-contents h4 {
+.zen-composer-contents h4 {
   font-size: 18px;
   margin: 10px 0 2px;
 }
 
-.toastui-editor-contents h3,
-.toastui-editor-contents h4 {
+.zen-composer-contents h3,
+.zen-composer-contents h4 {
   line-height: 18px;
 }
 
-.toastui-editor-contents h5 {
+.zen-composer-contents h5 {
   font-size: 16px;
 }
 
-.toastui-editor-contents h6 {
+.zen-composer-contents h6 {
   font-size: 14px;
 }
 
-.toastui-editor-contents h5,
-.toastui-editor-contents h6 {
+.zen-composer-contents h5,
+.zen-composer-contents h6 {
   line-height: 17px;
   margin: 9px 0 -4px;
 }
 
-.toastui-editor-contents del {
+.zen-composer-contents del {
   color: #999;
 }
 
-.toastui-editor-contents blockquote {
+.zen-composer-contents blockquote {
   margin: 14px 0;
   border-left: 4px solid #e5e5e5;
   padding: 0 16px;
   color: #999;
 }
 
-.toastui-editor-contents blockquote p,
-.toastui-editor-contents blockquote ul,
-.toastui-editor-contents blockquote ol {
+.zen-composer-contents blockquote p,
+.zen-composer-contents blockquote ul,
+.zen-composer-contents blockquote ol {
   color: #999;
 }
 
-.toastui-editor-contents blockquote > :first-child {
+.zen-composer-contents blockquote > :first-child {
   margin-top: 0;
 }
 
-.toastui-editor-contents blockquote > :last-child {
+.zen-composer-contents blockquote > :last-child {
   margin-bottom: 0;
 }
 
-.toastui-editor-contents pre,
-.toastui-editor-contents code {
+.zen-composer-contents pre,
+.zen-composer-contents code {
   font-family: Consolas, Courier, 'Apple SD 산돌고딕 Neo', -apple-system, 'Lucida Grande',
     'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', 'Segoe UI', '돋움', dotum, sans-serif;
   border: 0;
   border-radius: 0;
 }
 
-.toastui-editor-contents pre {
+.zen-composer-contents pre {
   margin: 2px 0 8px;
   padding: 18px;
   background-color: #f4f7f8;
 }
 
-.toastui-editor-contents code {
+.zen-composer-contents code {
   color: #c1798b;
   background-color: #f9f2f4;
   padding: 2px 3px;
@@ -176,21 +176,21 @@ table.ProseMirror-selectednode {
   border-radius: 2px;
 }
 
-.toastui-editor-contents pre code {
+.zen-composer-contents pre code {
   padding: 0;
   color: inherit;
   white-space: pre-wrap;
   background-color: transparent;
 }
 
-.toastui-editor-contents img {
+.zen-composer-contents img {
   margin: 4px 0 10px;
   box-sizing: border-box;
   vertical-align: top;
   max-width: 100%;
 }
 
-.toastui-editor-contents table {
+.zen-composer-contents table {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 12px 0 14px;
   color: #222;
@@ -199,42 +199,42 @@ table.ProseMirror-selectednode {
   box-sizing: border-box;
 }
 
-.toastui-editor-contents table th,
-.toastui-editor-contents table td {
+.zen-composer-contents table th,
+.zen-composer-contents table td {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 5px 14px 5px 12px;
   height: 32px;
 }
 
-.toastui-editor-contents table th {
+.zen-composer-contents table th {
   background-color: #555;
   font-weight: 300;
   color: #fff;
   padding-top: 6px;
 }
 
-.toastui-editor-contents th p {
+.zen-composer-contents th p {
   margin: 0;
   color: #fff;
 }
 
-.toastui-editor-contents td p {
+.zen-composer-contents td p {
   margin: 0;
   padding: 0 2px;
 }
 
-.toastui-editor-contents td.toastui-editor-cell-selected {
+.zen-composer-contents td.zen-composer-cell-selected {
   background-color: #d8dfec;
 }
 
-.toastui-editor-contents th.toastui-editor-cell-selected {
+.zen-composer-contents th.zen-composer-cell-selected {
   background-color: #908f8f;
 }
 
-.toastui-editor-contents ul,
-.toastui-editor-contents menu,
-.toastui-editor-contents ol,
-.toastui-editor-contents dir {
+.zen-composer-contents ul,
+.zen-composer-contents menu,
+.zen-composer-contents ol,
+.zen-composer-contents dir {
   display: block;
   list-style-type: none;
   padding-left: 24px;
@@ -242,22 +242,22 @@ table.ProseMirror-selectednode {
   color: #222;
 }
 
-.toastui-editor-contents ol {
+.zen-composer-contents ol {
   list-style-type: none;
   counter-reset: li;
 }
 
-.toastui-editor-contents ol > li {
+.zen-composer-contents ol > li {
   counter-increment: li;
 }
 
-.toastui-editor-contents ul > li::before,
-.toastui-editor-contents ol > li::before {
+.zen-composer-contents ul > li::before,
+.zen-composer-contents ol > li::before {
   display: inline-block;
   position: absolute;
 }
 
-.toastui-editor-contents ul > li::before {
+.zen-composer-contents ul > li::before {
   content: '';
   margin-top: 6px;
   margin-left: -17px;
@@ -267,7 +267,7 @@ table.ProseMirror-selectednode {
   background-color: #ccc;
 }
 
-.toastui-editor-contents ol > li::before {
+.zen-composer-contents ol > li::before {
   content: '.' counter(li);
   margin-left: -28px;
   width: 24px;
@@ -276,43 +276,43 @@ table.ProseMirror-selectednode {
   color: #aaa;
 }
 
-.toastui-editor-contents ul ul,
-.toastui-editor-contents ul ol,
-.toastui-editor-contents ol ol,
-.toastui-editor-contents ol ul {
+.zen-composer-contents ul ul,
+.zen-composer-contents ul ol,
+.zen-composer-contents ol ol,
+.zen-composer-contents ol ul {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-.toastui-editor-contents ul li,
-.toastui-editor-contents ol li {
+.zen-composer-contents ul li,
+.zen-composer-contents ol li {
   position: relative;
 }
 
-.toastui-editor-contents ul p,
-.toastui-editor-contents ol p {
+.zen-composer-contents ul p,
+.zen-composer-contents ol p {
   margin: 0;
 }
 
-.toastui-editor-contents hr {
+.zen-composer-contents hr {
   border-top: 1px solid #eee;
   margin: 16px 0;
 }
 
-.toastui-editor-contents a {
+.zen-composer-contents a {
   text-decoration: underline;
   color: #4b96e6;
 }
 
-.toastui-editor-contents a:hover {
+.zen-composer-contents a:hover {
   color: #1f70de;
 }
 
-.toastui-editor-contents .image-link {
+.zen-composer-contents .image-link {
   position: relative;
 }
 
-.toastui-editor-contents .image-link:hover::before {
+.zen-composer-contents .image-link:hover::before {
   content: '';
   position: absolute;
   width: 30px;
@@ -326,14 +326,14 @@ table.ProseMirror-selectednode {
   cursor: pointer;
 }
 
-.toastui-editor-contents .task-list-item {
+.zen-composer-contents .task-list-item {
   border: 0;
   list-style: none;
   padding-left: 24px;
   margin-left: -24px;
 }
 
-.toastui-editor-contents .task-list-item::before {
+.zen-composer-contents .task-list-item::before {
   background-repeat: no-repeat;
   background-size: 18px 18px;
   background-position: center;
@@ -350,38 +350,38 @@ table.ProseMirror-selectednode {
   background: transparent url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjQ0NDIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAzMCAtMjk2KSB0cmFuc2xhdGUoNzg4IDE5MikgdHJhbnNsYXRlKDI0MiAxMDQpIj4KICAgICAgICAgICAgICAgICAgICA8cmVjdCB3aWR0aD0iMTciIGhlaWdodD0iMTciIHg9Ii41IiB5PSIuNSIgcng9IjIiLz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==');
 }
 
-.toastui-editor-contents .task-list-item.checked::before {
+.zen-composer-contents .task-list-item.checked::before {
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDE4IDE4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbD0iIzRCOTZFNiI+CiAgICAgICAgICAgIDxnPgogICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTE2IDBjMS4xMDUgMCAyIC44OTUgMiAydjE0YzAgMS4xMDUtLjg5NSAyLTIgMkgyYy0xLjEwNSAwLTItLjg5NS0yLTJWMkMwIC44OTUuODk1IDAgMiAwaDE0em0tMS43OTMgNS4yOTNjLS4zOS0uMzktMS4wMjQtLjM5LTEuNDE0IDBMNy41IDEwLjU4NSA1LjIwNyA4LjI5M2wtLjA5NC0uMDgzYy0uMzkyLS4zMDUtLjk2LS4yNzgtMS4zMi4wODMtLjM5LjM5LS4zOSAxLjAyNCAwIDEuNDE0bDMgMyAuMDk0LjA4M2MuMzkyLjMwNS45Ni4yNzggMS4zMi0uMDgzbDYtNiAuMDgzLS4wOTRjLjMwNS0uMzkyLjI3OC0uOTYtLjA4My0xLjMyeiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEwNTAgLTI5NikgdHJhbnNsYXRlKDc4OCAxOTIpIHRyYW5zbGF0ZSgyNjIgMTA0KSIvPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K');
 }
 
-.toastui-editor-custom-block .toastui-editor-custom-block-editor {
+.zen-composer-custom-block .zen-composer-custom-block-editor {
   background: #f9f7fd;
   color: #452d6b;
   border: solid 1px #dbd4ea;
 }
 
-.toastui-editor-custom-block .toastui-editor-custom-block-view {
+.zen-composer-custom-block .zen-composer-custom-block-view {
   position: relative;
   padding: 9px 13px 8px 12px;
 }
 
-.toastui-editor-custom-block.ProseMirror-selectednode .toastui-editor-custom-block-view {
+.zen-composer-custom-block.ProseMirror-selectednode .zen-composer-custom-block-view {
   border: solid 1px #dbd4ea;
   border-radius: 2px;
 }
 
-.toastui-editor-custom-block .toastui-editor-custom-block-view .tool {
+.zen-composer-custom-block .zen-composer-custom-block-view .tool {
   position: absolute;
   right: 10px;
   top: 7px;
   display: none;
 }
 
-.toastui-editor-custom-block.ProseMirror-selectednode .toastui-editor-custom-block-view .tool {
+.zen-composer-custom-block.ProseMirror-selectednode .zen-composer-custom-block-view .tool {
   display: block;
 }
 
-.toastui-editor-custom-block-view button {
+.zen-composer-custom-block-view button {
   vertical-align: middle;
   width: 15px;
   height: 15px;
@@ -394,18 +394,18 @@ table.ProseMirror-selectednode {
   background-size: 30px 30px;
 }
 
-.toastui-editor-custom-block-view .info {
+.zen-composer-custom-block-view .info {
   font-size: 13px;
   font-weight: bold;
   color: #5200d0;
   vertical-align: middle;
 }
 
-.toastui-editor-contents .toastui-editor-ww-code-block {
+.zen-composer-contents .zen-composer-ww-code-block {
   position: relative;
 }
 
-.toastui-editor-contents .toastui-editor-ww-code-block:after {
+.zen-composer-contents .zen-composer-ww-code-block:after {
   content: attr(data-language);
   position: absolute;
   display: inline-block;
@@ -423,7 +423,7 @@ table.ProseMirror-selectednode {
   cursor: pointer;
 }
 
-.toastui-editor-ww-code-block-language {
+.zen-composer-ww-code-block-language {
   position: fixed;
   display: inline-block;
   width: 100px;
@@ -435,7 +435,7 @@ table.ProseMirror-selectednode {
   z-index: 30;
 }
 
-.toastui-editor-ww-code-block-language input {
+.zen-composer-ww-code-block-language input {
   box-sizing: border-box;
   margin: 0;
   padding: 0 10px;
@@ -446,30 +446,30 @@ table.ProseMirror-selectednode {
   outline: none;
 }
 
-.toastui-editor-contents-placeholder::before {
+.zen-composer-contents-placeholder::before {
   content: attr(data-placeholder);
   color: grey;
   line-height: 160%;
   position: absolute;
 }
 
-.toastui-editor-md-preview .toastui-editor-contents h1 {
+.zen-composer-md-preview .zen-composer-contents h1 {
   min-height: 28px;
 }
 
-.toastui-editor-md-preview .toastui-editor-contents h2 {
+.zen-composer-md-preview .zen-composer-contents h2 {
   min-height: 23px;
 }
 
-.toastui-editor-md-preview .toastui-editor-contents blockquote {
+.zen-composer-md-preview .zen-composer-contents blockquote {
   min-height: 20px;
 }
 
-.toastui-editor-md-preview .toastui-editor-contents li {
+.zen-composer-md-preview .zen-composer-contents li {
   min-height: 22px;
 }
 
-.toastui-editor-pseudo-clipboard {
+.zen-composer-pseudo-clipboard {
   position: fixed;
   opacity: 0;
   width: 0;

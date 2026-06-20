@@ -2,7 +2,7 @@ import { Transaction } from 'prosemirror-state';
 import { EditorView } from 'prosemirror-view';
 import { Fragment, Slice } from 'prosemirror-model';
 import { ReplaceAroundStep } from 'prosemirror-transform';
-import { MdPos, ToastMark } from '@toast-ui/toastmark';
+import { MdPos, ZenMark } from '@fablepress/zenmark';
 
 import toArray from 'tui-code-snippet/collection/toArray';
 
@@ -44,7 +44,7 @@ interface WindowWithClipboard extends Window {
 }
 
 interface MarkdownOptions {
-  toastMark: ToastMark;
+  toastMark: ZenMark;
   useCommandShortcut?: boolean;
   mdPlugins?: PluginProp[];
 }
@@ -53,7 +53,7 @@ const EVENT_TYPE = 'cut';
 const reLineEnding = /\r\n|\n|\r/;
 
 export default class MdEditor extends EditorBase {
-  private toastMark: ToastMark;
+  private toastMark: ZenMark;
 
   private clipboard!: HTMLTextAreaElement;
 
@@ -388,7 +388,7 @@ export default class MdEditor extends EditorBase {
       .join('\n');
   }
 
-  getToastMark() {
+  getZenMark() {
     return this.toastMark;
   }
 }

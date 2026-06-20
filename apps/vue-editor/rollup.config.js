@@ -23,7 +23,7 @@ function transpile() {
 }
 
 const bannerText = [
-  'TOAST UI Editor : Vue Wrapper',
+  'Zen Composer : Vue Wrapper',
   `@version ${version} | ${new Date().toDateString()}`,
   `@author ${author}`,
   `@license ${license}`,
@@ -38,6 +38,6 @@ export default [
       sourcemap: false,
     },
     plugins: [vue({}), commonjs(), nodeResolve(), transpile(), banner(bannerText)],
-    external: ['vue', '@toast-ui/editor', '@toast-ui/editor/dist/toastui-editor-viewer'],
+    external: ['vue', '@fablepress/zen-composer', '@fablepress/zen-composer/dist/zen-composer-viewer'],
   },
 ];

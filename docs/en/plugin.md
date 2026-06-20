@@ -2,15 +2,15 @@
 
 ## What Is Plugin?
 
-TOAST UI Editor (henceforth referred to as 'Editor') provides a plugin. Plugin is an extension that can be added as needed. There are a total of 5 plugins provided by the Editor.
+Zen Composer (henceforth referred to as 'Editor') provides a plugin. Plugin is an extension that can be added as needed. There are a total of 5 plugins provided by the Editor.
 
 | Plugin Name | Package Name | Description |
 | --- | --- | --- |
-| [`chart`](https://github.com/nhn/tui.editor/tree/master/plugins/chart) | [`@toast-ui/editor-plugin-chart`](https://www.npmjs.com/package/@toast-ui/editor-plugin-chart) | Plugin to render chart |
-| [`code-syntax-highlight`](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) | [`@toast-ui/editor-plugin-code-syntax-highlight`](https://www.npmjs.com/package/@toast-ui/editor-plugin-code-syntax-highlight) | Plugin to highlight code syntax |
-| [`color-syntax`](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) | [`@toast-ui/editor-plugin-color-syntax`](https://www.npmjs.com/package/@toast-ui/editor-plugin-color-syntax) | Plugin to color editing text |
-| [`table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) | [`@toast-ui/editor-plugin-table-merged-cell`](https://www.npmjs.com/package/@toast-ui/editor-plugin-table-merged-cell) | Plugin to merge table cells |
-| [`uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml) | [`@toast-ui/editor-plugin-uml`](https://www.npmjs.com/package/@toast-ui/editor-plugin-uml) | Plugin to render UML |
+| [`chart`](https://github.com/nhn/zen-composer/tree/master/plugins/chart) | [`@fablepress/zen-composer-plugin-chart`](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-chart) | Plugin to render chart |
+| [`code-syntax-highlight`](https://github.com/nhn/zen-composer/tree/master/plugins/code-syntax-highlight) | [`@fablepress/zen-composer-plugin-code-syntax-highlight`](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-code-syntax-highlight) | Plugin to highlight code syntax |
+| [`color-syntax`](https://github.com/nhn/zen-composer/tree/master/plugins/color-syntax) | [`@fablepress/zen-composer-plugin-color-syntax`](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-color-syntax) | Plugin to color editing text |
+| [`table-merged-cell`](https://github.com/nhn/zen-composer/tree/master/plugins/table-merged-cell) | [`@fablepress/zen-composer-plugin-table-merged-cell`](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-table-merged-cell) | Plugin to merge table cells |
+| [`uml`](https://github.com/nhn/zen-composer/tree/master/plugins/uml) | [`@fablepress/zen-composer-plugin-uml`](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-uml) | Plugin to render UML |
 
 ## How to Use Plugin
 
@@ -18,20 +18,20 @@ Each plugin can be installed and used with npm, or it can be used as provided CD
 
 ### Via Package Manager (npm)
 
-You can install each plugin using the command, and add the name of the plugin you want to install to `${pluginName}` below. For example, if you install the `chart` plugin, install it as`npm install @toast-ui/editor-plugin-chart`.
+You can install each plugin using the command, and add the name of the plugin you want to install to `${pluginName}` below. For example, if you install the `chart` plugin, install it as`npm install @fablepress/zen-composer-plugin-chart`.
 
 ```sh
-$ npm install --save @toast-ui/editor-plugin-${pluginName} # Latest Version
-$ npm install --save @toast-ui/editor-plugin-${pluginName}@<version> # Specific Version
+$ npm install --save @fablepress/zen-composer-plugin-${pluginName} # Latest Version
+$ npm install --save @fablepress/zen-composer-plugin-${pluginName}@<version> # Specific Version
 ```
 
 When installed and used with npm, the list of files that can be imported is as follows:
 
 ```
 - node_modules/
-   ├─ @toast-ui/editor-plugin-${pluginName}
+   ├─ @fablepress/zen-composer-plugin-${pluginName}
    │     ├─ dist/
-   │     │    ├─ toastui-editor-plugin-${pluginName}.js
+   │     │    ├─ zen-composer-plugin-${pluginName}.js
    │     │    ├─ ...
 ```
 
@@ -40,19 +40,19 @@ Installed plugins can be imported as shown below depending on the environment.
 - ES Module
 
 ```js
-import pluginFn from '@toast-ui/editor-plugin-${pluginName}';
+import pluginFn from '@fablepress/zen-composer-plugin-${pluginName}';
 ```
 
 - CommonJS
 
 ```js
-const pluginFn = require('@toast-ui/editor-plugin-${pluginName}');
+const pluginFn = require('@fablepress/zen-composer-plugin-${pluginName}');
 ```
 
 For example, `chart` plugin can be imported as follows:
 
 ```js
-import chart from '@toast-ui/editor-plugin-chart';
+import chart from '@fablepress/zen-composer-plugin-chart';
 ```
 ### Via Contents Delivery Network (CDN)
 
@@ -62,7 +62,7 @@ Each plugin is available over the CDN powered by [NHN Cloud](https://www.toast.c
 ...
 <body>
   ...
-  <script src="https://uicdn.toast.com/editor-plugin-${pluginName}/latest/toastui-editor-plugin-${pluginName}.min.js"></script>
+  <script src="https://uicdn.toast.com/editor-plugin-${pluginName}/latest/zen-composer-plugin-${pluginName}.min.js"></script>
 </body>
 ...
 ```
@@ -75,7 +75,7 @@ The CDN directory has the following structure:
 - uicdn.toast.com/
    ├─ editor-plugin-${pluginName}/
    │     ├─ latest/
-   │     │    ├─ toastui-editor-plugin-${pluginName}.js
+   │     │    ├─ zen-composer-plugin-${pluginName}.js
    │     │    └─ ...
    │     ├─ 3.0.0/
    │     │    └─ ...
@@ -83,16 +83,16 @@ The CDN directory has the following structure:
 
 > Note: Each plugin's CDN file contains all dependencies depending on the situation, or provides different types of bundled files. For more information, please check the each plugin repository.
 
-When importing the plugin into the namespace, use the plugin's namespace registered under `toastui.Editor.plugin`.
+When importing the plugin into the namespace, use the plugin's namespace registered under `zenComposer.Editor.plugin`.
 
 ```js
-const pluginFn = toastui.Editor.plugin[${pluginName}];
+const pluginFn = zenComposer.Editor.plugin[${pluginName}];
 ```
 
 For example, the `chart` plugin imports as follows:
 
 ```js
-const { chart } = toastui.Editor.plugin;
+const { chart } = zenComposer.Editor.plugin;
 ```
 
 ### Using the Plugin in Editor
@@ -111,9 +111,9 @@ For example, if you add the `chart` and `uml` plugin, you can do something like 
 - ES Module
 
 ```js
-import Editor from '@toast-ui/editor';
-import chart from '@toast-ui/editor-plugin-chart';
-import uml from '@toast-ui/editor-plugin-uml';
+import Editor from '@fablepress/zen-composer';
+import chart from '@fablepress/zen-composer-plugin-chart';
+import uml from '@fablepress/zen-composer-plugin-uml';
 
 const editor = new Editor({
   // ...
@@ -124,7 +124,7 @@ const editor = new Editor({
 - CDN
 
 ```js
-const { Editor } = toastui;
+const { Editor } = zenComposer;
 const { chart, uml } = Editor.plugin;
 
 const editor = new Editor({
@@ -205,7 +205,7 @@ interface PluginInfo {
 
 #### toHTMLRenderers
 
-`toHTMLRenderers` object can change the rendering results of elements when rendered in the Markdown Preview or when converted from Markdown Editor to WYSIWYG Editor. It is same as the [customHTMLRenderer](https://github.com/nhn/tui.editor/blob/master/docs/en/custom-html-renderer.md) option in the editor.
+`toHTMLRenderers` object can change the rendering results of elements when rendered in the Markdown Preview or when converted from Markdown Editor to WYSIWYG Editor. It is same as the [customHTMLRenderer](https://github.com/nhn/zen-composer/blob/master/docs/en/custom-html-renderer.md) option in the editor.
 
 **toMarkdownRenderers**
 
@@ -326,7 +326,7 @@ Like the code above, you can set which items to add to the `toolbarItems` array.
 
 * `groupIndex`: Toolbar group index to add toolbar item.
 * `itemIndex`: Toolbar item index in group.
-* `item`: Toolbar Item. It is the same form as the object used in [toolbar customization](https://github.com/nhn/tui.editor/blob/master/docs/en/toolbar.md).
+* `item`: Toolbar Item. It is the same form as the object used in [toolbar customization](https://github.com/nhn/zen-composer/blob/master/docs/en/toolbar.md).
 
 If the `toolbarItems` option is set, as in the example code, the toolbar item will be added as the fourth index of the first toolbar group.
 
@@ -361,7 +361,7 @@ The method of using this option object is the same as the `nodeView` definition 
 Plugin functions can use some information with `context` parameters to define the various properties described above. The `context` parameter contains the following properties.
 
 * `eventEmitter`: It is the same as `eventEmitter` in an editor. It is used to communicate with the editor.
-* `usageStatistics`: It decides whether to collect the plugin as GA for `@toast-ui/editor`.
+* `usageStatistics`: It decides whether to collect the plugin as GA for `@fablepress/zen-composer`.
 * `i18n`: It is an instance for adding i18n.
 * `pmState`: Some modules of [prosmirror-state] (https://prosemirror.net/docs/ref/#state).
 * `pmView`: Some modules of [prosemirror-view](https://prosemirror.net/docs/ref/#view).
@@ -369,4 +369,4 @@ Plugin functions can use some information with `context` parameters to define th
 
 ## Example
 
-Examples can be found [here](https://nhn.github.io/tui.editor/latest/tutorial-example13-creating-plugin) and in the [plugin package](https://github.com/nhn/tui.editor/tree/master/plugins).
+Examples can be found [here](https://nhn.github.io/zen-composer/latest/tutorial-example13-creating-plugin) and in the [plugin package](https://github.com/nhn/zen-composer/tree/master/plugins).

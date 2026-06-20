@@ -48,10 +48,10 @@ module.exports = (env) => {
     externals: [
       {
         '../editorCore': {
-          commonjs: '@toast-ui/editor',
-          commonjs2: '@toast-ui/editor',
-          amd: '@toast-ui/editor',
-          root: ['toastui', 'Editor'],
+          commonjs: '@fablepress/zen-composer',
+          commonjs2: '@fablepress/zen-composer',
+          amd: '@fablepress/zen-composer',
+          root: ['zenComposer', 'Editor'],
         },
       },
     ],
@@ -74,7 +74,7 @@ module.exports = (env) => {
     plugins: [
       new webpack.BannerPlugin(
         [
-          'TOAST UI Editor : i18n',
+          'Zen Composer : i18n',
           `@version ${pkg.version}`,
           `@author ${pkg.author}`,
           `@license ${pkg.license}`,

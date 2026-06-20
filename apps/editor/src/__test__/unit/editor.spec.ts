@@ -2,7 +2,7 @@ import '@/i18n/en-us';
 import { oneLineTrim, stripIndents, source } from 'common-tags';
 import { Emitter } from '@t/event';
 import { EditorOptions } from '@t/editor';
-import type { OpenTagToken } from '@toast-ui/toastmark';
+import type { OpenTagToken } from '@fablepress/zenmark';
 import i18n from '@/i18n/i18n';
 import Editor from '@/editor';
 import Viewer from '@/viewer';
@@ -337,13 +337,13 @@ describe('editor', () => {
         editor.replaceWithWidget([1, 1], [1, 1], '@test');
 
         const expectedEditor = oneLineTrim`
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test</a></span>
           </span>
         `;
         const expectedPreview = oneLineTrim`
           <p>
-            <span class="tui-widget">
+            <span class="zen-composer-widget">
               <span><a href="www.google.com">@test</a></span>
             </span>
           </p>
@@ -358,7 +358,7 @@ describe('editor', () => {
         editor.replaceWithWidget(1, 1, '@test');
 
         const expected = oneLineTrim`
-          <span class="tui-widget">
+          <span class="zen-composer-widget">
             <span><a href="www.google.com">@test</a></span>
           </span>
         `;
@@ -733,7 +733,7 @@ describe('editor', () => {
         const toolbarItem = {
           name: 'color',
           tooltip: 'Text color',
-          className: 'toastui-editor-toolbar-icons color',
+          className: 'zen-composer-toolbar-icons color',
         };
         const plugin = () => {
           return {

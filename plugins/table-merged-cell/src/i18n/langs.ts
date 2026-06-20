@@ -1,4 +1,4 @@
-import { I18n } from '@toast-ui/editor';
+import { I18n } from '@fablepress/zen-composer';
 
 export function addLangs(i18n: I18n) {
   i18n.setLanguage(['ko', 'ko-KR'], {

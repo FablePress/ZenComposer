@@ -34,10 +34,10 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build toastmark
+          npm run build zenmark
       - name: Toastmark unit, integration test
         run: |
-          npm run test:ci toastmark
+          npm run test:ci zenmark
       - name: Editor unit, integration test
         run: |
           npm run test:ci editor
@@ -56,7 +56,7 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build toastmark
+          npm run build zenmark
           npm run build editor
       - name: chart plugin unit, integration test
         run: |
@@ -93,15 +93,15 @@ jobs:
           npm install
       - name: Build
         run: |
-          npm run build toastmark
+          npm run build zenmark
           npm run build editor
       - name: Use Node.js 10.x
         uses: actions/setup-node@v2.5.1
         with:
           node-version: '10.x'
-      - name: Install @toast-ui/doc
+      - name: Install @fablepress/doc
         run: |
-          npm i -g @toast-ui/doc
+          npm i -g @fablepress/doc
       - name: Run doc
         run: |
           npm run doc

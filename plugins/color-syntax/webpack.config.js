@@ -8,12 +8,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
-const filename = `toastui-${name.replace(/@toast-ui\//, '')}`;
+const filename = `zenComposer-${name.replace(/@fablepress\//, '')}`;
 
 function getOutputConfig(isProduction, isCDN, minify) {
   const defaultConfig = {
     library: {
-      name: ['toastui', 'Editor', 'plugin', 'uml'],
+      name: ['zenComposer', 'Editor', 'plugin', 'uml'],
       export: 'default',
       type: 'umd',
     },
@@ -27,7 +27,7 @@ function getOutputConfig(isProduction, isCDN, minify) {
     const config = {
       ...defaultConfig,
       library: {
-        name: ['toastui', 'Editor', 'plugin', 'colorSyntax'],
+        name: ['zenComposer', 'Editor', 'plugin', 'colorSyntax'],
         export: 'default',
         type: 'umd',
       },
@@ -126,7 +126,7 @@ module.exports = (env) => {
     config.plugins.push(
       new webpack.BannerPlugin(
         [
-          'TOAST UI Editor : Color Syntax Plugin',
+          'Zen Composer : Color Syntax Plugin',
           `@version ${version} | ${new Date().toDateString()}`,
           `@author ${author}`,
           `@license ${license}`,

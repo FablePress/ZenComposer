@@ -2,8 +2,8 @@
 
 exports[`markdown editor syntax highlight atx heading 1`] = `
 <div>
-  <span class="toastui-editor-md-heading toastui-editor-md-heading1">
-    <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-heading zen-composer-md-heading1">
+    <span class="zen-composer-md-delimiter">
       #
     </span>
     heading
@@ -13,9 +13,9 @@ exports[`markdown editor syntax highlight atx heading 1`] = `
 
 exports[`markdown editor syntax highlight blockQuote basic 1`] = `
 <div>
-  <span class="toastui-editor-md-block-quote">
+  <span class="zen-composer-md-block-quote">
     &gt;
-    <span class="toastui-editor-md-marked-text">
+    <span class="zen-composer-md-marked-text">
       block quote
     </span>
   </span>
@@ -24,18 +24,18 @@ exports[`markdown editor syntax highlight blockQuote basic 1`] = `
 
 exports[`markdown editor syntax highlight blockQuote with list 1`] = `
 <div>
-  <span class="toastui-editor-md-block-quote">
+  <span class="zen-composer-md-block-quote">
     &gt;
-    <span class="toastui-editor-md-list-item toastui-editor-md-list-item-style toastui-editor-md-list-item-odd">
+    <span class="zen-composer-md-list-item zen-composer-md-list-item-style zen-composer-md-list-item-odd">
       *
     </span>
-    <span class="toastui-editor-md-delimiter toastui-editor-md-list-item">
+    <span class="zen-composer-md-delimiter zen-composer-md-list-item">
       [
-      <span class="toastui-editor-md-meta">
+      <span class="zen-composer-md-meta">
       </span>
       ]
     </span>
-    <span class="toastui-editor-md-marked-text">
+    <span class="zen-composer-md-marked-text">
       block quote
     </span>
   </span>
@@ -44,36 +44,36 @@ exports[`markdown editor syntax highlight blockQuote with list 1`] = `
 
 exports[`markdown editor syntax highlight bulletList 1`] = `
 <div>
-  <span class="toastui-editor-md-list-item toastui-editor-md-list-item-style toastui-editor-md-list-item-odd">
+  <span class="zen-composer-md-list-item zen-composer-md-list-item-style zen-composer-md-list-item-odd">
     *
-    <span class="toastui-editor-md-marked-text">
+    <span class="zen-composer-md-marked-text">
     </span>
   </span>
-  <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-marked-text">
     bullet list
   </span>
 </div>
 `;
 
 exports[`markdown editor syntax highlight code block 1`] = `
-<div class="toastui-editor-md-code-block-line-background start">
-  <span class="toastui-editor-md-code-block">
-    <span class="toastui-editor-md-delimiter">
+<div class="zen-composer-md-code-block-line-background start">
+  <span class="zen-composer-md-code-block">
+    <span class="zen-composer-md-delimiter">
       \`\`\`
     </span>
-    <span class="toastui-editor-md-meta">
+    <span class="zen-composer-md-meta">
       js
     </span>
   </span>
 </div>
-<div class="toastui-editor-md-code-block-line-background">
-  <span class="toastui-editor-md-code-block">
+<div class="zen-composer-md-code-block-line-background">
+  <span class="zen-composer-md-code-block">
     console.log("editor")
   </span>
 </div>
-<div class="toastui-editor-md-code-block-line-background">
-  <span class="toastui-editor-md-code-block">
-    <span class="toastui-editor-md-delimiter">
+<div class="zen-composer-md-code-block-line-background">
+  <span class="zen-composer-md-code-block">
+    <span class="zen-composer-md-delimiter">
       \`\`\`
     </span>
   </span>
@@ -82,42 +82,42 @@ exports[`markdown editor syntax highlight code block 1`] = `
 
 exports[`markdown editor syntax highlight code block within list 1`] = `
 <div>
-  <span class="toastui-editor-md-list-item toastui-editor-md-list-item-style toastui-editor-md-list-item-odd">
+  <span class="zen-composer-md-list-item zen-composer-md-list-item-style zen-composer-md-list-item-odd">
     *
-    <span class="toastui-editor-md-marked-text">
+    <span class="zen-composer-md-marked-text">
     </span>
   </span>
-  <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-marked-text">
     list
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-code-block">
-    <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-code-block">
+    <span class="zen-composer-md-marked-text">
     </span>
-    <span class="toastui-editor-md-delimiter">
-      <span class="toastui-editor-md-marked-text">
+    <span class="zen-composer-md-delimiter">
+      <span class="zen-composer-md-marked-text">
         \`\`\`
       </span>
     </span>
-    <span class="toastui-editor-md-marked-text">
-      <span class="toastui-editor-md-meta">
+    <span class="zen-composer-md-marked-text">
+      <span class="zen-composer-md-meta">
         js
       </span>
     </span>
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-code-block">
-    <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-code-block">
+    <span class="zen-composer-md-marked-text">
       console.log("editor")
     </span>
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-code-block">
-    <span class="toastui-editor-md-delimiter">
-      <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-code-block">
+    <span class="zen-composer-md-delimiter">
+      <span class="zen-composer-md-marked-text">
         \`\`\`
       </span>
     </span>
@@ -126,24 +126,24 @@ exports[`markdown editor syntax highlight code block within list 1`] = `
 `;
 
 exports[`markdown editor syntax highlight custom block 1`] = `
-<div class="toastui-editor-md-custom-block-line-background start">
-  <span class="toastui-editor-md-custom-block">
-    <span class="toastui-editor-md-delimiter">
+<div class="zen-composer-md-custom-block-line-background start">
+  <span class="zen-composer-md-custom-block">
+    <span class="zen-composer-md-delimiter">
       $$
     </span>
-    <span class="toastui-editor-md-meta">
+    <span class="zen-composer-md-meta">
       custom
     </span>
   </span>
 </div>
-<div class="toastui-editor-md-custom-block-line-background">
-  <span class="toastui-editor-md-custom-block">
+<div class="zen-composer-md-custom-block-line-background">
+  <span class="zen-composer-md-custom-block">
     my custom element
   </span>
 </div>
-<div class="toastui-editor-md-custom-block-line-background">
-  <span class="toastui-editor-md-custom-block">
-    <span class="toastui-editor-md-delimiter">
+<div class="zen-composer-md-custom-block-line-background">
+  <span class="zen-composer-md-custom-block">
+    <span class="zen-composer-md-delimiter">
       $$
     </span>
   </span>
@@ -152,13 +152,13 @@ exports[`markdown editor syntax highlight custom block 1`] = `
 
 exports[`markdown editor syntax highlight emph 1`] = `
 <div>
-  <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-delimiter">
     *
   </span>
-  <span class="toastui-editor-md-emph">
+  <span class="zen-composer-md-emph">
     emph
   </span>
-  <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-delimiter">
     *
   </span>
 </div>
@@ -166,22 +166,22 @@ exports[`markdown editor syntax highlight emph 1`] = `
 
 exports[`markdown editor syntax highlight image 1`] = `
 <div>
-  <span class="toastui-editor-md-link">
-    <span class="toastui-editor-md-meta">
+  <span class="zen-composer-md-link">
+    <span class="zen-composer-md-meta">
       !
     </span>
     [
   </span>
-  <span class="toastui-editor-md-link toastui-editor-md-link-desc toastui-editor-md-marked-text">
+  <span class="zen-composer-md-link zen-composer-md-link-desc zen-composer-md-marked-text">
     Logo
   </span>
-  <span class="toastui-editor-md-link">
+  <span class="zen-composer-md-link">
     ](
   </span>
-  <span class="toastui-editor-md-link toastui-editor-md-link-url toastui-editor-md-marked-text">
+  <span class="zen-composer-md-link zen-composer-md-link-url zen-composer-md-marked-text">
     https://picsum.photos/200
   </span>
-  <span class="toastui-editor-md-link">
+  <span class="zen-composer-md-link">
     )
   </span>
 </div>
@@ -189,13 +189,13 @@ exports[`markdown editor syntax highlight image 1`] = `
 
 exports[`markdown editor syntax highlight inline code 1`] = `
 <div>
-  <span class="toastui-editor-md-code toastui-editor-md-delimiter toastui-editor-md-start">
+  <span class="zen-composer-md-code zen-composer-md-delimiter zen-composer-md-start">
     \`
   </span>
-  <span class="toastui-editor-md-code toastui-editor-md-marked-text">
+  <span class="zen-composer-md-code zen-composer-md-marked-text">
     inline code
   </span>
-  <span class="toastui-editor-md-code toastui-editor-md-delimiter toastui-editor-md-end">
+  <span class="zen-composer-md-code zen-composer-md-delimiter zen-composer-md-end">
     \`
   </span>
 </div>
@@ -203,19 +203,19 @@ exports[`markdown editor syntax highlight inline code 1`] = `
 
 exports[`markdown editor syntax highlight link 1`] = `
 <div>
-  <span class="toastui-editor-md-link">
+  <span class="zen-composer-md-link">
     [
   </span>
-  <span class="toastui-editor-md-link toastui-editor-md-link-desc toastui-editor-md-marked-text">
-    TOAST UI
+  <span class="zen-composer-md-link zen-composer-md-link-desc zen-composer-md-marked-text">
+    Zen Composer
   </span>
-  <span class="toastui-editor-md-link">
+  <span class="zen-composer-md-link">
     ](
   </span>
-  <span class="toastui-editor-md-link toastui-editor-md-link-url toastui-editor-md-marked-text">
+  <span class="zen-composer-md-link zen-composer-md-link-url zen-composer-md-marked-text">
     https://ui.toast.com
   </span>
-  <span class="toastui-editor-md-link">
+  <span class="zen-composer-md-link">
     )
   </span>
 </div>
@@ -223,12 +223,12 @@ exports[`markdown editor syntax highlight link 1`] = `
 
 exports[`markdown editor syntax highlight orderedList 1`] = `
 <div>
-  <span class="toastui-editor-md-list-item toastui-editor-md-list-item-style toastui-editor-md-list-item-odd">
+  <span class="zen-composer-md-list-item zen-composer-md-list-item-style zen-composer-md-list-item-odd">
     1.
-    <span class="toastui-editor-md-marked-text">
+    <span class="zen-composer-md-marked-text">
     </span>
   </span>
-  <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-marked-text">
     ordered list
   </span>
 </div>
@@ -236,12 +236,12 @@ exports[`markdown editor syntax highlight orderedList 1`] = `
 
 exports[`markdown editor syntax highlight seText heading 1`] = `
 <div>
-  <span class="toastui-editor-md-heading toastui-editor-md-heading2">
+  <span class="zen-composer-md-heading zen-composer-md-heading2">
     heading
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-heading toastui-editor-md-heading1 toastui-editor-md-delimiter toastui-editor-md-setext">
+  <span class="zen-composer-md-heading zen-composer-md-heading1 zen-composer-md-delimiter zen-composer-md-setext">
     ---
   </span>
 </div>
@@ -249,13 +249,13 @@ exports[`markdown editor syntax highlight seText heading 1`] = `
 
 exports[`markdown editor syntax highlight strike 1`] = `
 <div>
-  <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-delimiter">
     ~~
   </span>
-  <span class="toastui-editor-md-strike">
+  <span class="zen-composer-md-strike">
     strike
   </span>
-  <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-delimiter">
     ~~
   </span>
 </div>
@@ -263,13 +263,13 @@ exports[`markdown editor syntax highlight strike 1`] = `
 
 exports[`markdown editor syntax highlight strong 1`] = `
 <div>
-  <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-delimiter">
     **
   </span>
-  <span class="toastui-editor-md-strong">
+  <span class="zen-composer-md-strong">
     strong
   </span>
-  <span class="toastui-editor-md-delimiter">
+  <span class="zen-composer-md-delimiter">
     **
   </span>
 </div>
@@ -277,30 +277,30 @@ exports[`markdown editor syntax highlight strong 1`] = `
 
 exports[`markdown editor syntax highlight table basic 1`] = `
 <div>
-  <span class="toastui-editor-md-table">
+  <span class="zen-composer-md-table">
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       col2
     </span>
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       col2
     </span>
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-table">
+  <span class="zen-composer-md-table">
     | --- | ---
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-table">
+  <span class="zen-composer-md-table">
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       data1
     </span>
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       data2
     </span>
     |
@@ -310,37 +310,37 @@ exports[`markdown editor syntax highlight table basic 1`] = `
 
 exports[`markdown editor syntax highlight table with mark 1`] = `
 <div>
-  <span class="toastui-editor-md-table">
+  <span class="zen-composer-md-table">
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       col2
     </span>
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       col2
     </span>
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-table">
+  <span class="zen-composer-md-table">
     | --- | ---
   </span>
 </div>
 <div>
-  <span class="toastui-editor-md-table">
+  <span class="zen-composer-md-table">
     |
-    <span class="toastui-editor-md-table-cell">
+    <span class="zen-composer-md-table-cell">
       data1
     </span>
     |
-    <span class="toastui-editor-md-table-cell">
-      <span class="toastui-editor-md-delimiter">
+    <span class="zen-composer-md-table-cell">
+      <span class="zen-composer-md-delimiter">
         **
       </span>
-      <span class="toastui-editor-md-strong">
+      <span class="zen-composer-md-strong">
         data2
       </span>
-      <span class="toastui-editor-md-delimiter">
+      <span class="zen-composer-md-delimiter">
         **
       </span>
     </span>
@@ -351,17 +351,17 @@ exports[`markdown editor syntax highlight table with mark 1`] = `
 
 exports[`markdown editor syntax highlight tastkList 1`] = `
 <div>
-  <span class="toastui-editor-md-list-item toastui-editor-md-list-item-style toastui-editor-md-list-item-odd">
+  <span class="zen-composer-md-list-item zen-composer-md-list-item-style zen-composer-md-list-item-odd">
     *
   </span>
-  <span class="toastui-editor-md-delimiter toastui-editor-md-list-item">
+  <span class="zen-composer-md-delimiter zen-composer-md-list-item">
     [
-    <span class="toastui-editor-md-meta">
+    <span class="zen-composer-md-meta">
       x
     </span>
     ]
   </span>
-  <span class="toastui-editor-md-marked-text">
+  <span class="zen-composer-md-marked-text">
     task list
   </span>
 </div>
@@ -369,7 +369,7 @@ exports[`markdown editor syntax highlight tastkList 1`] = `
 
 exports[`markdown editor syntax highlight thematicBreak 1`] = `
 <div>
-  <span class="toastui-editor-md-thematic-break">
+  <span class="zen-composer-md-thematic-break">
     ---
   </span>
 </div>

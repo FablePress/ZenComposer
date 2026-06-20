@@ -118,7 +118,7 @@ describe('parseToChartOption()', () => {
 });
 
 describe('parseToChartData()', () => {
-  it('should parse csv to @toast-ui/chart data format', () => {
+  it('should parse csv to @fablepress/chart data format', () => {
     expect(
       parseToChartData(
         `
@@ -143,7 +143,7 @@ describe('parseToChartData()', () => {
     });
   });
 
-  it('should parse tsv to @toast-ui/chart data format', () => {
+  it('should parse tsv to @fablepress/chart data format', () => {
     expect(
       parseToChartData(
         `
@@ -168,7 +168,7 @@ describe('parseToChartData()', () => {
     });
   });
 
-  it('should parse whitespace separated values to @toast-ui/chart data format', () => {
+  it('should parse whitespace separated values to @fablepress/chart data format', () => {
     expect(
       parseToChartData(
         ['\t"series a" "series b"', '"category 1" 1.234 2.345', '"category 2" 3.456 4.567'].join(
@@ -191,7 +191,7 @@ describe('parseToChartData()', () => {
     });
   });
 
-  it('should parse data with legends to @toast-ui/chart data format', () => {
+  it('should parse data with legends to @fablepress/chart data format', () => {
     expect(
       parseToChartData(
         `
@@ -216,7 +216,7 @@ describe('parseToChartData()', () => {
     });
   });
 
-  it('should parse data with categories to @toast-ui/chart data format', () => {
+  it('should parse data with categories to @fablepress/chart data format', () => {
     expect(
       parseToChartData(
         `

@@ -6,7 +6,7 @@
 
 자동 링크는 `<`, `>` 사이에 위치한 절대 경로 URI 또는 이메일 주소이다. URL 또는 이메일 주소를 링크 레이블로 하여 구문 분석된다.
 
-이 기능은 TOAST UI Editor(이하 '에디터'라고 명시)가 CommonMark 스펙을 따르기 때문에 에디터에서도 별도의 설정 없이 사용할 수 있다.
+이 기능은 Zen Composer(이하 '에디터'라고 명시)가 CommonMark 스펙을 따르기 때문에 에디터에서도 별도의 설정 없이 사용할 수 있다.
 
 ![image](https://user-images.githubusercontent.com/37766175/120604939-7ad04d00-c488-11eb-82c1-f9f05891039e.png)
 
@@ -26,7 +26,7 @@
 만약 `extendedAutolinks` 값을 `true` 값으로 설정한다면, 자동 링크 확장 기능을 사용할 수 있다.
 
 ```js
-const editor = new toastui.Editor({
+const editor = new zenComposer.Editor({
   // ...
   extendedAutolinks: true
 });
@@ -39,17 +39,17 @@ const editor = new toastui.Editor({
 자동 링크 확장을 커스터마이징하려면 `extendedAutolinks` 옵션을 `function`으로 설정해야 한다. 아래 간단한 예제 코드가 있다.
 
 ```js
-const reToastuiEditorRepo = /tui\.editor/g;
+const reZenComposerRepo = /tui\.editor/g;
 
 const editor = new Editor({
   el: document.querySelector('#editor'),
   extendedAutolinks: (content) => {
-    const matched = content.match(reToastuiEditorRepo);
+    const matched = content.match(reZenComposerRepo);
     if (matched) {
       return matched.map(m =>
         ({
-          text: 'toastui-editor',
-          url: 'https://github.com/nhn/tui.editor',
+          text: 'zen-composer',
+          url: 'https://github.com/nhn/zen-composer',
           range: [0, 9]
         })
       );

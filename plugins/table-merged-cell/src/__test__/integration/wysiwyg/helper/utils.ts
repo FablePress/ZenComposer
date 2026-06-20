@@ -1,4 +1,4 @@
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 import mergedTableCellPlugin from '@/index';
 
 export function assertWYSIWYGHTML(editor: Editor, html: string) {

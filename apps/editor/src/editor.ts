@@ -7,10 +7,10 @@ import { Layout } from './ui/components/layout';
 import { render } from './ui/vdom/renderer';
 
 /**
- * ToastUI Editor
- * @extends ToastUIEditorCore
+ * ZenComposer Editor
+ * @extends ZenComposerCore
  */
-class ToastUIEditor extends EditorCore {
+class ZenComposer extends EditorCore {
   private defaultUI!: DefaultUI;
 
   constructor(options: EditorOptions) {
@@ -52,10 +52,10 @@ class ToastUIEditor extends EditorCore {
   /**
    * Factory method for Editor
    * @param {object} options Option for initialize TUIEditor
-   * @returns {object} ToastUIEditor or ToastUIEditorViewer
+   * @returns {object} ZenComposer or ZenComposerViewer
    */
   static factory(options: (EditorOptions | ViewerOptions) & { viewer?: boolean }) {
-    return options.viewer ? new Viewer(options) : new ToastUIEditor(options as EditorOptions);
+    return options.viewer ? new Viewer(options) : new ZenComposer(options as EditorOptions);
   }
 
   /**
@@ -84,4 +84,4 @@ class ToastUIEditor extends EditorCore {
   }
 }
 
-export default ToastUIEditor;
+export default ZenComposer;

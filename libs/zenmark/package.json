@@ -1,7 +1,7 @@
 {
-  "name": "@toast-ui/toastmark",
+  "name": "@fablepress/zenmark",
   "version": "0.0.1-alpha.1",
-  "description": "ToastMark - Incremental markdown parser extended from CommonMark.js",
+  "description": "ZenMark - Incremental markdown parser extended from CommonMark.js",
   "scripts": {
     "lint": "eslint .",
     "test:types": "tsc",
@@ -21,7 +21,7 @@
     "parser"
   ],
   "author": "NHN",
-  "main": "dist/toastmark.js",
+  "main": "dist/zenmark.js",
   "module": "dist/esm/index.js",
   "license": "MIT",
   "devDependencies": {

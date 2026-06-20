@@ -1,4 +1,4 @@
-import { MdNode, TableMdNode, Sourcepos, NodeWalker } from './toastmark';
+import { MdNode, TableMdNode, Sourcepos, NodeWalker } from './zenmark';
 
 export interface TableRowMdNode extends MdNode {
   parent: TableBodyMdNode | TableHeadMdNode;

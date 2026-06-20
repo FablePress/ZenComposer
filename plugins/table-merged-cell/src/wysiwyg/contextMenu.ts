@@ -1,7 +1,7 @@
-import type { PluginContext } from '@toast-ui/editor';
+import type { PluginContext } from '@fablepress/zen-composer';
 import toArray from 'tui-code-snippet/collection/toArray';
 
-const TABLE_CELL_SELECT_CLASS = '.toastui-editor-cell-selected';
+const TABLE_CELL_SELECT_CLASS = '.zen-composer-cell-selected';
 
 function hasSpanAttr(tableCell: Element) {
   return (

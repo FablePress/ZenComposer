@@ -1,6 +1,6 @@
 import { ProsemirrorNode } from 'prosemirror-model';
 import { EditorView } from 'prosemirror-view';
-import { ToastMark } from '@toast-ui/toastmark';
+import { ZenMark } from '@fablepress/zenmark';
 import { Emitter } from '@t/event';
 import { isHTMLNode, getMdStartLine } from '@/utils/markdown';
 import MarkdownPreview from '../mdPreview';
@@ -36,7 +36,7 @@ export class ScrollSync {
 
   private editorView: EditorView;
 
-  private toastMark: ToastMark;
+  private toastMark: ZenMark;
 
   private eventEmitter: Emitter;
 
@@ -59,7 +59,7 @@ export class ScrollSync {
     this.previewEl = previewEl!;
     this.mdEditor = mdEditor;
     this.editorView = mdEditor.view;
-    this.toastMark = mdEditor.getToastMark();
+    this.toastMark = mdEditor.getZenMark();
     this.eventEmitter = eventEmitter;
     this.addScrollSyncEvent();
   }

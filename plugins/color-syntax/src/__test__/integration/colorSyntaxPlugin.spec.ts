@@ -1,4 +1,4 @@
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 import colorPicker from 'tui-color-picker';
 import { oneLineTrim } from 'common-tags';
 import colorSyntaxPlugin from '@/index';
@@ -196,7 +196,7 @@ describe('colorSyntax', () => {
       editor.exec('selectAll');
       editor.exec('color');
 
-      assertMdPreviewHTML('<p class="toastui-editor-md-preview-highlight">text</p>');
+      assertMdPreviewHTML('<p class="zen-composer-md-preview-highlight">text</p>');
     });
 
     it('add color in wysiwyg', () => {

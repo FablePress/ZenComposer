@@ -1,8 +1,8 @@
-# TOAST UI Editor : UML Plugin
+# Zen Composer : UML Plugin
 
-> This is a plugin of [TOAST UI Editor](https://github.com/nhn/tui.editor/tree/master/apps/editor) to render UML.
+> This is a plugin of [Zen Composer](https://github.com/nhn/zen-composer/tree/master/apps/editor) to render UML.
 
-[![npm version](https://img.shields.io/npm/v/@toast-ui/editor-plugin-uml.svg)](https://www.npmjs.com/package/@toast-ui/editor-plugin-uml)
+[![npm version](https://img.shields.io/npm/v/@fablepress/zen-composer-plugin-uml.svg)](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-uml)
 
 ![uml](https://user-images.githubusercontent.com/37766175/121813437-01fe9b80-cca7-11eb-966b-598333c8ec14.png)
 
@@ -18,10 +18,10 @@
 
 ```
 - node_modules/
-  - @toast-ui/
+  - @fablepress/
     - editor-plugin-uml/
       - dist/
-        - toastui-editor-plugin-uml.js
+        - zen-composer-plugin-uml.js
 ```
 
 ### Files Distributed on CDN
@@ -32,20 +32,20 @@ The bundle files include all dependencies of this plugin.
 - uicdn.toast.com/
   - editor-plugin-uml/
     - latest/
-      - toastui-editor-plugin-uml.js
-      - toastui-editor-plugin-uml.min.js
+      - zen-composer-plugin-uml.js
+      - zen-composer-plugin-uml.min.js
 ```
 
 ## 📦 Usage npm
 
-To use the plugin, [`@toast-ui/editor`](https://github.com/nhn/tui.editor/tree/master/apps/editor) must be installed.
+To use the plugin, [`@fablepress/zen-composer`](https://github.com/nhn/zen-composer/tree/master/apps/editor) must be installed.
 
-> Ref. [Getting Started](https://github.com/nhn/tui.editor/blob/master/docs/en/getting-started.md)
+> Ref. [Getting Started](https://github.com/nhn/zen-composer/blob/master/docs/en/getting-started.md)
 
 ### Install
 
 ```sh
-$ npm install @toast-ui/editor-plugin-uml
+$ npm install @fablepress/zen-composer-plugin-uml
 ```
 
 ### Import Plugin
@@ -53,13 +53,13 @@ $ npm install @toast-ui/editor-plugin-uml
 #### ES Modules
 
 ```js
-import uml from '@toast-ui/editor-plugin-uml';
+import uml from '@fablepress/zen-composer-plugin-uml';
 ```
 
 #### CommonJS
 
 ```js
-const uml = require('@toast-ui/editor-plugin-uml');
+const uml = require('@fablepress/zen-composer-plugin-uml');
 ```
 
 ### Create Instance
@@ -67,8 +67,8 @@ const uml = require('@toast-ui/editor-plugin-uml');
 #### Basic
 
 ```js
-import Editor from '@toast-ui/editor';
-import uml from '@toast-ui/editor-plugin-uml';
+import Editor from '@fablepress/zen-composer';
+import uml from '@fablepress/zen-composer-plugin-uml';
 
 const editor = new Editor({
   // ...
@@ -79,8 +79,8 @@ const editor = new Editor({
 #### With Viewer
 
 ```js
-import Viewer from '@toast-ui/editor/dist/toustui-editor-viewer';
-import uml from '@toast-ui/editor-plugin-uml';
+import Viewer from '@fablepress/zen-composer/dist/touszen-composer-viewer';
+import uml from '@fablepress/zen-composer-plugin-uml';
 
 const viewer = new Viewer({
   // ...
@@ -91,8 +91,8 @@ const viewer = new Viewer({
 or
 
 ```js
-import Editor from '@toast-ui/editor';
-import uml from '@toast-ui/editor-plugin-uml';
+import Editor from '@fablepress/zen-composer';
+import uml from '@fablepress/zen-composer-plugin-uml';
 
 const viewer = Editor.factory({
   // ...
@@ -103,7 +103,7 @@ const viewer = Editor.factory({
 
 ## 🗂 Usage CDN
 
-To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be included.
+To use the plugin, the CDN files(CSS, Script) of `@fablepress/zen-composer` must be included.
 
 ### Include Files
 
@@ -112,9 +112,9 @@ To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be incl
 <body>
   ...
   <!-- Editor -->
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-all.min.js"></script>
   <!-- Editor's Plugin -->
-  <script src="https://uicdn.toast.com/editor-plugin-uml/latest/toastui-editor-plugin-uml.min.js"></script>
+  <script src="https://uicdn.toast.com/editor-plugin-uml/latest/zen-composer-plugin-uml.min.js"></script>
   ...
 </body>
 ...
@@ -125,7 +125,7 @@ To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be incl
 #### Basic
 
 ```js
-const { Editor } = toastui;
+const { Editor } = zenComposer;
 const { uml } = Editor.plugin;
 
 const editor = new Editor({
@@ -137,7 +137,7 @@ const editor = new Editor({
 #### With Viewer
 
 ```js
-const Viewer = toastui.Editor;
+const Viewer = zenComposer.Editor;
 const { uml } = Viewer.plugin;
 
 const viewer = new Viewer({
@@ -149,7 +149,7 @@ const viewer = new Viewer({
 or
 
 ```js
-const { Editor } = toastui;
+const { Editor } = zenComposer;
 const { uml } = Editor.plugin;
 
 const viewer = Editor.factory({
@@ -172,8 +172,8 @@ The following option is available in the `uml` plugin.
 ```js
 // ...
 
-import Editor from '@toast-ui/editor';
-import uml from '@toast-ui/editor-plugin-uml';
+import Editor from '@fablepress/zen-composer';
+import uml from '@fablepress/zen-composer-plugin-uml';
 
 const umlOptions = {
   rendererURL: // ...

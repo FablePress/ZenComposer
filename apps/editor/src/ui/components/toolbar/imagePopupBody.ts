@@ -127,15 +127,15 @@ export class ImagePopupBody extends Component<Props, State> {
       <div aria-label="${i18n.get('Insert image')}">
         <${Tabs} tabs=${this.tabs} activeTab=${activeTab} onClick=${this.toggleTab} />
         <div style="display:${activeTab === 'url' ? 'block' : 'none'}">
-          <label for="toastuiImageUrlInput">${i18n.get('Image URL')}</label>
+          <label for="zenComposerImageUrlInput">${i18n.get('Image URL')}</label>
           <input
-            id="toastuiImageUrlInput"
+            id="zenComposerImageUrlInput"
             type="text"
             ref=${(el: HTMLInputElement) => (this.refs.url = el)}
           />
         </div>
         <div style="display:${activeTab === 'file' ? 'block' : 'none'};position: relative;">
-          <label for="toastuiImageFileInput">${i18n.get('Select image file')}</label>
+          <label for="zenComposerImageFileInput">${i18n.get('Select image file')}</label>
           <span
             class="${cls('file-name')}${file ? ' has-file' : fileNameElClassName}"
             onClick=${this.showFileSelectBox}
@@ -151,16 +151,16 @@ export class ImagePopupBody extends Component<Props, State> {
             ${i18n.get('Choose a file')}
           </button>
           <input
-            id="toastuiImageFileInput"
+            id="zenComposerImageFileInput"
             type="file"
             accept="image/*"
             onChange=${this.changeFile}
             ref=${(el: HTMLInputElement) => (this.refs.file = el)}
           />
         </div>
-        <label for="toastuiAltTextInput">${i18n.get('Description')}</label>
+        <label for="zenComposerAltTextInput">${i18n.get('Description')}</label>
         <input
-          id="toastuiAltTextInput"
+          id="zenComposerAltTextInput"
           type="text"
           ref=${(el: HTMLInputElement) => (this.refs.altText = el)}
         />

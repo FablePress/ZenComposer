@@ -20,14 +20,14 @@ let minify;
 
 function addFileManagerPlugin(config) {
   // When an entry option's value is set to a CSS file,
-  // empty JavaScript files are created. (e.g. toastui-editor-only.js)
+  // empty JavaScript files are created. (e.g. zen-composer-only.js)
   // These files are unnecessary, so use the FileManager plugin to delete them.
   const options = minify
     ? {
-        delete: ['./dist/cdn/toastui-editor-only.min.js'],
+        delete: ['./dist/cdn/zen-composer-only.min.js'],
       }
     : {
-        delete: ['./dist/toastui-editor-only.js'],
+        delete: ['./dist/zen-composer-only.js'],
         copy: [{ source: './dist/*.{js,css}', destination: './dist/cdn' }],
       };
 
@@ -37,10 +37,10 @@ function addFileManagerPlugin(config) {
 function addCopyPluginForThemeCss(config) {
   const options = minify
     ? {
-        patterns: [{ from: './src/css/theme/*.css', to: './theme/toastui-editor-[name].min.css' }],
+        patterns: [{ from: './src/css/theme/*.css', to: './theme/zen-composer-[name].min.css' }],
       }
     : {
-        patterns: [{ from: './src/css/theme/*.css', to: './theme/toastui-editor-[name].css' }],
+        patterns: [{ from: './src/css/theme/*.css', to: './theme/zen-composer-[name].css' }],
       };
 
   config.plugins.push(new CopyPlugin(options));
@@ -70,7 +70,7 @@ function addAnalyzerPlugin(config, type) {
 
 function setDevelopConfig(config) {
   // check in examples
-  config.entry = { 'editor-all': ENTRY_EDITOR };
+  config.entry = { 'zen-composer-all': ENTRY_EDITOR };
   config.output.publicPath = '/dist/cdn';
 
   config.plugins.pop();
@@ -89,9 +89,9 @@ function setDevelopConfig(config) {
 
 function setProductionConfig(config) {
   config.entry = {
-    editor: ENTRY_EDITOR,
-    'editor-only': ENTRY_ONLY_STYLE,
-    'editor-viewer': ENTRY_VIEWER,
+    'zen-composer': ENTRY_EDITOR,
+    'zen-composer-only': ENTRY_ONLY_STYLE,
+    'zen-composer-viewer': ENTRY_VIEWER,
   };
 
   addFileManagerPlugin(config);
@@ -104,7 +104,7 @@ function setProductionConfig(config) {
 }
 
 function setProductionConfigForAll(config) {
-  config.entry = { 'editor-all': ENTRY_EDITOR };
+  config.entry = { 'zen-composer-all': ENTRY_EDITOR };
   config.output.path = path.resolve(__dirname, 'dist/cdn');
   config.externals = [];
 
@@ -132,12 +132,12 @@ module.exports = (env) => {
             const: false,
           },
           library: {
-            name: ['toastui', 'Editor'],
+            name: ['zenComposer', 'Editor'],
             type: 'umd',
             export: 'default',
           },
           path: path.resolve(__dirname, minify ? 'dist/cdn' : 'dist'),
-          filename: `toastui-[name]${minify ? '.min' : ''}.js`,
+          filename: `[name]${minify ? '.min' : ''}.js`,
         },
         module: {
           rules: [
@@ -173,7 +173,7 @@ module.exports = (env) => {
         plugins: [
           new MiniCssExtractPlugin({
             filename: ({ chunk }) =>
-              `toastui-${chunk.name.replace('-all', '')}${minify ? '.min' : ''}.css`,
+              `${chunk.name.replace('-all', '')}${minify ? '.min' : ''}.css`,
           }),
           new webpack.BannerPlugin({
             banner: [

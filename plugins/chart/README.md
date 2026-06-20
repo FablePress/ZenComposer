@@ -1,8 +1,8 @@
-# TOAST UI Editor : Chart Plugin
+# Zen Composer : Chart Plugin
 
-> This is a plugin of [TOAST UI Editor](https://github.com/nhn/tui.editor/tree/master/apps/editor) to render chart.
+> This is a plugin of [Zen Composer](https://github.com/nhn/zen-composer/tree/master/apps/editor) to render chart.
 
-[![npm version](https://img.shields.io/npm/v/@toast-ui/editor-plugin-chart.svg)](https://www.npmjs.com/package/@toast-ui/editor-plugin-chart)
+[![npm version](https://img.shields.io/npm/v/@fablepress/zen-composer-plugin-chart.svg)](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-chart)
 
 ![chart](https://user-images.githubusercontent.com/37766175/121808323-d8d41000-cc92-11eb-9117-b92a435c9b43.png)
 
@@ -18,10 +18,10 @@
 
 ```
 - node_modules/
-  - @toast-ui/
+  - @fablepress/
     - editor-plugin-chart/
       - dist/
-        - toastui-editor-plugin-chart.js
+        - zen-composer-plugin-chart.js
 ```
 
 ### Files Distributed on CDN
@@ -32,40 +32,40 @@ The bundle files include all dependencies of this plugin.
 - uicdn.toast.com/
   - editor-plugin-chart/
     - latest/
-      - toastui-editor-plugin-chart.js
-      - toastui-editor-plugin-chart.min.js
+      - zen-composer-plugin-chart.js
+      - zen-composer-plugin-chart.min.js
 ```
 
 ## 📦 Usage npm
 
-To use the plugin, [`@toast-ui/editor`](https://github.com/nhn/tui.editor/tree/master/apps/editor) must be installed.
+To use the plugin, [`@fablepress/zen-composer`](https://github.com/nhn/zen-composer/tree/master/apps/editor) must be installed.
 
-> Ref. [Getting Started](https://github.com/nhn/tui.editor/blob/master/docs/en/getting-started.md)
+> Ref. [Getting Started](https://github.com/nhn/zen-composer/blob/master/docs/en/getting-started.md)
 
 ### Install
 
 ```sh
-$ npm install @toast-ui/editor-plugin-chart
+$ npm install @fablepress/zen-composer-plugin-chart
 ```
 
 ### Import Plugin
 
-Along with the plugin, the plugin's dependency style must be imported. The `chart` plugin has [TOAST UI Chart](https://github.com/nhn/tui.chart) as a dependency, and you need to add a CSS file of TOAST UI Chart.
+Along with the plugin, the plugin's dependency style must be imported. The `chart` plugin has [Zen Composer Chart](https://github.com/nhn/tui.chart) as a dependency, and you need to add a CSS file of Zen Composer Chart.
 
 #### ES Modules
 
 ```js
-import '@toast-ui/chart/dist/toastui-chart.css';
+import '@fablepress/chart/dist/zenComposer-chart.css';
 
-import chart from '@toast-ui/editor-plugin-chart';
+import chart from '@fablepress/zen-composer-plugin-chart';
 ```
 
 #### CommonJS
 
 ```js
-require('@toast-ui/chart/dist/toastui-chart.css');
+require('@fablepress/chart/dist/zenComposer-chart.css');
 
-const chart = require('@toast-ui/editor-plugin-chart');
+const chart = require('@fablepress/zen-composer-plugin-chart');
 ```
 
 ### Create Instance
@@ -74,10 +74,10 @@ const chart = require('@toast-ui/editor-plugin-chart');
 
 ```js
 // ...
-import '@toast-ui/chart/dist/toastui-chart.css';
+import '@fablepress/chart/dist/zenComposer-chart.css';
 
-import Editor from '@toast-ui/editor';
-import chart from '@toast-ui/editor-plugin-chart';
+import Editor from '@fablepress/zen-composer';
+import chart from '@fablepress/zen-composer-plugin-chart';
 
 const editor = new Editor({
   // ...
@@ -89,10 +89,10 @@ const editor = new Editor({
 
 ```js
 // ...
-import '@toast-ui/chart/dist/toastui-chart.css';
+import '@fablepress/chart/dist/zenComposer-chart.css';
 
-import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
-import chart from '@toast-ui/editor-plugin-chart';
+import Viewer from '@fablepress/zen-composer/dist/zen-composer-viewer';
+import chart from '@fablepress/zen-composer-plugin-chart';
 
 const viewer = new Viewer({
   // ...
@@ -104,10 +104,10 @@ or
 
 ```js
 // ...
-import '@toast-ui/chart/dist/toastui-chart.css';
+import '@fablepress/chart/dist/zenComposer-chart.css';
 
-import Editor from '@toast-ui/editor';
-import chart from '@toast-ui/editor-plugin-chart';
+import Editor from '@fablepress/zen-composer';
+import chart from '@fablepress/zen-composer-plugin-chart';
 
 const viewer = Editor.factory({
   // ...
@@ -118,7 +118,7 @@ const viewer = Editor.factory({
 
 ## 🗂 Usage CDN
 
-To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be included.
+To use the plugin, the CDN files(CSS, Script) of `@fablepress/zen-composer` must be included.
 
 ### Include Files
 
@@ -126,17 +126,17 @@ To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be incl
 ...
 <head>
   ...
-  <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/toastui-chart.min.css" />
+  <link rel="stylesheet" href="https://uicdn.toast.com/chart/latest/zenComposer-chart.min.css" />
   ...
 </head>
 <body>
   ...
   <!-- Chart -->
-  <script src="https://uicdn.toast.com/chart/latest/toastui-chart.min.js"></script>
+  <script src="https://uicdn.toast.com/chart/latest/zenComposer-chart.min.js"></script>
   <!-- Editor -->
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-all.min.js"></script>
   <!-- Editor's Plugin -->
-  <script src="https://uicdn.toast.com/editor-plugin-chart/latest/toastui-editor-plugin-chart.min.js"></script>
+  <script src="https://uicdn.toast.com/editor-plugin-chart/latest/zen-composer-plugin-chart.min.js"></script>
   ...
 </body>
 ```
@@ -146,7 +146,7 @@ To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be incl
 #### Basic
 
 ```js
-const { Editor } = toastui;
+const { Editor } = zenComposer;
 const { chart } = Editor.plugin;
 
 const editor = new Editor({
@@ -158,7 +158,7 @@ const editor = new Editor({
 #### With Viewer
 
 ```js
-const Viewer = toastui.Editor;
+const Viewer = zenComposer.Editor;
 const { chart } = Viewer.plugin;
 
 const viewer = new Viewer({
@@ -170,7 +170,7 @@ const viewer = new Viewer({
 or
 
 ```js
-const { Editor } = toastui;
+const { Editor } = zenComposer;
 const { chart } = Editor.plugin;
 
 const viewer = Editor.factory({
@@ -198,10 +198,10 @@ These options are used to set the dimensions of the chart drawn in the editor.
 
 ```js
 // ...
-import '@toast-ui/chart/dist/toastui-chart.css';
+import '@fablepress/chart/dist/zenComposer-chart.css';
 
-import Editor from '@toast-ui/editor';
-import chart from '@toast-ui/editor-plugin-chart';
+import Editor from '@fablepress/zen-composer';
+import chart from '@fablepress/zen-composer-plugin-chart';
 
 const chartOptions = {
   minWidth: 100,

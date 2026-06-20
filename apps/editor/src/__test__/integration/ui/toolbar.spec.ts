@@ -188,11 +188,11 @@ describe('Default toolbar', () => {
       const OkBtn = getByText(linkPopup, 'OK');
 
       urlText.value = 'https://ui.toast.com';
-      linkText.value = 'toastui';
+      linkText.value = 'zenComposer';
 
       OkBtn.click();
 
-      expect(editor.getMarkdown()).toBe('[toastui](https://ui.toast.com)');
+      expect(editor.getMarkdown()).toBe('[zenComposer](https://ui.toast.com)');
     });
 
     it('should add wrong class when url or text are not filled out', () => {

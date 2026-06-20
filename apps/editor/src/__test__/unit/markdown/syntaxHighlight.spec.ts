@@ -1,4 +1,4 @@
-import { ToastMark } from '@toast-ui/toastmark';
+import { ZenMark } from '@fablepress/zenmark';
 import MarkdownEditor from '@/markdown/mdEditor';
 import EventEmitter from '@/event/eventEmitter';
 import { source } from 'common-tags';
@@ -11,7 +11,7 @@ let mde: MarkdownEditor, em: EventEmitter;
 
 beforeEach(() => {
   em = new EventEmitter();
-  mde = new MarkdownEditor(em, { toastMark: new ToastMark() });
+  mde = new MarkdownEditor(em, { toastMark: new ZenMark() });
 });
 
 afterEach(() => {
@@ -148,7 +148,7 @@ describe('markdown editor syntax highlight', () => {
   });
 
   it('link', () => {
-    mde.setMarkdown('[TOAST UI](https://ui.toast.com)');
+    mde.setMarkdown('[Zen Composer](https://ui.toast.com)');
 
     const html = getEditorHTML(mde);
 

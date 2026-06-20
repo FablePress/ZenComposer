@@ -1,6 +1,6 @@
 import { source } from 'common-tags';
 
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 import codeSyntaxHighlightPlugin from '@/indexAll';
 
 describe('codeSyntaxHighlightPlugin', () => {
@@ -17,7 +17,7 @@ describe('codeSyntaxHighlightPlugin', () => {
 
   function getPreviewHTML() {
     return mdPreview
-      .querySelector('.toastui-editor-contents')!
+      .querySelector('.zen-composer-contents')!
       .innerHTML.replace(/\sdata-nodeid="\d+"|\n/g, '')
       .trim();
   }

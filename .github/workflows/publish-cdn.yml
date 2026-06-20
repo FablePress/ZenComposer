@@ -34,10 +34,10 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build toastmark
+          npm run build zenmark
       - name: Toastmark unit, integration test
         run: |
-          npm run test:ci toastmark
+          npm run test:ci zenmark
       - name: Editor unit, integration test
         run: |
           npm run test:ci editor
@@ -56,7 +56,7 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build toastmark
+          npm run build zenmark
           npm run build editor
       - name: chart plugin unit, integration test
         run: |
@@ -88,7 +88,7 @@ jobs:
           npm ci
       - name: Build
         run: |
-          npm run build toastmark
+          npm run build zenmark
           npm run build editor
       - name: Publish CDN
         run: |

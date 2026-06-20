@@ -9,7 +9,7 @@ import {
   OpenTagToken,
   Context,
   HTMLConvertor,
-} from '@t/toastmark';
+} from '@t/zenmark';
 import { LinkAttributes, CustomHTMLRenderer } from '@t/editor';
 import { HTMLMdNode } from '@t/markdown';
 import { getWidgetContent, widgetToDOM } from '@/widget/rules';
@@ -116,7 +116,7 @@ const baseConvertors: HTMLConvertorMap = {
       const htmlInline = widgetToDOM(info, content).outerHTML;
 
       return [
-        { type: 'openTag', tagName: 'span', classNames: ['tui-widget'] },
+        { type: 'openTag', tagName: 'span', classNames: ['zen-composer-widget'] },
         { type: 'html', content: htmlInline },
         { type: 'closeTag', tagName: 'span' },
       ];

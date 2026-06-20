@@ -1,8 +1,8 @@
-# TOAST UI Editor : Code Syntax Highlight Plugin
+# Zen Composer : Code Syntax Highlight Plugin
 
-> This is a plugin of [TOAST UI Editor](https://github.com/nhn/tui.editor/tree/master/apps/editor) to highlight code syntax.
+> This is a plugin of [Zen Composer](https://github.com/nhn/zen-composer/tree/master/apps/editor) to highlight code syntax.
 
-[![npm version](https://img.shields.io/npm/v/@toast-ui/editor-plugin-code-syntax-highlight.svg)](https://www.npmjs.com/package/@toast-ui/editor-plugin-code-syntax-highlight)
+[![npm version](https://img.shields.io/npm/v/@fablepress/zen-composer-plugin-code-syntax-highlight.svg)](https://www.npmjs.com/package/@fablepress/zen-composer-plugin-code-syntax-highlight)
 
 ![code-syntax-highlight](https://user-images.githubusercontent.com/37766175/121834103-de6c3d00-cd08-11eb-870f-6ff943f65f8b.png)
 
@@ -20,12 +20,12 @@
 
 ```
 - node_modules/
-  - @toast-ui/
+  - @fablepress/
     - editor-plugin-code-syntax-highlight/
       - dist/
-        - toastui-editor-plugin-code-syntax-highlight-all.js
-        - toastui-editor-plugin-code-syntax-highlight.js
-        - toastui-editor-plugin-code-syntax-highlight.css
+        - zen-composer-plugin-code-syntax-highlight-all.js
+        - zen-composer-plugin-code-syntax-highlight.js
+        - zen-composer-plugin-code-syntax-highlight.css
 ```
 
 ### Files Distributed on CDN
@@ -34,24 +34,24 @@
 - uicdn.toast.com/
   - editor-plugin-code-syntax-highlight/
     - latest/
-      - toastui-editor-plugin-code-syntax-highlight.js
-      - toastui-editor-plugin-code-syntax-highlight.min.js
-      - toastui-editor-plugin-code-syntax-highlight-all.js
-      - toastui-editor-plugin-code-syntax-highlight-all.min.js
-      - toastui-editor-plugin-code-syntax-highlight.css
-      - toastui-editor-plugin-code-syntax-highlight.min.css
+      - zen-composer-plugin-code-syntax-highlight.js
+      - zen-composer-plugin-code-syntax-highlight.min.js
+      - zen-composer-plugin-code-syntax-highlight-all.js
+      - zen-composer-plugin-code-syntax-highlight-all.min.js
+      - zen-composer-plugin-code-syntax-highlight.css
+      - zen-composer-plugin-code-syntax-highlight.min.css
 ```
 
 ## 📦 Usage npm
 
-To use the plugin, [`@toast-ui/editor`](https://github.com/nhn/tui.editor/tree/master/apps/editor) must be installed.
+To use the plugin, [`@fablepress/zen-composer`](https://github.com/nhn/zen-composer/tree/master/apps/editor) must be installed.
 
-> Ref. [Getting Started](https://github.com/nhn/tui.editor/blob/master/docs/en/getting-started.md)
+> Ref. [Getting Started](https://github.com/nhn/zen-composer/blob/master/docs/en/getting-started.md)
 
 ### Install
 
 ```sh
-$ npm install @toast-ui/editor-plugin-code-syntax-highlight
+$ npm install @fablepress/zen-composer-plugin-code-syntax-highlight
 ```
 
 ### Import Plugin
@@ -63,25 +63,25 @@ The `code-syntax-highlight` plugin has [`prismjs`](https://prismjs.com/) as a de
 
 ```js
 import 'prismjs/themes/prism.css';
-import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
+import '@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight.css';
 
-import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
+import codeSyntaxHighlight from '@fablepress/zen-composer-plugin-code-syntax-highlight';
 ```
 
 #### CommonJS
 
 ```js
 require('prismjs/themes/prism.css');
-require('@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css');
+require('@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight.css');
 
-const codeSyntaxHighlight = require('@toast-ui/editor-plugin-code-syntax-highlight');
+const codeSyntaxHighlight = require('@fablepress/zen-composer-plugin-code-syntax-highlight');
 ```
 
 ### Create Instance
 
 When you set up a plugin function, you must set it with an option. The option has `highlighter`, and you need to import [`prismjs`](https://www.npmjs.com/package/prismjs) before creating an instance and set it to the value of that option.
 
-The main bundle file of `prismjs` contains just several language pack it supports. So we provides the bundle file(`toastui-editor-plugin-code-syntax-highlight-all.js`) to import all languages you need in `prismjs`.
+The main bundle file of `prismjs` contains just several language pack it supports. So we provides the bundle file(`zen-composer-plugin-code-syntax-highlight-all.js`) to import all languages you need in `prismjs`.
 
 #### Basic
 
@@ -90,10 +90,10 @@ The main bundle file of `prismjs` contains just several language pack it support
 ```js
 // ...
 import 'prismjs/themes/prism.css';
-import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
+import '@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight.css';
 
-import Editor from '@toast-ui/editor';
-import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight-all.js';
+import Editor from '@fablepress/zen-composer';
+import codeSyntaxHighlight from '@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight-all.js';
 
 
 const editor = new Editor({
@@ -109,7 +109,7 @@ You need to import the language files you want to use in the code block and regi
 ```js
 // ...
 import 'prismjs/themes/prism.css';
-import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
+import '@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight.css';
 
 // Step 1. Import prismjs
 import Prism from 'prismjs';
@@ -117,8 +117,8 @@ import Prism from 'prismjs';
 // Step 2. Import language files of prismjs that you need
 import 'prismjs/components/prism-clojure.js';
 
-import Editor from '@toast-ui/editor';
-import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
+import Editor from '@fablepress/zen-composer';
+import codeSyntaxHighlight from '@fablepress/zen-composer-plugin-code-syntax-highlight';
 
 const editor = new Editor({
   // ...
@@ -133,13 +133,13 @@ As with creating an editor instance, you need to import `prismjs` and pass it to
 ```js
 // ...
 import 'prismjs/themes/prism.css';
-import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
+import '@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight.css';
 
 // Import prismjs
 import Prism from 'prismjs';
 
-import Viewer from '@toast-ui/editor/dist/toastui-editor-viewer';
-import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
+import Viewer from '@fablepress/zen-composer/dist/zen-composer-viewer';
+import codeSyntaxHighlight from '@fablepress/zen-composer-plugin-code-syntax-highlight';
 
 
 const viewer = new Viewer({
@@ -153,13 +153,13 @@ or
 ```js
 // ...
 import 'prismjs/themes/prism.css';
-import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
+import '@fablepress/zen-composer-plugin-code-syntax-highlight/dist/zen-composer-plugin-code-syntax-highlight.css';
 
 // Import prismjs
 import Prism from 'prismjs';
 
-import Editor from '@toast-ui/editor';
-import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
+import Editor from '@fablepress/zen-composer';
+import codeSyntaxHighlight from '@fablepress/zen-composer-plugin-code-syntax-highlight';
 
 const viewer = Editor.factory({
   // ...
@@ -172,7 +172,7 @@ const viewer = Editor.factory({
 
 ### Include Files
 
-To use the plugin, the CDN files(CSS, Script) of `@toast-ui/editor` must be included.
+To use the plugin, the CDN files(CSS, Script) of `@fablepress/zen-composer` must be included.
 
 ### Create Instance
 
@@ -194,23 +194,23 @@ By including the **all** version of the plugin, all languages ​​of `prismjs`
   />
   <link
     rel="stylesheet"
-    href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.css"
+    href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/zen-composer-plugin-code-syntax-highlight.min.css"
   />
   ...
 </head>
 <body>
   ...
   <!-- Editor -->
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-all.min.js"></script>
   <!-- Editor's Plugin -->
-  <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/zen-composer-plugin-code-syntax-highlight-all.min.js"></script>
   ...
 </body>
 ...
 ```
 
 ```js
-const { Editor } = toastui;
+const { Editor } = zenComposer;
 const { codeSyntaxHighlight } = Editor.plugin;
 
 const instance = new Editor({
@@ -235,19 +235,19 @@ If you include the **normal** version of the plugin, only the languages ​​yo
   />
   <link
     rel="stylesheet"
-    href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.css"
+    href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/zen-composer-plugin-code-syntax-highlight.min.css"
   />
   ...
 </head>
 <body>
   ...
   <!-- Editor -->
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-all.min.js"></script>
   <!-- prismjs Languages -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-clojure.min.js"></script>
   <!-- Editor's Plugin -->
-  <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+  <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/zen-composer-plugin-code-syntax-highlight.min.js"></script>
   ...
 </body>
 ...
@@ -284,23 +284,23 @@ Include the Viewer file instead of the Editor.
   />
   <link
     rel="stylesheet"
-    href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.css"
+    href="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/zen-composer-plugin-code-syntax-highlight.min.css"
   />
   ...
 </head>
 <body>
   ...
   <!-- Viewer -->
-  <script src="https://uicdn.toast.com/editor/latest/toastui-editor-viewer.min.js"></script>
+  <script src="https://uicdn.toast.com/editor/latest/zen-composer-viewer.min.js"></script>
   <!-- Viewer's Plugin -->
-  <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight-all.min.js"></script>
+  <script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/zen-composer-plugin-code-syntax-highlight-all.min.js"></script>
   ...
 </body>
 ...
 ```
 
 ```js
-const Viewer = toastui.Editor;
+const Viewer = zenComposer.Editor;
 const { codeSyntaxHighlight } = Viewer.plugin;
 
 const viewer = new Viewer({

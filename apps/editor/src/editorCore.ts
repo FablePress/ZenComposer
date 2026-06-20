@@ -33,7 +33,7 @@ import Viewer from './viewer';
 import i18n, { I18n } from './i18n/i18n';
 import { getPluginInfo } from './helper/plugin';
 
-import { ToastMark } from '@toast-ui/toastmark';
+import { ZenMark } from '@fablepress/zenmark';
 import { WwToDOMAdaptor } from './wysiwyg/adaptor/wwToDOMAdaptor';
 import { ScrollSync } from './markdown/scroll/scrollSync';
 import { addDefaultImageBlobHook } from './helper/image';
@@ -44,10 +44,10 @@ import { createHTMLSchemaMap } from './wysiwyg/nodes/html';
 import { getHTMLRenderConvertors } from './markdown/htmlRenderConvertors';
 import { buildQuery } from './queries/queryManager';
 import { getEditorToMdPos, getMdToEditorPos } from './markdown/helper/pos';
-import { Pos } from '@t/toastmark';
+import { Pos } from '@t/zenmark';
 
 /**
- * ToastUIEditorCore
+ * ZenComposerCore
  * @param {Object} options Option object
  *     @param {HTMLElement} options.el - container element
  *     @param {string} [options.height='300px'] - Editor's height style value. Height is applied as border-box ex) '300px', '100%', 'auto'
@@ -84,13 +84,13 @@ import { Pos } from '@t/toastmark';
  *     @param {boolean} [options.previewHighlight=false] - whether highlight preview area
  *     @param {boolean} [options.frontMatter=false] - whether use the front matter
  *     @param {Array.<object>} [options.widgetRules=[]] - The rules for replacing the text with widget node
- *     @param {string} [options.theme] - The theme to style the editor with. The default is included in toastui-editor.css.
+ *     @param {string} [options.theme] - The theme to style the editor with. The default is included in zen-composer.css.
  *     @param {autofocus} [options.autofocus=true] - automatically focus the editor on creation.
  */
-class ToastUIEditorCore {
+class ZenComposerCore {
   private initialHTML: string;
 
-  private toastMark: ToastMark;
+  private toastMark: ZenMark;
 
   private mdEditor: MarkdownEditor;
 
@@ -214,7 +214,7 @@ class ToastUIEditorCore {
       wwToDOMAdaptor
     );
 
-    this.toastMark = new ToastMark('', {
+    this.toastMark = new ZenMark('', {
       disallowedHtmlBlockTags: ['br', 'img'],
       extendedAutolinks,
       referenceDefinition,
@@ -331,10 +331,10 @@ class ToastUIEditorCore {
   /**
    * Factory method for Editor
    * @param {object} options Option for initialize TUIEditor
-   * @returns {object} ToastUIEditorCore or ToastUIEditorViewer
+   * @returns {object} ZenComposerCore or ZenComposerViewer
    */
   static factory(options: (EditorOptions | ViewerOptions) & { viewer?: boolean }) {
-    return options.viewer ? new Viewer(options) : new ToastUIEditorCore(options as EditorOptions);
+    return options.viewer ? new Viewer(options) : new ZenComposerCore(options as EditorOptions);
   }
 
   /**
@@ -854,6 +854,6 @@ class ToastUIEditorCore {
 
 // // (Not an official API)
 // // Create a function converting markdown to HTML using the internal parser and renderer.
-// ToastUIEditor._createMarkdownToHTML = createMarkdownToHTML;
+// ZenComposer._createMarkdownToHTML = createMarkdownToHTML;
 
-export default ToastUIEditorCore;
+export default ZenComposerCore;

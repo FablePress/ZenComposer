@@ -13,7 +13,7 @@ function getTestUrls() {
     throw Error('not exist examples path at tuidoc.config.json');
   }
 
-  const urlPrefix = 'http://nhn.github.io/tui.editor/latest';
+  const urlPrefix = 'http://nhn.github.io/zen-composer/latest';
 
   const testUrls = fs.readdirSync(filePath).reduce((urls, fileName) => {
     if (/html$/.test(fileName)) {

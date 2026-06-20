@@ -1,19 +1,19 @@
 {
-  "name": "@toast-ui/editor-plugin-table-merged-cell",
+  "name": "@fablepress/zen-composer-plugin-table-merged-cell",
   "version": "3.1.0",
-  "description": "TOAST UI Editor : Table Merged Cell Plugin",
+  "description": "Zen Composer : Table Merged Cell Plugin",
   "keywords": [
     "nhn",
     "nhn cloud",
     "toast",
-    "toastui",
+    "zenComposer",
     "toast-ui",
     "editor",
     "plugin",
     "table",
     "merged-cell"
   ],
-  "main": "dist/toastui-editor-plugin-table-merged-cell.js",
+  "main": "dist/zen-composer-plugin-table-merged-cell.js",
   "files": [
     "dist/*.js",
     "dist/*.css",
@@ -24,11 +24,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nhn/tui.editor.git",
+    "url": "https://github.com/nhn/zen-composer.git",
     "directory": "plugins/table-merged-cell"
   },
   "bugs": {
-    "url": "https://github.com/nhn/tui.editor/issues"
+    "url": "https://github.com/nhn/zen-composer/issues"
   },
   "homepage": "https://ui.toast.com",
   "browserslist": "last 2 versions, not ie <= 10",

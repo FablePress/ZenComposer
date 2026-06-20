@@ -3,8 +3,8 @@ import {
   EventHandlerMap,
   EventName,
   RemovedNodeRange,
-  ToastMark as ToastMarkParser,
-} from '@t/toastMark';
+  ZenMark as ZenMarkParser,
+} from '@t/zenMark';
 import { ParserOptions, RefDefCandidateMap, RefLinkCandidateMap, RefMap } from '@t/parser';
 import { Pos } from '@t/node';
 import { Parser } from './commonmark/blocks';
@@ -66,7 +66,7 @@ export function createRefDefState(node: RefDefNode) {
   };
 }
 
-export class ToastMark implements ToastMarkParser {
+export class ZenMark implements ZenMarkParser {
   lineTexts: string[];
   private parser: Parser;
   private root: BlockNode;

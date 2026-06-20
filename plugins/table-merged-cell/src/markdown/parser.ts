@@ -1,4 +1,4 @@
-import type { CustomParserMap } from '@toast-ui/toastmark';
+import type { CustomParserMap } from '@fablepress/zenmark';
 import { MergedTableRowMdNode, MergedTableCellMdNode, SpanType } from '@t/index';
 
 interface Attrs {

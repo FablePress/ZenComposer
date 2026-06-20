@@ -7,7 +7,7 @@ import {
   selectNodeBackward,
 } from 'prosemirror-commands';
 import * as keymaps from 'prosemirror-keymap';
-import { Sourcepos, ToastMark } from '@toast-ui/toastmark';
+import { Sourcepos, ZenMark } from '@fablepress/zenmark';
 import MarkdownEditor from '@/markdown/mdEditor';
 import MarkdownPreview from '@/markdown/mdPreview';
 import EventEmitter from '@/event/eventEmitter';
@@ -49,7 +49,7 @@ function execUndo() {
 
 beforeEach(() => {
   em = new EventEmitter();
-  mde = new TestEditorWithNoneDelayHistory(em, { toastMark: new ToastMark() });
+  mde = new TestEditorWithNoneDelayHistory(em, { toastMark: new ZenMark() });
 
   const options = {
     linkAttributes: null,

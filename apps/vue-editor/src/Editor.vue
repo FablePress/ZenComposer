@@ -1,12 +1,12 @@
 <template>
-  <div ref="toastuiEditor"></div>
+  <div ref="zenComposerEditor"></div>
 </template>
 <script>
-import Editor from '@toast-ui/editor';
+import Editor from '@fablepress/zen-composer';
 import { optionsMixin } from './mixin/option';
 
 export default {
-  name: 'ToastuiEditor',
+  name: 'ZenComposer',
   mixins: [optionsMixin],
   props: {
     previewStyle: {
@@ -34,13 +34,13 @@ export default {
     },
   },
   mounted() {
-    const options = { ...this.computedOptions, el: this.$refs.toastuiEditor };
+    const options = { ...this.computedOptions, el: this.$refs.zenComposerEditor };
 
     this.editor = new Editor(options);
   },
   methods: {
     getRootElement() {
-      return this.$refs.toastuiEditor;
+      return this.$refs.zenComposerEditor;
     },
   },
 };

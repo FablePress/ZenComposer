@@ -1,6 +1,6 @@
 import { oneLineTrim, source, stripIndent } from 'common-tags';
 import { undo } from 'prosemirror-history';
-import { ToastMark } from '@toast-ui/toastmark';
+import { ZenMark } from '@fablepress/zenmark';
 import MarkdownEditor from '@/markdown/mdEditor';
 import MarkdownPreview from '@/markdown/mdPreview';
 import EventEmitter from '@/event/eventEmitter';
@@ -22,7 +22,7 @@ function getPreviewHTML() {
 
 beforeEach(() => {
   em = new EventEmitter();
-  mde = new TestEditorWithNoneDelayHistory(em, { toastMark: new ToastMark() });
+  mde = new TestEditorWithNoneDelayHistory(em, { toastMark: new ZenMark() });
   cmd = new CommandManager(em, mde.commands, {}, () => 'markdown');
 
   const options = {
@@ -307,9 +307,9 @@ describe('addImage command', () => {
 
 describe('addLink command', () => {
   it('should add link syntax', () => {
-    cmd.exec('addLink', { linkText: 'TOAST UI', linkUrl: 'https://ui.toast.com' });
+    cmd.exec('addLink', { linkText: 'Zen Composer', linkUrl: 'https://ui.toast.com' });
 
-    expect(getTextContent(mde)).toBe('[TOAST UI](https://ui.toast.com)');
+    expect(getTextContent(mde)).toBe('[Zen Composer](https://ui.toast.com)');
   });
 
   it('should escape link Text', () => {
@@ -323,12 +323,12 @@ describe('addLink command', () => {
 
   it('should not decode url which is already encoded', () => {
     cmd.exec('addLink', {
-      linkText: 'TOAST UI',
+      linkText: 'Zen Composer',
       linkUrl: 'https://firebasestorage.googleapis.com/links%2Fimage.png?alt=media',
     });
 
     expect(getTextContent(mde)).toBe(
-      '[TOAST UI](https://firebasestorage.googleapis.com/links%2Fimage.png?alt=media)'
+      '[Zen Composer](https://firebasestorage.googleapis.com/links%2Fimage.png?alt=media)'
     );
   });
 });

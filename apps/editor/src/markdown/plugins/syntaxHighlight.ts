@@ -1,4 +1,4 @@
-import { MdNode, MdPos, EditResult, ToastMark } from '@toast-ui/toastmark';
+import { MdNode, MdPos, EditResult, ZenMark } from '@fablepress/zenmark';
 import { Plugin, Transaction } from 'prosemirror-state';
 import { NodeType, ProsemirrorNode, Schema } from 'prosemirror-model';
 import { MdContext } from '@t/spec';
@@ -192,7 +192,7 @@ function getMarkForRemoving({ doc }: Transaction, nodes: MdNode[]) {
   return marks;
 }
 
-function getMarkForAdding(node: MdNode, toastMark: ToastMark) {
+function getMarkForAdding(node: MdNode, toastMark: ZenMark) {
   const lineTexts = toastMark.getLineTexts();
   const startPos: MdPos = [getMdStartLine(node), getMdStartCh(node)];
   const endPos: MdPos = [getMdEndLine(node), getMdEndCh(node) + 1];

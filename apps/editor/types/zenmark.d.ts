@@ -332,7 +332,7 @@ type EventHandlerMap = {
   [key in EventName]: Function[];
 };
 
-export class ToastMark {
+export class ZenMark {
   constructor(contents?: string, options?: Partial<ParserOptions>);
 
   lineTexts: string[];

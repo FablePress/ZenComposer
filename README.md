@@ -1,8 +1,8 @@
-# ![TOAST UI Editor](https://uicdn.toast.com/toastui/img/tui-editor-bi.png)
+# ![Zen Composer](https://uicdn.toast.com/zenComposer/img/zen-composer-bi.png)
 
 > GFM  Markdown and WYSIWYG Editor - Productive and Extensible
 
-[![github release version](https://img.shields.io/github/v/release/nhn/tui.editor.svg?include_prereleases)](https://github.com/nhn/tui.editor/releases/latest) [![npm version](https://img.shields.io/npm/v/@toast-ui/editor.svg)](https://www.npmjs.com/package/@toast-ui/editor) [![license](https://img.shields.io/github/license/nhn/tui.editor.svg)](https://github.com/nhn/tui.editor/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/tui.editor/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![code with hearth by NHN Cloud](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN_Cloud-ff1414.svg)](https://github.com/nhn)
+[![github release version](https://img.shields.io/github/v/release/nhn/zen-composer.svg?include_prereleases)](https://github.com/nhn/zen-composer/releases/latest) [![npm version](https://img.shields.io/npm/v/@fablepress/zen-composer.svg)](https://www.npmjs.com/package/@fablepress/zen-composer) [![license](https://img.shields.io/github/license/nhn/zen-composer.svg)](https://github.com/nhn/zen-composer/blob/master/LICENSE) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/nhn/zen-composer/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![code with hearth by NHN Cloud](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-NHN_Cloud-ff1414.svg)](https://github.com/nhn)
 
 <img src="https://user-images.githubusercontent.com/37766175/121809054-446bac80-cc96-11eb-9139-08c6d9ad2d88.png" />
 
@@ -10,46 +10,46 @@
 ## 🚩 Table of Contents
 
 - [Packages](#-packages)
-- [Why TOAST UI Editor?](#-why-toast-ui-editor)
+- [Why Zen Composer?](#-why-toast-ui-editor)
 - [Features](#-features)
 - [Examples](#-examples)
 - [Browser Support](#-browser-support)
 - [Pull Request Steps](#-pull-request-steps)
 - [Contributing](#-contributing)
-- [TOAST UI Family](#-toast-ui-family)
+- [Zen Composer Family](#-toast-ui-family)
 - [Used By](#-used-by)
 - [License](#-license)
 
 
 ## 📦 Packages
 
-### TOAST UI Editor
+### Zen Composer
 
 | Name | Description |
 | --- | --- |
-| [`@toast-ui/editor`](https://github.com/nhn/tui.editor/tree/master/apps/editor) | Plain JavaScript component |
+| [`@fablepress/zen-composer`](https://github.com/nhn/zen-composer/tree/master/apps/editor) | Plain JavaScript component |
 
-### TOAST UI Editor's Wrappers
-
-| Name | Description |
-| --- | --- |
-| [`@toast-ui/react-editor`](https://github.com/nhn/tui.editor/tree/master/apps/react-editor) | [React](https://reactjs.org/) wrapper component |
-| [`@toast-ui/vue-editor`](https://github.com/nhn/tui.editor/tree/master/apps/vue-editor) | [Vue](https://vuejs.org/) wrapper component |
-
-### TOAST UI Editor's Plugins
+### Zen Composer's Wrappers
 
 | Name | Description |
 | --- | --- |
-| [`@toast-ui/editor-plugin-chart`](https://github.com/nhn/tui.editor/tree/master/plugins/chart) | Plugin to render chart |
-| [`@toast-ui/editor-plugin-code-syntax-highlight`](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) | Plugin to highlight code syntax |
-| [`@toast-ui/editor-plugin-color-syntax`](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) | Plugin to color editing text |
-| [`@toast-ui/editor-plugin-table-merged-cell`](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) | Plugin to merge table columns |
-| [`@toast-ui/editor-plugin-uml`](https://github.com/nhn/tui.editor/tree/master/plugins/uml) | Plugin to render UML |
+| [`@fablepress/zen-composer-react`](https://github.com/nhn/zen-composer/tree/master/apps/react-editor) | [React](https://reactjs.org/) wrapper component |
+| [`@fablepress/zen-composer-vue`](https://github.com/nhn/zen-composer/tree/master/apps/vue-editor) | [Vue](https://vuejs.org/) wrapper component |
+
+### Zen Composer's Plugins
+
+| Name | Description |
+| --- | --- |
+| [`@fablepress/zen-composer-plugin-chart`](https://github.com/nhn/zen-composer/tree/master/plugins/chart) | Plugin to render chart |
+| [`@fablepress/zen-composer-plugin-code-syntax-highlight`](https://github.com/nhn/zen-composer/tree/master/plugins/code-syntax-highlight) | Plugin to highlight code syntax |
+| [`@fablepress/zen-composer-plugin-color-syntax`](https://github.com/nhn/zen-composer/tree/master/plugins/color-syntax) | Plugin to color editing text |
+| [`@fablepress/zen-composer-plugin-table-merged-cell`](https://github.com/nhn/zen-composer/tree/master/plugins/table-merged-cell) | Plugin to merge table columns |
+| [`@fablepress/zen-composer-plugin-uml`](https://github.com/nhn/zen-composer/tree/master/plugins/uml) | Plugin to render UML |
 
 
-## 🤖 Why TOAST UI Editor?
+## 🤖 Why Zen Composer?
 
-TOAST UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on the type of use you want like production of *Markdown* or maybe to just edit the *Markdown*. The TOAST UI Editor can be helpful for both the usage. It offers **Markdown mode** and **WYSIWYG mode**, which can be switched any point in time.
+Zen Composer provides **Markdown mode** and **WYSIWYG mode**. Depending on the type of use you want like production of *Markdown* or maybe to just edit the *Markdown*. The Zen Composer can be helpful for both the usage. It offers **Markdown mode** and **WYSIWYG mode**, which can be switched any point in time.
 
 ### Productive Markdown Mode
 
@@ -57,7 +57,7 @@ TOAST UI Editor provides **Markdown mode** and **WYSIWYG mode**. Depending on th
 
 **CommonMark + GFM Specifications**
 
-Today *CommonMark* is the de-facto *Markdown* standard. *GFM (GitHub Flavored Markdown)* is another popular specification based on *CommonMark* - maintained by *GitHub*, which is the *Markdown* mostly used. TOAST UI Editor follows both [*CommonMark*](http://commonmark.org/) and [*GFM*](https://github.github.com/gfm/) specifications. Write documents with ease using productive tools provided by TOAST UI Editor and you can easily open the produced document wherever the specifications are supported.
+Today *CommonMark* is the de-facto *Markdown* standard. *GFM (GitHub Flavored Markdown)* is another popular specification based on *CommonMark* - maintained by *GitHub*, which is the *Markdown* mostly used. Zen Composer follows both [*CommonMark*](http://commonmark.org/) and [*GFM*](https://github.github.com/gfm/) specifications. Write documents with ease using productive tools provided by Zen Composer and you can easily open the produced document wherever the specifications are supported.
 
 * **Live Preview** : Edit Markdown while keeping an eye on the rendered HTML. Your edits will be applied immediately.
 * **Scroll Sync** : Synchronous scrolling between Markdown and Preview. You don't need to scroll through each one separately.
@@ -82,35 +82,35 @@ Today *CommonMark* is the de-facto *Markdown* standard. *GFM (GitHub Flavored Ma
 
 ![plugin](https://user-images.githubusercontent.com/37766175/121808323-d8d41000-cc92-11eb-9117-b92a435c9b43.png)
 
-CommonMark and GFM are great, but we often need more abstraction. The TOAST UI Editor comes with powerful **Plugins** in compliance with the Markdown syntax.
+CommonMark and GFM are great, but we often need more abstraction. The Zen Composer comes with powerful **Plugins** in compliance with the Markdown syntax.
 
 **Five basic plugins** are provided as follows, and can be downloaded and used with npm.
 
-* [**`chart`**](https://github.com/nhn/tui.editor/tree/master/plugins/chart) : A code block marked as a 'chart' will render [TOAST UI Chart](https://github.com/nhn/tui.chart).
-* [**`code-syntax-highlight`**](https://github.com/nhn/tui.editor/tree/master/plugins/code-syntax-highlight) : Highlight the code block area corresponding to the language provided by [Prism.js](https://prismjs.com/).
-* [**`color-syntax`**](https://github.com/nhn/tui.editor/tree/master/plugins/color-syntax) : 
-Using [TOAST UI ColorPicker](https://github.com/nhn/tui.color-picker), you can change the color of the editing text with the GUI.
-* [**`table-merged-cell`**](https://github.com/nhn/tui.editor/tree/master/plugins/table-merged-cell) : 
+* [**`chart`**](https://github.com/nhn/zen-composer/tree/master/plugins/chart) : A code block marked as a 'chart' will render [Zen Composer Chart](https://github.com/nhn/tui.chart).
+* [**`code-syntax-highlight`**](https://github.com/nhn/zen-composer/tree/master/plugins/code-syntax-highlight) : Highlight the code block area corresponding to the language provided by [Prism.js](https://prismjs.com/).
+* [**`color-syntax`**](https://github.com/nhn/zen-composer/tree/master/plugins/color-syntax) : 
+Using [Zen Composer ColorPicker](https://github.com/nhn/tui.color-picker), you can change the color of the editing text with the GUI.
+* [**`table-merged-cell`**](https://github.com/nhn/zen-composer/tree/master/plugins/table-merged-cell) : 
 You can merge columns of the table header and body area.
-* [**`uml`**](https://github.com/nhn/tui.editor/tree/master/plugins/uml) : A code block marked as an 'uml' will render [UML diagrams](http://plantuml.com/screenshot).
+* [**`uml`**](https://github.com/nhn/zen-composer/tree/master/plugins/uml) : A code block marked as an 'uml' will render [UML diagrams](http://plantuml.com/screenshot).
 
 ## 🎨 Features
 
-* [Viewer](https://github.com/nhn/tui.editor/tree/master/docs/en/viewer.md) : Supports a mode to display only markdown data without an editing area.
-* [Internationalization (i18n)](https://github.com/nhn/tui.editor/tree/master/docs/en/i18n.md) : Supports English, Dutch, Korean, Japanese, Chinese, Spanish, German, Russian, French, Ukrainian, Turkish, Finnish, Czech, Arabic, Polish, Galician, Swedish, Italian, Norwegian, Croatian + language and you can extend.
-* [Widget](https://github.com/nhn/tui.editor/tree/master/docs/en/widget.md) : This feature allows you to configure the rules that replaces the string matching to a specific `RegExp` with the widget node.
-* [Custom Block](https://github.com/nhn/tui.editor/tree/master/docs/en/custom-block.md) : Nodes not supported by Markdown can be defined through custom block. You can display the node what you want through writing the parsing logic with custom block.
+* [Viewer](https://github.com/nhn/zen-composer/tree/master/docs/en/viewer.md) : Supports a mode to display only markdown data without an editing area.
+* [Internationalization (i18n)](https://github.com/nhn/zen-composer/tree/master/docs/en/i18n.md) : Supports English, Dutch, Korean, Japanese, Chinese, Spanish, German, Russian, French, Ukrainian, Turkish, Finnish, Czech, Arabic, Polish, Galician, Swedish, Italian, Norwegian, Croatian + language and you can extend.
+* [Widget](https://github.com/nhn/zen-composer/tree/master/docs/en/widget.md) : This feature allows you to configure the rules that replaces the string matching to a specific `RegExp` with the widget node.
+* [Custom Block](https://github.com/nhn/zen-composer/tree/master/docs/en/custom-block.md) : Nodes not supported by Markdown can be defined through custom block. You can display the node what you want through writing the parsing logic with custom block.
 
 ## 🐾 Examples
 
-* [Basic](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic)
-* [Viewer](https://nhn.github.io/tui.editor/latest/tutorial-example04-viewer)
-* [Using All Plugins](https://nhn.github.io/tui.editor/latest/tutorial-example12-editor-with-all-plugins)
-* [Creating the User's Plugin](https://nhn.github.io/tui.editor/latest/tutorial-example13-creating-plugin)
-* [Customizing the Toobar Buttons](https://nhn.github.io/tui.editor/latest/tutorial-example15-customizing-toolbar-buttons)
-* [Internationalization (i18n)](https://nhn.github.io/tui.editor/latest/tutorial-example16-i18n)
+* [Basic](https://nhn.github.io/zen-composer/latest/tutorial-example01-editor-basic)
+* [Viewer](https://nhn.github.io/zen-composer/latest/tutorial-example04-viewer)
+* [Using All Plugins](https://nhn.github.io/zen-composer/latest/tutorial-example12-editor-with-all-plugins)
+* [Creating the User's Plugin](https://nhn.github.io/zen-composer/latest/tutorial-example13-creating-plugin)
+* [Customizing the Toobar Buttons](https://nhn.github.io/zen-composer/latest/tutorial-example15-customizing-toolbar-buttons)
+* [Internationalization (i18n)](https://nhn.github.io/zen-composer/latest/tutorial-example16-i18n)
 
-Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-example01-editor-basic) and play with TOAST UI Editor!
+Here are more [examples](https://nhn.github.io/zen-composer/latest/tutorial-example01-editor-basic) and play with Zen Composer!
 
 
 ## 🌏 Browser Support
@@ -122,20 +122,20 @@ Here are more [examples](https://nhn.github.io/tui.editor/latest/tutorial-exampl
 
 ## 🔧 Pull Request Steps
 
-TOAST UI products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
+Zen Composer products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
 
 ### Setup
 
 Fork `main` branch into your personal repository. Clone it to local computer. Install node modules. Before starting development, you should check if there are any errors.
 
 ```sh
-$ git clone https://github.com/{your-personal-repo}/tui.editor.git
+$ git clone https://github.com/{your-personal-repo}/zen-composer.git
 $ npm install
-$ npm run build toastmark
+$ npm run build zenmark
 $ npm run test editor
 ```
 
-> TOAST UI Editor uses [npm workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces/), so you need to set the environment based on [npm7](https://github.blog/2021-02-02-npm-7-is-now-generally-available/). If subversion is used, dependencies must be installed by moving direct paths per package.
+> Zen Composer uses [npm workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces/), so you need to set the environment based on [npm7](https://github.blog/2021-02-02-npm-7-is-now-generally-available/). If subversion is used, dependencies must be installed by moving direct paths per package.
 
 ### Develop
 
@@ -169,19 +169,19 @@ For more information on PR's steps, please see links in the Contributing section
 
 ## 💬 Contributing
 
-* [Code of Conduct](https://github.com/nhn/tui.editor/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing Guideline](https://github.com/nhn/tui.editor/blob/master/CONTRIBUTING.md)
-* [Commit Convention](https://github.com/nhn/tui.editor/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
-* [Issue Guidelines](https://github.com/nhn/tui.editor/tree/master/.github/ISSUE_TEMPLATE)
+* [Code of Conduct](https://github.com/nhn/zen-composer/blob/master/CODE_OF_CONDUCT.md)
+* [Contributing Guideline](https://github.com/nhn/zen-composer/blob/master/CONTRIBUTING.md)
+* [Commit Convention](https://github.com/nhn/zen-composer/blob/master/docs/COMMIT_MESSAGE_CONVENTION.md)
+* [Issue Guidelines](https://github.com/nhn/zen-composer/tree/master/.github/ISSUE_TEMPLATE)
 
 
-## 🍞 TOAST UI Family
+## 🍞 Zen Composer Family
 
-- [TOAST UI Calendar](https://github.com/nhn/tui.calendar)
-- [TOAST UI Chart](https://github.com/nhn/tui.chart)
-- [TOAST UI Grid](https://github.com/nhn/tui.grid)
-- [TOAST UI Image Editor](https://github.com/nhn/tui.image-editor)
-- [TOAST UI Components](https://github.com/nhn)
+- [Zen Composer Calendar](https://github.com/nhn/tui.calendar)
+- [Zen Composer Chart](https://github.com/nhn/tui.chart)
+- [Zen Composer Grid](https://github.com/nhn/tui.grid)
+- [Zen Composer Image Editor](https://github.com/nhn/tui.image-editor)
+- [Zen Composer Components](https://github.com/nhn)
 
 
 ## 🚀 Used By
@@ -192,4 +192,4 @@ For more information on PR's steps, please see links in the Contributing section
 
 ## 📜 License
 
-This software is licensed under the [MIT](https://github.com/nhn/tui.editor/blob/master/LICENSE) © [NHN Cloud](https://github.com/nhn).
+This software is licensed under the [MIT](https://github.com/nhn/zen-composer/blob/master/LICENSE) © [NHN Cloud](https://github.com/nhn).

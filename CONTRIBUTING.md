@@ -1,8 +1,8 @@
-# Contributing to TOAST UI
+# Contributing to Zen Composer
 
 First off, thanks for taking the time to contribute! 🎉 😘 ✨
 
-The following is a set of guidelines for contributing to TOAST UI. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to Zen Composer. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Reporting Bugs
 Bugs are tracked as GitHub issues. Search the list and try reproduce on [demo][demo] before you create an issue. When you create an issue, please provide the following information by filling in the template.
@@ -17,21 +17,21 @@ Explain the problem and include additional details to help maintainers reproduce
 * **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem.
 
 ## Suggesting Enhancements
-In case you want to suggest for TOAST UI Editor, please follow this guideline to help maintainers and the community understand your suggestion.
-Before creating suggestions, please check [issue list](https://github.com/nhn/tui.editor/labels/feature) if there's already a request.
+In case you want to suggest for Zen Composer, please follow this guideline to help maintainers and the community understand your suggestion.
+Before creating suggestions, please check [issue list](https://github.com/nhn/zen-composer/labels/feature) if there's already a request.
 
 Create an issue and provide the following information:
 
 * **Use a clear and descriptive title** for the issue to identify the suggestion.
 * **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
 * **Provide specific examples to demonstrate the steps.** Include copy/pasteable snippets which you use in those examples, as Markdown code blocks.
-* **Include screenshots and animated GIFs** which helps demonstrate the steps or point out the part of TOAST UI Editor which the suggestion is related to.
-* **Explain why this enhancement would be useful** to most TOAST UI users.
+* **Include screenshots and animated GIFs** which helps demonstrate the steps or point out the part of Zen Composer which the suggestion is related to.
+* **Explain why this enhancement would be useful** to most Zen Composer users.
 * **List some other text editors or applications where this enhancement exists.**
 
 ## First Code Contribution
 
-Unsure where to begin contributing to TOAST UI? You can start by looking through these `document`, `good first issue` and `help wanted` issues:
+Unsure where to begin contributing to Zen Composer? You can start by looking through these `document`, `good first issue` and `help wanted` issues:
 
 * **document issues**: issues which should be reviewed or improved.
 * **good first issues**: issues which should only require a few lines of code, and a test or two.
@@ -49,7 +49,7 @@ Unsure where to begin contributing to TOAST UI? You can start by looking through
 - Prepare your machine node and it's packages installed.
 - Checkout our repository
 - Install dependencies by `npm install`
-- Build toastmark by `npm run build toastmark`
+- Build zenmark by `npm run build zenmark`
 - Start snowpack-dev-server by `npm run serve`
 
 ### Make changes
@@ -90,4 +90,4 @@ This project and everyone participating in it is governed by the [Code of Conduc
 
 > This Guide is base on [atom contributing guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md), [CocoaPods](http://guides.cocoapods.org/contributing/contribute-to-cocoapods.html) and [ESLint](http://eslint.org/docs/developer-guide/contributing/pull-requests)
 
-[demo]:https://nhn.github.io/tui.editor/
+[demo]:https://nhn.github.io/zen-composer/
