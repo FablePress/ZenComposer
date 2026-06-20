@@ -1,0 +1,9 @@
+{
+    "name": "fablepress/zenmark",
+    "description": "ZenMark: Markdown parser extended from CommonMark.js",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    }
+}

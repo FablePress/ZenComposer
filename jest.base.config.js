@@ -12,7 +12,16 @@ module.exports = {
     '^.+\\.js$': 'jest-esm-transformer',
     '^.+\\.css$': cssMockFile,
   },
-  transformIgnorePatterns: ['<rootDir>/node_modules/'],
+  transformIgnorePatterns: ['/node_modules/(?!.*\\.css$)'],
+  moduleNameMapper: {
+    '^prosemirror-model$': path.resolve(__dirname, 'node_modules/prosemirror-model'),
+  },
+  globals: {
+    'ts-jest': {
+      isolatedModules: true,
+      diagnostics: false,
+    },
+  },
   snapshotSerializers: ['jest-serializer-html'],
   testMatch: ['**/__test__/**/*.spec.ts'],
   moduleFileExtensions: ['ts', 'js', 'json'],

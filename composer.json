@@ -1,0 +1,15 @@
+{
+    "name": "fablepress/zen-composer",
+    "description": "ZenComposer: GFM Markdown WYSIWYG Editor",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0",
+        "fablepress/zenmark": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "FablePress\\ZenComposer\\": "src/"
+        }
+    }
+}

@@ -5,6 +5,7 @@ module.exports = {
   ...base,
   testEnvironment: 'jsdom',
   moduleNameMapper: {
+    ...base.moduleNameMapper,
     '^@/(.*)$': '<rootDir>/src/$1',
   },
 };
