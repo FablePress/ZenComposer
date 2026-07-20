@@ -65,6 +65,71 @@
             theme: 'default',
             plugins: activePlugins,
             hooks: activeHooks,
+            customHTMLRenderer: {
+                image(node, context) {
+                    const destination = node.destination || (node.literal && node.literal.destination) || '';
+                    const altText = node.altText || (node.literal && node.literal.altText) || '';
+                    
+                    context.skipChildren();
+                    
+                    let width = '';
+                    let height = '';
+                    
+                    if (destination) {
+                        const hashIndex = destination.indexOf('#');
+                        const queryIndex = destination.indexOf('?');
+                        let queryStr = '';
+                        
+                        if (hashIndex !== -1) {
+                            queryStr = destination.substring(hashIndex + 1);
+                        } else if (queryIndex !== -1) {
+                            queryStr = destination.substring(queryIndex + 1);
+                        }
+                        
+                        if (queryStr) {
+                            const params = {};
+                            queryStr.split('&').forEach(part => {
+                                const pair = part.split('=');
+                                if (pair[0]) params[pair[0]] = pair[1] || '';
+                            });
+                            
+                            const w = params.width || params.w;
+                            const h = params.height || params.h;
+                            
+                            if (w) width = w;
+                            if (h) height = h;
+                            
+                            if (!width) {
+                                const match = queryStr.match(/^(\d+)(x(\d+))?$/);
+                                if (match) {
+                                    width = match[1];
+                                    if (match[3]) height = match[3];
+                                }
+                            }
+                        }
+                    }
+                    
+                    const attributes = {
+                        src: destination,
+                        alt: altText || ''
+                    };
+                    
+                    if (width) {
+                        attributes.width = width.match(/[^0-9]/) ? width : width + 'px';
+                        attributes.style = `width: ${attributes.width}; max-width: 100%; height: ${height ? (height.match(/[^0-9]/) ? height : height + 'px') : 'auto'};`;
+                    }
+                    if (height) {
+                        attributes.height = height.match(/[^0-9]/) ? height : height + 'px';
+                    }
+                    
+                    return {
+                        type: 'openTag',
+                        tagName: 'img',
+                        attributes: attributes,
+                        isSelfClosing: true
+                    };
+                }
+            },
             toolbarItems: [
                 ['heading', 'bold', 'italic', 'strike'],
                 ['hr', 'quote'],

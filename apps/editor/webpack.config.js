@@ -169,6 +169,7 @@ module.exports = (env) => {
             '@': path.resolve('src'),
             '@t': path.resolve('types'),
           },
+          mainFields: ['browser', 'main'],
         },
         plugins: [
           new MiniCssExtractPlugin({
